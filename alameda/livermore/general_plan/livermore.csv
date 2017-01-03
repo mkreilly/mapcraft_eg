@@ -1,0 +1,83 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+livermore,GP-RR,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UL,,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-ULM,,,3.0,,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UM,,,4.5,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UMH,,,6.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH,,,55.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH1,,,8.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH2,,,14.0,,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH3,,,18.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH4,,,22.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH5,,,38.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH6,,,55.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-RR_UM,,,4.5,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-ULM_UH,,,22.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-ULM_UH2,,,14.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-ULM_UH3,,,18.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-ULM_UH4,,,22.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UMH_UH,,,14.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-LII_ULM,,,3.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-HII_UH,,,18.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-LII_UH,,,18.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-NC_UH,,,18.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-BCP_UH,,,22.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-UH-OC,,,14.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-SC,0.3,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+livermore,GP-HC,0.3,,,,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+livermore,GP-NC,0.3,,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+livermore,GP-CSGS,0.3,,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+livermore,GP-OC_CF,0.3,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+livermore,GP-OC,0.3,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+livermore,GP-DA,,,,,0,0,1,1,1,0,0,0,0,1,0,1,1,0
+livermore,GP-NML,0.3,,15.0,,1,0,0,0,0,0,0,0,0,1,0,1,1,0
+livermore,GP-NMM,0.3,,24.0,,0,1,0,0,0,0,0,0,0,1,0,1,1,0
+livermore,GP-NMH,0.3,,38.0,,0,1,1,0,0,0,0,0,0,1,0,1,1,0
+livermore,GP-BCP,,,,,0,0,0,1,0,0,1,0,0,1,1,0,0,1
+livermore,GP-BCP_CF,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-LII,,,,,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+livermore,GP-HII,,,,,0,0,0,1,0,0,1,1,1,0,0,0,0,0
+livermore,GP-OSP,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-AGVT,,,0.01,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-LDAG,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-HLCN,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-LPA,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-RMG,,,0.01,1.0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-WML,,,0.01,1.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-OSP_S&G,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-BART,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-CF,,,,,0,0,0,1,0,1,1,0,0,0,0,0,0,0
+livermore,GP-SV-RDA,,,3.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-SV-AP,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-SV-VC,0.25,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+livermore,GP-SV-ROS,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,GP-AGVT_SV7-TDR,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Agriculture Preserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Agriculture/Viticulture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Business and Commercial Park,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+livermore,107 - Community Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+livermore,107 - Community Serving General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+livermore,107 - High Intensity Industrial,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+livermore,107 - Highway Commercial,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+livermore,107 - Hillside Conservation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Limited Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Low Intensity Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+livermore,107 - Mixed Use-Downtown Area SP,,,22.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+livermore,107 - Mixed Use-Neighborhood Low Density,,,3.0,,1,0,0,1,0,1,0,0,0,1,1,0,1,1
+livermore,107 - Mixed Use-Neighborhood Medium Density,,,4.5,,1,1,1,1,0,1,0,0,0,1,1,0,1,1
+livermore,107 - Neighborhood Commercial,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+livermore,107 - Office Commercial,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+livermore,107 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Residential Development Area (SVA),,,3.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Resource Management,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Rural Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Service Commercial,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+livermore,107 - Urban High Density Residential UH1,,,8.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban High Density Residential UH2,,,14.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban High Density Residential UH3,,,18.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban High Density Residential UH4,,,22.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban Low Medium Residential,,,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban Low Residential UL1,,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban Low Residential UL2,,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban Medium Density Residential,,,4.5,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+livermore,107 - Urban Medium High Residential,,,6.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0

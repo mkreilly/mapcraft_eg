@@ -1,0 +1,25 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+san_anselmo,Very Low Density Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,Single Family-Conservation,,,1.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,Single Family,,,6.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_anselmo,Medium Density Residential,,,12.0,,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+san_anselmo,High Density Residential,,,20.0,,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+san_anselmo,Downtown Mixed Residential,,,20.0,,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+san_anselmo,Central Commercial,2.0,30.0,,,0,0,1,1,0,0,0,0,0,1,0,1,1,1
+san_anselmo,General Commercial,1.5,30.0,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+san_anselmo,Limited Commercial,1.0,30.0,,,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+san_anselmo,Neighborhood Commercial,0.65,30.0,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+san_anselmo,Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,Public Facility,,,,,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+san_anselmo,308 - Central Commercial,2.0,30.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_anselmo,308 - General Commercial,1.5,30.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_anselmo,308 - High Density Residential,,,20.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,308 - Limited Commercial,1.0,30.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_anselmo,308 - Medium Density Residential,,,12.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,308 - Neighborhood Commercial,0.65,30.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_anselmo,308 - Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,308 - Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_anselmo,308 - Road,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,308 - Single Family-Conservation Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,308 - Single Family Residential,,,6.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_anselmo,308 - Very Low Density Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0

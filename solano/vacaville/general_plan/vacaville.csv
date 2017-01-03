@@ -1,0 +1,67 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+vacaville,Residential Rural,,,0.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Rural Residential,,,0.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Estate,,,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Golf Course Residential Community,,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Golf Course,,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Low Density,,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Low-Medium Density,,,8.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Low Medium Density,,,8.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Low Med Density,,,8.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Manufactured Housing Park,,,10.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Medium Density,,,14.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential High Density,,,24.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Urban High Density,,,36.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+vacaville,General Commercial,0.3,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+vacaville,Service Commercial,0.3,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+vacaville,Neighborhood Commercial,0.3,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+vacaville,Highway Commercial,0.3,,,,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+vacaville,Commercial Office,0.3,,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+vacaville,Commercial Offices,0.3,,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+vacaville,Downtown,3.0,,,,0,0,1,0,0,0,0,0,0,1,0,1,1,1
+vacaville,Commercial Service,0.3,,,,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+vacaville,Business Park,0.3,,,,0,0,0,1,0,0,1,0,0,1,0,0,0,1
+vacaville,Industrial Park,0.4,,,,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+vacaville,Public/Institutional,0.3,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+vacaville,Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+vacaville,Private Recreation,0.1,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+vacaville,Public Parks,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Public Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Agricultural Buffer (Transitional Zone),0.01,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Hillside Agricultural,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Hillside Agriculture,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Community Separator Overlay,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Residential Manufactured Home Park,,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,Downtown Commercial,3.0,,,,0,0,0,1,1,0,0,0,0,1,1,1,1,1
+vacaville,Professional Office Restriction Commercial,0.3,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+vacaville,Agricultural Buffer,0.01,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Agricultural Buffer,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Business Park,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+vacaville,806 - Commercial Offices,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1
+vacaville,806 - Downtown,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+vacaville,806 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+vacaville,806 - Golf Course,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - High Density,,,24.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Highway Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+vacaville,806 - Hillside Agricultural,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Industrial Park,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+vacaville,806 - Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Low-Medium Density Residential,,,8.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Low Density Residential,,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Manufactured Home Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Medium Density Residential,,,14.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Neighborhood Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+vacaville,806 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Private Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Professional Office Restriction,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1
+vacaville,806 - Public Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Public/Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+vacaville,806 - Residential Estate,,,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Roads,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Rural Residential,,,0.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+vacaville,806 - Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+vacaville,806 - Service,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+vacaville,806 - Urban High Density Residential,,,36.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0

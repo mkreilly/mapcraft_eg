@@ -1,0 +1,33 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+corte_madera,OR,,30.0,0.2,1.0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,HR,,30.0,2.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,LDR,,30.0,6.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+corte_madera,MDR,,30.0,11.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,HDMFR,,30.0,31.5,,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,RSC,0.34,35.0,,,0,0,0,1,0,0,0,0,0,1,0,0,1,0
+corte_madera,Com,0.34,30.0,,,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+corte_madera,Off,0.34,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+corte_madera,MUC,0.34,35.0,25.0,,0,0,1,1,0,0,1,0,0,1,0,0,1,0
+corte_madera,MU,1.0,30.0,31.0,,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+corte_madera,MUG,0.34,35.0,40.0,,0,0,1,1,0,0,1,1,0,0,0,0,1,1
+corte_madera,MURSC,0.47,35.0,9.4,,0,0,1,1,0,0,0,0,0,1,1,1,1,0
+corte_madera,POS,,35.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,HOS,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,WM,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,PF,0.35,35.0,,,0,0,0,0,0,1,1,0,0,0,0,0,0,0
+corte_madera,Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Commercial Services,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+corte_madera,302 - High Density Multi Unit Residential,,30.0,31.5,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Hillside Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Hillside Residential,,30.0,2.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Low Density Residential,,30.0,6.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Medium Density Residential,,30.0,11.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Mixed-Use Commercial,0.34,35.0,31.0,,1,1,1,1,0,1,0,0,0,1,1,0,1,1
+corte_madera,302 - Mixed-Use/Old Corte Madera Square,0.34,35.0,25.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+corte_madera,302 - Office,0.34,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1
+corte_madera,302 - Open Residential,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Parks,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Public & Semi-Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+corte_madera,302 - Region-Serving Commercial,0.34,35.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+corte_madera,302 - Waterbodies and Waterways,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+corte_madera,302 - Wetlands and Marshlands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,68 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+redwood_city,RH-40,,28.0,1.089,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,RH-20,,28.0,2.178,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,RH-15,,28.0,2.904,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,RH-12,,28.0,3.63,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,RH,,28.0,4.356,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-30,,28.0,1.452,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-20,,28.0,2.178,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-12,,28.0,3.63,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-10,,28.0,4.356,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-9,,28.0,4.84,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-8,,28.0,5.445,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1-7,,28.0,6.222857142,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-1,,28.0,7.26,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-2,,28.0,17.424,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-3,,35.0,21.78,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-4,,45.0,29.04,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-5,3.5,75.0,43.56,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,MH,,30.0,14.52,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,CG-R,3.5,75.0,43.56,,1,1,1,1,1,1,0,1,0,1,1,1,1,0
+redwood_city,RH-20-T,,28.0,2.178,,1,0,0,0,1,0,0,0,0,0,0,0,0,0
+redwood_city,R-4-O,,45.0,29.04,,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+redwood_city,R-4-T,,45.0,29.04,,1,1,1,0,1,0,0,0,0,0,0,0,0,0
+redwood_city,R-5-O,,75.0,43.56,,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+redwood_city,CBR,,100.0,,,0,0,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,P,,92.0,,,0,1,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,MU El Cam,1.0,85.0,,,1,1,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,MU Vet Blvd,1.0,85.0,,,1,1,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,MU Redwood Cr,1.0,85.0,,,1,1,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,MU Streetcar Bway,1.0,85.0,,,1,1,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,MU Gateway Bway,1.0,85.0,,,1,1,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,PO,,35.0,,,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+redwood_city,CA,,75.0,,,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+redwood_city,CN,0.4,35.0,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+redwood_city,CB,,100.0,,,0,0,1,1,1,1,0,0,0,1,0,1,1,1
+redwood_city,CG,,75.0,,,0,0,0,1,1,1,0,1,0,1,1,0,0,0
+redwood_city,CP,0.75,100.0,,,0,0,0,1,1,1,0,0,0,0,0,0,0,0
+redwood_city,IBT,2.25,75.0,,,0,0,0,1,1,1,1,1,0,1,0,0,0,0
+redwood_city,IR,0.7,75.0,,,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+redwood_city,IR-T,0.7,75.0,,,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+redwood_city,IR-V,0.7,75.0,,,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+redwood_city,IP,0.4,50.0,,,0,0,0,1,1,0,1,1,1,0,1,0,0,0
+redwood_city,IP-10,0.4,50.0,,,0,0,0,1,1,0,1,1,1,0,1,0,0,0
+redwood_city,IP-T,0.4,50.0,,,0,0,0,1,1,0,1,1,1,0,1,0,0,0
+redwood_city,IP-V,0.7,50.0,,,0,0,0,1,1,0,1,1,1,0,1,0,0,0
+redwood_city,GI,,100.0,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+redwood_city,PF,1.0,35.0,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+redwood_city,TP,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,TP-W,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,RSB,,30.0,,,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+redwood_city,ROW,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,IR-Y,0.7,75.0,,,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+redwood_city,614 - Heavy Commercial/Office,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+redwood_city,614 - Heavy Industrial,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+redwood_city,614 - High Density Residential,3.5,75.0,44.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,614 - Intermediate Commercial/Office,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+redwood_city,614 - Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+redwood_city,614 - Low Density Residential,,28.0,4.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,614 - Medium Density Residential,,35.0,20.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,614 - Mixed Use: Heavy Commercial/ High Density Residential,,,44.0,,0,1,1,0,0,0,1,1,0,0,0,0,0,0
+redwood_city,614 - Mixed Use: Intermediate Commercial/High Density Residential,,,44.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1
+redwood_city,614 - Neighborhood Commercial/Office,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+redwood_city,614 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,614 - Public and Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+redwood_city,614 - Public and Quasi-Public: Government,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+redwood_city,614 - Public and Quasi-Public: Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+redwood_city,614 - Public and Quasi-Public: School,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+redwood_city,614 - Urban Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0

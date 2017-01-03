@@ -1,0 +1,28 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+rohnert_park,R-E,,35.0,2.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+rohnert_park,R-L,0.4,35.0,6.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+rohnert_park,R-M,0.55,35.0,12.0,,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+rohnert_park,R-H,1.15,45.0,30.0,,0,1,1,0,0,1,0,0,0,0,0,0,0,0
+rohnert_park,C-O,1.0,45.0,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+rohnert_park,C-N,0.4,35.0,,,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+rohnert_park,C-R,1.5,65.0,,,0,0,0,0,1,0,0,0,0,0,1,0,0,0
+rohnert_park,M-U,2.0,45.0,,,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+rohnert_park,C-R/R-H,1.5,65.0,,,0,1,1,0,1,0,0,0,0,0,1,0,0,0
+rohnert_park,I-L,1.0,45.0,,,0,0,0,1,0,0,1,1,0,0,0,0,0,0
+rohnert_park,P-I,,45.0,,,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+rohnert_park,OS-ARM,,35.0,1.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+rohnert_park,OS-EC,,35.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,REC,,35.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,905 - Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+rohnert_park,905 - High Density Residential (12-30 un/ac),,45.0,30.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,905 - Industrial,1.0,45.0,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+rohnert_park,905 - Low Density Residential (4-6 un/ac),,35.0,6.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,905 - Medium Density Residential (6-12 un/ac),,35.0,12.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,905 - Mixed Use,2.0,45.0,,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+rohnert_park,905 - Neighborhood Commercial,0.4,35.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+rohnert_park,905 - Office,1.0,45.0,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1
+rohnert_park,905 - Open Space-Agriculture and Resource Management,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,905 - Parks,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+rohnert_park,905 - Public/Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+rohnert_park,905 - Regional Commercial,1.5,65.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+rohnert_park,905 - Rural Estate Residential (up to 2un/ac),,35.0,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0

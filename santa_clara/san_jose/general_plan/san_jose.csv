@@ -1,0 +1,84 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+san_jose,Transit Residential,12.0,45.0,250.0,,0,1,1,1,1,1,0,0,0,0,0,1,1,1
+san_jose,Urban Residential,4.0,45.0,95.0,,0,1,1,1,0,1,0,0,0,1,0,0,0,0
+san_jose,Mixed Use Neighborhood,2.0,45.0,30.0,,1,1,1,0,0,1,0,0,0,0,0,1,1,0
+san_jose,Residential Neighborhood,0.7,35.0,,,1,1,0,0,0,1,0,0,0,1,0,0,0,0
+san_jose,Rural Residential,0.35,35.0,2.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_jose,Lower Hillside,0.35,35.0,0.2,1.0,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_jose,Downtown,15.0,285.0,350.0,,1,1,1,1,1,1,0,0,0,0,0,1,1,1
+san_jose,Commercial Downtown,15.0,285.0,,,0,0,0,1,1,1,0,0,0,0,0,0,1,1
+san_jose,Urban Village,10.0,65.0,250.0,,1,1,1,0,0,1,0,0,0,0,0,1,1,0
+san_jose,Transit Employment Center,12.0,35.0,,,0,0,0,1,1,1,1,0,0,0,0,0,0,1
+san_jose,Regional Commercial,12.0,65.0,,,0,0,0,0,0,1,0,0,0,1,1,0,0,0
+san_jose,Mixed Use Commercial,3.0,50.0,50.0,,0,0,1,1,0,1,1,0,0,0,0,0,1,0
+san_jose,Neighborhood/Community Commercial,2.0,50.0,,,0,0,0,1,0,1,0,0,0,0,0,0,1,0
+san_jose,Combined Industrial/Commercial,12.0,45.0,,,0,0,0,1,0,0,1,1,0,1,0,0,0,1
+san_jose,Industrial Park,10.0,45.0,,,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+san_jose,Light Industrial,1.5,45.0,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_jose,Heavy Industrial,1.5,45.0,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+san_jose,Transportation and Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,Agriculture,0.8,35.0,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,Private Recreation and Open Space,0.02,35.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,"Open Space, Parklands and Habitat",0.02,35.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,Open Hillside,0.02,35.0,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Administrative Office/Research and Development,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Arts Related Mixed Use,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Campus Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_jose,712 - Combined Industrial/Commercial,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1
+san_jose,712 - Combined Industrial/Commercial with Live/Work Overlay,,,25.0,,1,1,1,1,0,1,1,1,0,1,1,0,1,1
+san_jose,712 - Combined Residential/Commercial,,,25.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Commercial/Light Industrial,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1
+san_jose,712 - Commercial/Mixed Use,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Core Area,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Estate Residential (1.0 DU/AC),,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Existing Hotel (Limited Expansion),,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - General Commercial/Industrial Park,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1
+san_jose,712 - Heavy Industrial,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+san_jose,712 - High Density Residential (25-50 DU/AC),,,50.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - High Density Residential (25-50 DU/AC)/General Commercial,,,50.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - Industrial Core Area,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_jose,712 - Industrial Park,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_jose,712 - Industrial Park with Mixed Industrial Overlay,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_jose,712 - Integrated Residential/Recreational,,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_jose,712 - Low Density Residential (5.0 DU/AC),,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Medium Density Residential (8-16 DU/AC),,,16.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Medium High Density Residential (12-25 DU/AC),,,25.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Medium High Density Residential (12-25 DU/AC)/General Commercial,,,25.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - Medium Low Density Residential (8.0 DU/AC),,,8.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Mixed Use,,,25.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,"712 - Mixed Use 1, 2, 3 & 4 see GP text",,,25.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - Neighborhood/Community Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - No Underlying Designation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Non-Urban Hillside,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1
+san_jose,712 - Open Space/Trails,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Parks/Play Fields,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Pedestrian Emphasis Public Street,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Pedestrian/Exhibit/Cafe Corridor,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Preferred Hotel Site (expansion permitted),,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Private Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Private Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_jose,712 - Public Park and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_jose,712 - Regional Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Research and Development,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Residential Support for the Core Area (25+ DU/AC),,,30.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Residential Support for the Core Area (25+ DU/AC)/General Commercial,,,30.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - River Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Rural Residential (0.2 DU/AC),,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Transit-Oriented Mixed Use (40-150 DU/AC),,,150.0,,0,1,1,1,0,1,1,1,0,1,1,0,1,1
+san_jose,712 - Transit Corridor Mixed Use (40-100 DU/AC),,,100.0,,0,1,1,1,0,1,1,1,0,1,1,0,1,1
+san_jose,712 - Transit Corridor Residential (12+ DU/AC),,,15.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Transit Corridor Residential (12+ DU/AC)/General Commercial,,,15.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - Transit Mall,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Urban Hillside,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Very Low Density Residential (2.0 DU/AC),,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_jose,712 - Victorian Preservation/Mixed Use,,,10.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+san_jose,712 - Village Center,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_jose,712 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0

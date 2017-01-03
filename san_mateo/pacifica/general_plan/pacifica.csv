@@ -1,0 +1,34 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+pacifica,Open Space Residential,,35.0,4.591e-06,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Very Low Density Residential,,35.0,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Low Density Residential,,35.0,9.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Medium Density Residential,,35.0,15.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,High Density Residential,,35.0,21.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Mixed Use,,35.0,21.78,,0,0,1,1,1,0,0,0,0,1,0,1,1,1
+pacifica,Commercial,,35.0,21.78,,0,0,1,1,1,0,1,1,0,1,1,1,1,1
+pacifica,Public/Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+pacifica,Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Parking,,35.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Greenbelt,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Ridge,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Sandy Beach,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Agriculture,,35.0,4.591e-06,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,Special Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,ROW,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Commercial,,35.0,21.78,,0,1,1,1,1,1,0,0,0,1,1,0,1,1
+pacifica,612 - Greenbelt,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - High Density Residential,,35.0,21.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Low Density Residential,,35.0,9.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Medium Density Residential,,35.0,15.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Mixed Use,,35.0,21.78,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+pacifica,612 - Open Space Residential,,35.0,4.591e-06,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Parking,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+pacifica,612 - Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+pacifica,612 - Special Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Transportation - CalTrans,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+pacifica,612 - Very Low Density Residential,,35.0,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,41 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+hayward,REDR,,30.0,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,SDR,,30.0,4.3,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,LDR,,30.0,8.7,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,LMDR,,40.0,12.0,,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+hayward,MDR,,40.0,17.0,,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+hayward,HDR,,40.0,34.0,,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+hayward,ROC,,55.0,65.0,,0,0,0,1,0,1,0,0,0,1,0,0,1,1
+hayward,GC,,,,,0,0,0,1,1,1,0,0,0,1,1,0,0,0
+hayward,CHDR,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,CC-HDR,,55.0,65.0,,0,0,1,1,0,1,0,0,0,1,0,1,1,1
+hayward,CC-ROC,,55.0,65.0,,0,0,0,1,0,1,0,0,0,1,0,0,1,1
+hayward,IC,,,,,0,0,0,1,0,0,1,1,1,0,1,0,0,0
+hayward,MI,,40.0,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+hayward,PR,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,LOS,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,BL,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,Bay,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,X,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,PQP,,,,,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+hayward,PQPIC,,,,,0,0,0,1,0,1,0,1,0,0,0,0,0,0
+hayward,106 - Baylands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - City Center - High Density Residential,,55.0,65.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - City Center - Retail and Office Commercial,,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+hayward,106 - Commercial/High Density Residential,,,34.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+hayward,106 - County/No Designation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+hayward,106 - High Density Residential,,40.0,34.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Industrial Corridor,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+hayward,106 - Limited Medium Density Residential,,40.0,12.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Limited Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Low Density Residential,,30.0,8.7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Medium Density Residential,,40.0,17.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Mixed Industrial,,40.0,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+hayward,106 - Parks and Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Public and Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+hayward,106 - Public and Quasi-Public/Industrial Corridor,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+hayward,106 - Retail and Office Commercial,,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+hayward,106 - Rural Estate Density Residential,,30.0,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - San Francisco Bay,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+hayward,106 - Suburban Density Residential,,30.0,4.3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0

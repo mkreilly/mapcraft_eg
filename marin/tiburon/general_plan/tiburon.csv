@@ -1,0 +1,32 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+tiburon,L,,,0.5,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,PD-R,,,1.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,ML,,,1.1,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,M,,,3.0,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,MH,,,4.4,,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,H,,,11.6,,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,VH,,,12.4,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+tiburon,NC,0.37,,,,0,0,0,1,0,0,0,0,0,1,0,1,1,1
+tiburon,NC/AHO,0.31,,15.3,,0,0,1,0,0,0,0,0,0,0,0,1,1,1
+tiburon,VC,0.28,,,,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+tiburon,SC,0.5,,,,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+tiburon,O,1.0,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+tiburon,P,1.0,,,,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+tiburon,Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,OS,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,Bay,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - High Density Residential,,,11.6,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Low Density Residential,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Medium Density Residential,,,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Medium High Density Residential,,,4.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Medium Low Density Residential,,,1.1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Neighborhood Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+tiburon,311 - Neighborhood Commercial/Affordable Housing Overlay,0.31,,15.3,,1,1,1,1,1,1,0,0,0,1,1,1,1,1
+tiburon,311 - Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1
+tiburon,311 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Parks & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Planned Development - Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+tiburon,311 - Very High Density Residential,,,12.4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Very High Density Residential/Affordable Housing Overlay,,,14.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+tiburon,311 - Village Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1

@@ -1,0 +1,24 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+san_bruno,Low Density Residential,,30.0,8.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,Multi-Use,,30.0,8.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,Medium Density Residential,,50.0,24.0,,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+san_bruno,High Density Residential,,50.0,40.0,,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+san_bruno,Central Business District,3.0,50.0,40.0,,0,1,1,1,1,0,1,0,0,1,0,0,1,1
+san_bruno,Transit-Oriented Development,3.0,50.0,40.0,,0,1,1,1,1,0,0,0,0,0,0,1,1,1
+san_bruno,Regional Commercial,1.2,50.0,,,0,0,0,1,1,0,0,0,0,1,1,0,0,0
+san_bruno,Regional Office,1.5,45.0,,,0,0,0,1,1,0,0,0,0,1,1,0,0,0
+san_bruno,Industrial,1.5,35.0,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+san_bruno,Public/Quasi-public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_bruno,Parks/Open Space,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_bruno,Mulit-Use Residential Focus,3.0,50.0,40.0,,0,1,1,1,1,0,1,0,0,1,0,0,1,1
+san_bruno,Neighborhood Commercial,1.2,30.0,,,0,0,0,1,1,0,0,0,0,1,1,0,0,0
+san_bruno,Very Low Density Residential,,30.0,6.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,615 - High Density Residential,,50.0,40.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,615 - Industrial,1.5,35.0,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_bruno,615 - Low Density Residential,,30.0,8.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,615 - Medium Density Residential,,50.0,24.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,615 - Neighborhood/Community Commercial,,30.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_bruno,615 - Park/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_bruno,615 - Public and Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_bruno,615 - Regional Community/Office Commercial,1.2,50.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_bruno,615 - Very Low Density Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0

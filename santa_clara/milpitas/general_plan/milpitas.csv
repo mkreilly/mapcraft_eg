@@ -1,0 +1,47 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+milpitas,SFL,,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,SMD,,,15.0,,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,MFM,,,11.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,MFH,,,20.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+milpitas,MFH_PUD,,,40.0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,VHD,,,60.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+milpitas,HD_TOD,,,40.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+milpitas,URR,,,75.0,,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+milpitas,MHP,,,7.0,,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,MXD,1.0,,40.0,,0,1,1,1,0,0,0,0,0,1,0,1,0,1
+milpitas,RRMU,1.5,,50.0,,0,1,1,1,1,0,0,0,0,1,0,1,1,1
+milpitas,BVMU,1.5,,75.0,,0,1,1,1,1,0,0,0,0,1,0,1,1,1
+milpitas,TC,0.85,,40.0,,0,1,1,1,1,0,0,0,0,1,0,1,1,1
+milpitas,GNC,0.5,,,,0,0,0,1,0,0,0,0,0,1,0,0,1,1
+milpitas,RSC,0.35,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+milpitas,PAO,0.5,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+milpitas,RET_TOD,2.25,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,HWS,,,,,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+milpitas,INP,0.5,,,,0,0,0,1,0,0,1,0,0,0,0,0,0,0
+milpitas,MFG,0.4,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+milpitas,HVL,,,0.1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,HLD,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,HMD,,,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,Waterways,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,PF,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,POS,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,ROW,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Correctional Facility,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - General Commercial,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+milpitas,707 - Highway Service Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+milpitas,707 - Hillside Low Density Residential,,,1.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Hillside Medium Density Residential,,,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Hillside Very Low Density Residential,,,0.1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Industrial Park,0.5,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+milpitas,707 - Manufacturing & Warehousing,0.4,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+milpitas,707 - Mixed Use,,,20.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1
+milpitas,707 - Mobile Home Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Multi-Family High Density Residential,,,20.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Multi-Family Medium Density Residential,,,11.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Parks/Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Professional/Administrative Office Commercial,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+milpitas,707 - Retail Sub-Center Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+milpitas,707 - Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+milpitas,707 - Single Family Low Density Residential,,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Single Family Moderate Density Residential,,,15.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+milpitas,707 - Town Center Commercial,0.85,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1

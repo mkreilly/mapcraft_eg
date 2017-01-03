@@ -1,0 +1,31 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+unincorporated_solano,Marsh,,,0.004,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Watershed,,,0.00625,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Extensive Agriculture,,,0.00625,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Intensive Agriculture,,,0.025,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+unincorporated_solano,Rural (2.5 to 10 acres per unit),,,0.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Suburban (1 to 4 units per acre),,,4.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Low (2 to 7 units per acre),0.25,,4.0,,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+unincorporated_solano,Medium (8 to 15 units per acre),,,25.0,,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Neighborhood Commercial,0.3,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+unincorporated_solano,Neighborhood Agricultural/ Tourist Center,0.3,,,,0,0,0,0,1,0,0,0,0,1,0,0,1,0
+unincorporated_solano,Commercial Recreation,0.3,,,,0,1,0,0,1,0,0,0,0,1,0,0,1,0
+unincorporated_solano,Commercial Service,0.5,,,,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+unincorporated_solano,Highway Commercial,0.3,,,,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+unincorporated_solano,Urban Commercial,0.5,,,,0,0,0,1,0,0,0,0,0,1,0,0,0,1
+unincorporated_solano,General Industrial,0.3,,,,0,0,0,1,0,0,1,1,1,1,0,0,0,0
+unincorporated_solano,Limited Industrial,0.3,,,,0,0,0,1,0,0,1,1,0,1,0,0,0,0
+unincorporated_solano,Water Dependent Industrial,0.3,,,,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+unincorporated_solano,Water Dependent Industrial Reserve,0.3,,,,0,0,0,0,0,0,0,1,1,0,0,0,0,0
+unincorporated_solano,Urban Industrial,0.3,,,,0,0,0,1,0,0,1,1,1,1,0,0,0,0
+unincorporated_solano,Joint Study Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Specific Project Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Urban Project Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Incorporated Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Park & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Water Bodies & Courses,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Community Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Business & Adminisrative Office,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Commercial Office,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+unincorporated_solano,Commercial Service - Light Industrial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0

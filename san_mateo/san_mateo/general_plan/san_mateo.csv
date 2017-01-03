@@ -1,0 +1,40 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+san_mateo,Single Family,,24.0,9.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,Low Density Multi-Family,,24.0,17.0,,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,Medium Density Multi-Family,,55.0,35.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,High Density Multi-Family,,55.0,50.0,,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,Neighborhood Commercial,1.0,55.0,,,0,0,0,1,0,0,0,0,0,1,0,1,1,0
+san_mateo,Regional/Community Commercial,2.5,55.0,,,0,0,0,1,1,0,1,0,0,1,1,0,1,1
+san_mateo,Downtown Retail Core,3.0,55.0,,,0,0,0,1,1,0,1,0,0,1,0,0,1,1
+san_mateo,Service Commercial,1.0,30.0,,,0,0,0,1,0,0,1,1,1,0,0,0,1,1
+san_mateo,Manufacturing,1.0,90.0,,,0,0,0,1,0,0,1,1,1,0,0,0,0,1
+san_mateo,Executive Office,1.0,55.0,,,0,0,0,1,0,0,0,0,0,1,0,0,0,1
+san_mateo,Downtown Retail Core Support,3.0,55.0,50.0,,0,0,0,1,0,0,0,0,0,1,0,1,1,0
+san_mateo,Transit-Oriented Development,3.0,55.0,50.0,,0,0,1,1,0,0,1,0,0,1,1,1,1,1
+san_mateo,Executive Office &Med Density Multi-Family (split LU),1.0,45.0,35.0,,0,1,1,1,0,0,0,0,0,1,0,1,1,1
+san_mateo,Executive Office/ High Density Multi-Family,1.0,55.0,50.0,,0,0,1,0,0,0,0,0,0,0,0,1,1,1
+san_mateo,Neighborhood Commercial/ Medium-High Density Multi-Family,1.0,35.0,50.0,,0,1,1,1,0,0,0,0,0,1,0,1,1,1
+san_mateo,Regional/Community Commercial/ High Density Multi-Family,2.5,55.0,50.0,,0,0,1,1,1,0,1,0,0,1,1,1,1,1
+san_mateo,Public Facility,,75.0,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+san_mateo,Parks/ Open Space,,32.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,Utilities,,32.0,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+san_mateo,Transportation Corridor,,32.0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,Major Institution/ Special Facility,,90.0,,,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+san_mateo,617 - Downtown Retail Core,3.0,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_mateo,617 - Downtown Retail Core Support,3.0,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_mateo,617 - Executive Office,1.0,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_mateo,617 - High Density Multi-Family,,55.0,50.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,617 - Low Density Multi-Family,,24.0,17.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,617 - Major Institution/Special Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_mateo,617 - Manufacturing,1.0,90.0,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0
+san_mateo,617 - Medium Density Multi-Family,,55.0,35.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,617 - Mixed-Executive Office/HiDen-MultiFamily,1.0,55.0,50.0,,0,0,1,1,1,1,0,0,0,1,1,1,1,1
+san_mateo,617 - Mixed-Neighborhood Commercial/HiDen-MultiFam,1.0,35.0,50.0,,0,0,1,1,1,1,0,0,0,1,1,1,1,1
+san_mateo,617 - Mixed-Regional/Community Comm/HiDen-MultiFam,2.5,55.0,50.0,,0,0,1,1,1,1,0,0,0,1,1,1,1,1
+san_mateo,617 - Neighborhood Commercial,1.0,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_mateo,617 - Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,617 - Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+san_mateo,617 - Regional/Community Commercial,2.5,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_mateo,617 - Service Commercial,1.0,30.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1
+san_mateo,617 - Single Family Residential,,24.0,9.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+san_mateo,617 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0
