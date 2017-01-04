@@ -1,0 +1,16 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Sonoma,908 - Agriculture,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Commercial,2.0,36,20.0,0,0,0,1,1,1,1,0,0,,1,1,0,1,1
+Sonoma,908 - Gateway Commercial,0.8,36,20.0,0,0,0,1,1,1,1,0,0,,1,1,0,1,1
+Sonoma,908 - High Density Residential,0.7,30,15.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Hillside,0.0,30,0.1,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Housing Opportunity,0.7,36,25.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Low Density Residential,0.35,35,5.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Medium Density Residential,0.5,30,11.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Mixed Use,1.2,36,20.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+Sonoma,908 - Mobile Home Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Public Facility,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Sonoma,908 - Rural Residential,0.2,35,2.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Sonoma Residential,0.35,35,8.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Sonoma,908 - Wine Production,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0

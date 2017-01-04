@@ -1,0 +1,18 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Foster City,607 - Apartment Residential,0.0,0,35.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Apartment Residential/Neighborhood Commercial,0.3,0,35.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+Foster City,607 - Condominium Residential,0.0,0,35.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Elementary School,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Foster City,607 - Light Industrial,0.6,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Foster City,607 - Neighborhood Commercial,0.3,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Foster City,607 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Parks,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Public/Semi Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Foster City,607 - Research/Office Park,1.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Foster City,607 - Service Commercial,0.98,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Foster City,607 - Single Family Residential,0.0,0,8.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Town Center Commercial,2.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Foster City,607 - Townhouse Residential,0.0,0,15.0,0,1,1,0,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Two Family Residential,0.0,0,10.0,0,1,1,0,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Water,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Foster City,607 - Water Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1

@@ -1,0 +1,28 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+South San Francisco,618 - Business and Technology Park,1.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Business and Technology Park/ Coastal Commercial,1.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Business Commercial,1.0,50,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Coastal Commercial,1.0,50,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Community Commercial,0.5,50,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Downtown Commercial,3.0,60,50.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Downtown High Density Residential,0.7,28,15.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Downtown High Density Residential/ Business Commercial,2.5,80,50.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - Downtown High Density Residential/ Community Commercial,0.5,50,50.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - Downtown Low Density Residential,0.7,28,15.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Downtown Medium Density Residential,1.25,35,31.3,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Downtown Medium Density Residential/ Business Commercial,2.5,80,31.3,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - Downtown Medium Density Residential/ Community Commercial,2.5,80,31.3,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - High Density Residential,0.0,50,30.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - High Density Residential/ Community Commercial,0.5,50,30.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - High Density Residential/ Community Commercial/ Office,2.5,80,30.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - Low Density Residential,0.5,28,8.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Medium Density Residential,1.0,35,18.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Medium Density Residential/ Community Commercial,0.5,50,22.5,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+South San Francisco,618 - Mixed Industrial,0.6,65,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+South San Francisco,618 - Mixed Industrial/ Coastal Commercial,0.0,65,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+South San Francisco,618 - Office,2.5,80,0.0,0,0,0,0,1,0,0,0,0,,0,0,0,1,1
+South San Francisco,618 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Park and Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+South San Francisco,618 - Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+South San Francisco,618 - Regional Commercial,0.5,50,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+South San Francisco,618 - Transportation Center,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0

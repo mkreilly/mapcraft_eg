@@ -1,0 +1,18 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+American Canyon,407 - Agriculture,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Commercial Neighborhood,1.5,42,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+American Canyon,407 - Commercial Recreation,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+American Canyon,407 - Community Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+American Canyon,407 - Industrial,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+American Canyon,407 - Industrial/Commercial Recreation,0.0,0,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+American Canyon,407 - Industrial/Commercial Specialty,0.0,0,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+American Canyon,407 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+American Canyon,407 - Residential Estate,0.0,35,2.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Residential High-2,0.0,42,20.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Residential Low,0.0,35,5.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Residential Medium,0.0,42,12.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Specific Plan: Cluster Residential,0.0,45,0.25,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Specific Plan: Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Specific Plan: Single Family,0.0,0,5.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+American Canyon,407 - Town Center Mixed Use,0.0,0,20.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1

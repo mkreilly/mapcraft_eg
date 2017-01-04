@@ -1,0 +1,15 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Morgan Hill,709 - Campus Industrial,0.4,35,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Morgan Hill,709 - Commercial,1.0,30,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Morgan Hill,709 - General Commercial,1.0,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Morgan Hill,709 - Industrial,1.8,50,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Morgan Hill,709 - Multi-Family Low Density Residential,1.0,30,14.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Morgan Hill,709 - Multi-Family Medium Density Residential,1.2,30,21.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Morgan Hill,709 - Non-Retail Commercial,1.0,35,0.0,0,0,0,0,1,1,1,0,0,,0,0,0,1,1
+Morgan Hill,709 - Office Industrial,1.5,50,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Morgan Hill,709 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Morgan Hill,709 - Public Facilities,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Morgan Hill,709 - Residential Estate,0.6,30,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Morgan Hill,709 - Rural County Residential,0.0,30,0.1,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Morgan Hill,709 - Single Family Low Density Residential,0.8,30,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Morgan Hill,709 - Single Family Medium Density Residential,1.0,30,5.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

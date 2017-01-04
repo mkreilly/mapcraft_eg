@@ -1,0 +1,11 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Calistoga,401 - Airport Commercial,0.1,30,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Calistoga,401 - Community Commercial,0.8,30,20.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+Calistoga,401 - Downtown Commercial,2.0,30,20.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+Calistoga,401 - High Density Residential/Office (10 - 20 dwelling units per acre),0.0,30,20.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+Calistoga,401 - Light Industrial,0.6,30,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Calistoga,401 - Low Density Residential (1 - 4 dwelling units per acre),0.0,30,4.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Calistoga,401 - Medium Density Residential (4 - 10 dwelling units per acre),0.0,30,10.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Calistoga,401 - Public/Quasi-Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Calistoga,401 - Rural Residential,0.0,30,0.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Calistoga,401 - Rural Residential - Hillside,0.0,30,0.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

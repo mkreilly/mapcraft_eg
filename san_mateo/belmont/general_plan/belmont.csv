@@ -1,0 +1,19 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Belmont,602 - Commercial General,1.2,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Belmont,602 - Commercial Highway,1.5,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Belmont,602 - Commercial Office,1.5,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Belmont,602 - Commercial Service,1.8,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Belmont,602 - Commercial/Residential Mix,0.8,0,7.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1
+Belmont,602 - Hilltop Residential Open Space,0.0,0,0.05,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Industrial - General,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Belmont,602 - Industrial - Light,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Belmont,602 - Institutions,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Lake,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Mixed Use,0.0,0,30.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Belmont,602 - Neighborhood Commercial,0.8,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Belmont,602 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Parks and Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Public Facilities and Services,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Residential High Density,1.4,50,30.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Residential Low Density,0.533,28,7.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Belmont,602 - Residential Medium Density,0.5,35,20.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0

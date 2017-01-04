@@ -1,0 +1,18 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Cherryland,116 - General Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Cherryland,116 - General Commercial or Medium/ High Density Residential,0.0,0,43.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - General Commercial/Low-Medium Density Residential allowed,0.0,0,12.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - General Commercial/Medium & High Density Residential allowed,0.0,0,43.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - General Commercial/Medium Density Residential allowed,0.0,0,43.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - High Density Residential,0.0,0,86.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Cherryland,116 - High Density Residential/General Commercial allowed,0.0,0,86.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - Light Industrial and Research & Development/Office,0.0,0,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Cherryland,116 - Low-Medium Density Residential,0.0,0,12.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Cherryland,116 - Low-Medium Density Residential/General Commercial,0.0,0,12.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - Low Density Residential,0.0,0,9.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Cherryland,116 - Medium-High Density Residential,0.0,0,43.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Cherryland,116 - Medium Density Residential,0.0,0,22.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Cherryland,116 - Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Cherryland,116 - Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Cherryland,116 - San Lorenzo Village,0.0,0,19.5,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Cherryland,116 - School,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0

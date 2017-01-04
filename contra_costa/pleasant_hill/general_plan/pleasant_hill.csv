@@ -1,0 +1,15 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Pleasant Hill,212 - Commercial and Retail,0.4,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Pleasant Hill,212 - Light Industrial,0.33,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Pleasant Hill,212 - Mixed Use,0.75,0,40.0,0,0,0,1,1,1,1,0,0,,1,1,1,1,1
+Pleasant Hill,212 - Multifamily High Density,0.0,0,40.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Multifamily Low Density,0.0,0,20.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Multifamily Medium Density,0.0,0,30.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Office,0.4,0,0.0,0,0,0,0,1,0,0,0,0,,0,0,0,1,1
+Pleasant Hill,212 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - School,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Semi-public and Institutional,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Single Family High Density,0.0,0,7.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Single Family Low Density,0.0,0,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Pleasant Hill,212 - Single Family Medium Density,0.0,0,4.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

@@ -1,0 +1,19 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Larkspur,304 - Administrative and Professional Offices,0.35,25,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Larkspur,304 - Commercial,0.4,25,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Larkspur,304 - Downtown,0.8,25,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Larkspur,304 - Educational/Environmental Resources Area,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - High Density Residential,0.6,35,21.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Industrial/Service Commercial,0.4,25,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Larkspur,304 - Low Density Residential,0.4,30,5.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Medium Density Residential,0.5,35,12.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Mobile Home Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Open Residential,0.0,0,0.2,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Open Space - Private,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Parkland,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Public Facilities,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Larkspur,304 - Restricted Commercial,0.4,25,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Larkspur,304 - Schools,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Larkspur,304 - Shoreline/Marsh Conservation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Larkspur,304 - Water Area,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0

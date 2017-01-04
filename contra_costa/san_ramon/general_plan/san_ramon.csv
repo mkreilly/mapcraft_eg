@@ -1,0 +1,18 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+San Ramon,226 - Commercial Recreation,0.35,35,0.0,0,0,0,0,0,1,0,0,0,,0,0,0,0,0
+San Ramon,226 - Commercial Services,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+San Ramon,226 - Hillside Residential,0.0,35,2.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Manufacturing and Warehouse,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+San Ramon,226 - Mixed Use,1.35,60,30.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+San Ramon,226 - Mixed Use - City Center,0.0,0,50.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+San Ramon,226 - Multiple Family High Density,0.5,35,30.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Multiple Family Very High Density,0.5,50,50.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Office,0.45,55,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+San Ramon,226 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Parks,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Public and Semipublic,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+San Ramon,226 - Retail Shopping,0.35,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+San Ramon,226 - Single Family Low Density,0.0,35,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Single Family Low/ Medium Density,0.0,35,6.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Single Family Medium Density,0.0,35,14.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+San Ramon,226 - Thoroughfare Commercial,0.5,50,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1

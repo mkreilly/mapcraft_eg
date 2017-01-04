@@ -1,0 +1,13 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Alameda County,199 - Agriculture,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - High Density Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Alameda County,199 - High Density Residential,0.0,0,86.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - Industrial,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Alameda County,199 - Light Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Alameda County,199 - Low Density Residential,0.0,0,9.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - Medium Density Residential,0.0,0,22.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - Mixed Use,0.0,0,22.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Alameda County,199 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - Other,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - Urban Reserve,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Alameda County,199 - Water,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0

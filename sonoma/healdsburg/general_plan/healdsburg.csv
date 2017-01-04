@@ -1,0 +1,21 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Healdsburg,903 - Agricultural,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Downtown Commercial,3.0,50,16.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+Healdsburg,903 - Downtown Residential,0.0,35,8.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Heavy Industrial,0.5,50,0.0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0
+Healdsburg,903 - High Density Residential,0.0,35,20.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Highway Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Healdsburg,903 - Light Industrial,0.5,50,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Healdsburg,903 - Low Density Residential,0.0,35,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Medical/Professional Office,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Medium Density Residential,0.0,35,6.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Medium High Density Residential,0.0,35,10.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Mixed Commercial/Light Industrial,0.0,0,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Healdsburg,903 - Mixed Use,1.0,35,7.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Healdsburg,903 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Professional Office/High Density Residential,0.0,0,20.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Healdsburg,903 - Public/Quasi Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Healdsburg,903 - Recreation & Parks,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Riparian Setback,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Healdsburg,903 - Service Commercial,0.8,50,16.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+Healdsburg,903 - Very Low Density Residential,0.0,35,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

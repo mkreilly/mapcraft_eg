@@ -1,0 +1,22 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Rio Vista,804 - Agriculture/ Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Airport/ Transportation,0.8,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Downtown/ Waterfront,2.0,0,40.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+Rio Vista,804 - Edgewater Neighborhood,0.5,0,16.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Golf Course,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Highway Commercial,0.5,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Rio Vista,804 - Historic Residential,0.5,0,30.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Industrial/ General Commercial,1.0,0,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Rio Vista,804 - Industrial/ Warehouse& Services,1.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Rio Vista,804 - Limited Industrial,1.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Rio Vista,804 - Marina,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Multifamily Residential,0.0,0,25.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Neighborhood Core: Commercial,0.8,0,20.0,0,0,1,1,1,1,1,0,0,,1,1,0,1,1
+Rio Vista,804 - Neighborhood Core: Residential,0.0,0,20.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Neighborhood Residential,0.5,0,16.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Neighborhood Service/ Mixed Use,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Parks/Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Public Facility,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Rio Vista,804 - Residential Estate,0.0,0,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Rio Vista,804 - Schools,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Rio Vista,804 - Study Area,0.5,0,0.05,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

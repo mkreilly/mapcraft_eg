@@ -1,0 +1,18 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Saratoga,714 - Commercial Retail,1.2,30,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Saratoga,714 - Community Facility,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Saratoga,714 - Hillside Conservation Single Family,0.5,30,0.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Low Density,0.9,30,2.2,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Medium Density Residential,1.2,30,3.5,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Multi Use Planning District,0.8,30,14.5,0,0,1,1,1,0,1,1,1,,1,1,0,1,1
+Saratoga,714 - Open Space-Managed Resource,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Open Space-Outdoor Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Open Space-Private,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Planned Development,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Planned Development Residential,0.7,30,12.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Professional Administrative,0.6,30,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Saratoga,714 - Public Facility,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Saratoga,714 - Public Use Corridor,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Quasi Public Facility,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Saratoga,714 - Residential Multi Family,0.8,30,15.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Saratoga,714 - Very Low Density,0.7,30,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

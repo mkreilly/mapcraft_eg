@@ -1,0 +1,11 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Yountville,404 - Agricultural,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Yountville,404 - Master-Planned Residential,0.35,28,10.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Yountville,404 - Mixed Residential,0.4,28,10.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Yountville,404 - Mobile Home Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Yountville,404 - Old Town Historic,0.35,30,8.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Yountville,404 - Parks & Playfields,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Yountville,404 - Primary Commercial,0.35,20,10.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Yountville,404 - Public Facilities,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Yountville,404 - Residential Scaled Commercial,0.35,30,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Yountville,404 - Single Family Residential,0.35,28,7.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

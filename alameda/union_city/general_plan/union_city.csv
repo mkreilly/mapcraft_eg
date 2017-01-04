@@ -1,0 +1,17 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Union City,113 - Agriculture,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Union City,113 - Civic Facility,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Union City,113 - General Industry,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Union City,113 - Light Industry,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Union City,113 - Office Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Union City,113 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Union City,113 - Private Institutional,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Union City,113 - Research and Development Campus,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Union City,113 - Residential (10 to 17 du/acre),0.0,0,17.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Union City,113 - Residential (17 to 29 du/acre),0.0,0,29.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Union City,113 - Residential (3 to 6 du/acre),0.0,0,6.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Union City,113 - Residential (6 to 10 du/acre),0.0,0,10.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Union City,113 - Retail Commercial,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,1,1,0,1,1
+Union City,113 - Special Industry,0.0,0,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Union City,113 - Station Mixed-Use Commercial,0.0,0,80.0,0,1,1,1,1,0,1,0,0,,1,1,0,1,1
+Union City,113 - Visitor and Thoroughfare Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1

@@ -1,0 +1,19 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Oakley,222 - Agricultural Limited,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Agriculture,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Commercial,1.0,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Oakley,222 - Commercial Downtown,1.0,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Oakley,222 - Commercial Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Delta Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Light Industrial,0.67,50,0.0,0,0,0,0,0,0,0,1,1,,0,0,0,0,0
+Oakley,222 - Mobile Home,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Multi-Family High,0.0,0,16.7,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Multi-Family Low,0.0,0,9.6,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Parks and Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Public and Semi-Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Oakley,222 - Single Family High,0.0,0,5.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Single Family Low,0.0,0,2.3,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Single Family Medium,0.0,0,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Single Family Very Low,0.0,0,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Utility Energy,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Oakley,222 - Waterways,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0

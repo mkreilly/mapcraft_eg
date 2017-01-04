@@ -1,0 +1,17 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Burlingame,604 - Commercial Recreation,0.0,55,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Burlingame,604 - Community Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - High Density,0.0,75,51.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - Hotels/Motels,0.0,0,0.0,0,0,0,0,1,1,0,0,0,,1,1,0,1,1
+Burlingame,604 - Industrial & Office Use,0.5,60,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Burlingame,604 - Institutions,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Burlingame,604 - Low Density,0.0,30,8.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - Medium Density,0.0,30,20.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - Medium High Density,0.0,55,50.0,0,0,1,1,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - Office Use,3.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Burlingame,604 - Other,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - Preserve,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Burlingame,604 - Restaurants,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Burlingame,604 - Service & Special Sales,3.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Burlingame,604 - Shopping & Service,3.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Burlingame,604 - Waterfront Commercial,1.0,65,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1

@@ -1,0 +1,18 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Pinole,210 - High Density Residential,0.0,40,35.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Light Industrial/Service Commercial,0.0,0,0.0,0,0,0,0,1,1,0,1,1,,1,1,0,1,1
+Pinole,210 - Low Density Residential,0.0,0,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Major Institution/Medical,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Pinole,210 - Medium Density Residential,0.0,40,20.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Mixed Use - Neighborhood Commercial/High Density Residential,0.0,0,35.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Pinole,210 - Mixed Use - Neighborhood Commercial/Low Density Residential,0.0,0,1.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Pinole,210 - Mixed Use - Neighborhood Commercial/Medium Density Residential,0.0,0,20.0,0,1,1,1,1,1,1,0,0,,1,1,1,1,1
+Pinole,210 - Mixed Use - Suburban/Rural Residential and Medium Density Residential,3.0,50,0.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Neighborhood Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Pinole,210 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Parks and Recreation,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Public Facilities,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Pinole,210 - Regional Commercial,0.4,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Pinole,210 - San Pablo Bay Conservation Area,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Suburban/Rural Residential,0.0,0,10.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Pinole,210 - Transportation Right of Way,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0

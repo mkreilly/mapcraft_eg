@@ -1,0 +1,16 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Clayton,203 - Convenience Commercial,0.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Clayton,203 - Cultural Center,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Clayton,203 - High Density Residential,0.0,35,7.5,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Institutional Density Residential,0.0,35,0.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Kirker Corridor,0.0,35,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Low Density Residential,0.0,35,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Medium Density Residential,0.0,35,5.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Multi-Family Low Density Residential,0.5,35,7.6,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Multi-Family Medium Density Residential,0.5,35,10.1,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Public/Private Park,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Public/Quasi Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Clayton,203 - Rural Estate,0.0,35,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Clayton,203 - Schools,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Clayton,203 - Town Center,0.0,40,0.0,0,0,1,1,1,1,1,0,0,,1,1,1,1,1

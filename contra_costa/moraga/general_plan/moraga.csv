@@ -1,0 +1,13 @@
+city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
+Moraga,209 - College,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Moraga,209 - Community Commercial,1.0,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Moraga,209 - Limited Commercial,1.5,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Moraga,209 - Multi-Family Six Dwelling Units/Acre,0.0,0,6.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
+Moraga,209 - Office Commercial,0.65,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
+Moraga,209 - Open Space Lands,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Moraga,209 - Public Parks,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
+Moraga,209 - Schools,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
+Moraga,209 - Single Family One Dwelling Unit/Acre,0.0,0,1.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Moraga,209 - Single Family Three Dwelling Units/Acre,0.0,0,3.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Moraga,209 - Single Family Two Dwelling Units/Acre,0.0,0,2.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
+Moraga,209 - Study Area,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
