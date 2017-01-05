@@ -32,7 +32,7 @@ def test_csv_and_geojson_join(juris, county):
 
     # general plan name is missing on shapes
     assert len(empty_names) == 0
-    
+
     unique_plan_names = plan_names.unique()
 
     if not df.index.is_unique:
@@ -42,3 +42,29 @@ def test_csv_and_geojson_join(juris, county):
 
     # all the names on the shapes exist in the csv file
     assert len(df.loc[unique_plan_names]) == len(unique_plan_names)
+
+
+@pytest.mark.parametrize("juris,county", jurises)
+def test_csv_schema(juris, county):
+
+    dirname = os.path.join(county, juris, 'general_plan')
+    csvname = os.path.join(dirname, '%s.csv' % juris)
+
+    df = pd.read_csv(csvname, index_col="name")
+
+    cols = ("city,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM" +\
+           ",OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME").split(',')
+    for col in cols:
+        # check column names
+        assert col in df.columns
+
+    assert df.max_far.dtype == "float"
+    assert df.max_dua.dtype == "float"
+    assert df.max_height.dtype in ["float", "int"]
+    assert df.max_du_per_parcel.dtype in ["float", "int"]
+
+    for col in "HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME".split(","):
+        ind = list(df[col].value_counts().index)
+        assert ind == [0, 1] or ind == [1, 0] or ind == [1.0] \
+            or ind == [0] or ind == []
+        
