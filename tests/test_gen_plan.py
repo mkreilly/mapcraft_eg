@@ -52,8 +52,8 @@ def test_csv_schema(juris, county):
 
     df = pd.read_csv(csvname, index_col="name")
 
-    cols = ("city,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM" +\
-           ",OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME").split(',')
+    cols = ("city,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM" +
+            ",OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME").split(',')
     for col in cols:
         # check column names
         assert col in df.columns
@@ -79,4 +79,3 @@ def test_csv_schema(juris, county):
     assert df.max_dua.fillna(0).max() <= 350
     assert df.max_du_per_parcel.fillna(0).min() >= 0
     assert df.max_du_per_parcel.fillna(0).max() <= 10
-        
