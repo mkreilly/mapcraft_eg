@@ -58,13 +58,25 @@ def test_csv_schema(juris, county):
         # check column names
         assert col in df.columns
 
+    # types should be right
     assert df.max_far.dtype == "float"
     assert df.max_dua.dtype == "float"
     assert df.max_height.dtype in ["float", "int"]
     assert df.max_du_per_parcel.dtype in ["float", "int"]
 
+    # buildings types should be on or off
     for col in "HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME".split(","):
         ind = list(df[col].value_counts().index)
         assert ind == [0, 1] or ind == [1, 0] or ind == [1.0] \
             or ind == [0] or ind == []
+
+    # values should be in right ranges
+    assert df.max_far.fillna(0).min() >= 0
+    assert df.max_far.fillna(0).max() <= 30
+    assert df.max_height.fillna(0).min() >= 0
+    assert df.max_height.fillna(0).max() <= 1000
+    assert df.max_dua.fillna(0).min() >= 0
+    assert df.max_dua.fillna(0).max() <= 350
+    assert df.max_du_per_parcel.fillna(0).min() >= 0
+    assert df.max_du_per_parcel.fillna(0).max() <= 10
         
