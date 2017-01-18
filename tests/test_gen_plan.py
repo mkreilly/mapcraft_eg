@@ -4,7 +4,7 @@ import os
 import json
 
 
-counties = ['alameda', 'contra_costa', 'marin', 'napa', 'san_mateo',
+counties = ['contra_costa', 'marin', 'alameda', 'napa', 'san_mateo',
             'santa_clara', 'solano', 'sonoma', 'san_francisco']
 jurises = [(d, c) for c in counties for d in os.listdir(c)]
 # jurises = [("petaluma", "sonoma")]
