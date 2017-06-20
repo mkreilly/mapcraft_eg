@@ -1,6 +1,8 @@
 import pandas as pd
 import geopandas as gpd
 import os
+import sys
+sys.path.insert(0, ".")
 from tests.test_gen_plan import counties
 
 
