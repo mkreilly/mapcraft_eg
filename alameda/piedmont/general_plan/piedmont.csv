@@ -1,7 +1,0 @@
-city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
-Piedmont,110 - Commercial,3.0,35,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
-Piedmont,110 - Estate Residential,0.0,35,2.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
-Piedmont,110 - Medium Residential,0.0,35,20.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
-Piedmont,110 - Open Space,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
-Piedmont,110 - Public/Quasi Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
-Piedmont,110 - Suburban Residential,0.0,35,8.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0

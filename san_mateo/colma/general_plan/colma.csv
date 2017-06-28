@@ -1,7 +1,0 @@
-city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME
-Colma,605 - Cemetary,0.0,0,0.0,0,0,0,0,0,0,0,0,0,,0,0,0,0,0
-Colma,605 - Commercial,1.5,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
-Colma,605 - Executive Administrative,1.0,0,0.0,0,0,0,0,1,1,1,0,0,,1,1,0,1,1
-Colma,605 - Planned Development,3.0,0,30.0,0,1,1,1,0,0,0,0,0,,0,0,0,0,0
-Colma,605 - Public,0.0,0,0.0,0,0,0,0,0,0,1,0,0,,0,0,0,0,0
-Colma,605 - Residential Single Family,0.0,0,30.0,0,1,0,0,0,0,0,0,0,,0,0,0,0,0
