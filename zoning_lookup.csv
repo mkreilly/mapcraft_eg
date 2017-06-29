@@ -4398,24 +4398,24 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61243,,San Carlos,616 - Service and Convenience,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x992
 61244,,San Carlos,616 - Single Family,,28,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x992
 61245,,San Carlos,616 - Single Family-Low Density,,28,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x992
-61246,,San Mateo,617 - Downtown Retail Core,3,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61247,,San Mateo,617 - Downtown Retail Core Support,3,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61248,,San Mateo,617 - Executive Office,1,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61249,,San Mateo,617 - High Density Multi-Family,,55,50,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61250,,San Mateo,617 - Low Density Multi-Family,,24,17,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61251,,San Mateo,617 - Major Institution/Special Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-61252,,San Mateo,617 - Manufacturing,1,90,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
-61253,,San Mateo,617 - Medium Density Multi-Family,,55,35,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61254,,San Mateo,617 - Mixed-Executive Office/HiDen-MultiFamily,1,55,50,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61255,,San Mateo,617 - Mixed-Neighborhood Commercial/HiDen-MultiFam,1,35,50,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61256,,San Mateo,617 - Mixed-Regional/Community Comm/HiDen-MultiFam,2.5,55,50,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61257,,San Mateo,617 - Neighborhood Commercial,1,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61258,,San Mateo,617 - Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61259,,San Mateo,617 - Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-61260,,San Mateo,617 - Regional/Community Commercial,2.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61261,,San Mateo,617 - Service Commercial,1,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61262,,San Mateo,617 - Single Family Residential,,24,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61263,,San Mateo,617 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61246,,San Mateo,Downtown Retail Core,3,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61247,,San Mateo,Downtown Retail Core Support,3,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61248,,San Mateo,Executive Office,1,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61249,,San Mateo,High Density Multi-Family,,55,50,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61250,,San Mateo,Low Density Multi-Family,,24,17,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61251,,San Mateo,Major Institution/Special Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+61252,,San Mateo,Manufacturing,1,90,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
+61253,,San Mateo,Medium Density Multi-Family,,55,35,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61254,,San Mateo,Mixed-Executive Office/HiDen-MultiFamily,1,55,50,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61255,,San Mateo,Mixed-Neighborhood Commercial/HiDen-MultiFam,1,35,50,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61256,,San Mateo,Mixed-Regional/Community Comm/HiDen-MultiFam,2.5,55,50,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61257,,San Mateo,Neighborhood Commercial,1,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61258,,San Mateo,Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61259,,San Mateo,Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+61260,,San Mateo,Regional/Community Commercial,2.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61261,,San Mateo,Service Commercial,1,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61262,,San Mateo,Single Family Residential,,24,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61263,,San Mateo,Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61264,,South San Francisco,618 - Business and Technology Park,1,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,26_New
 61265,,South San Francisco,618 - Business and Technology Park/ Coastal Commercial,1,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,26_New
 61266,,South San Francisco,618 - Business Commercial,1,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,26_New
@@ -4632,110 +4632,110 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61477,,Mountain View,710 - Parks and Schools,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61478,,Mountain View,710 - Regional Commercial,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61479,,Mountain View,710 - Regional Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61480,,Palo Alto,711 - Hotel Commercial,1.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
-61481,,Palo Alto,711 - Light Industrial,0.5,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,7/x/x998
-61482,,Palo Alto,711 - Major Institution/Special Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998
-61483,,Palo Alto,711 - Major Institution/University Lands/Academic Reserve and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61484,,Palo Alto,711 - Major Institution/University Lands/Campus Educational Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998
-61485,,Palo Alto,711 - Major Institution/University Lands/Campus Multiple Family,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61486,,Palo Alto,711 - Major Institution/University Lands/Campus Single Family,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61487,,Palo Alto,711 - Mixed Use/Coordinated Area Plan (CAP),,,40,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,7/x/x998
-61488,,Palo Alto,711 - Multiple Family Residential,1,40,40,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61489,,Palo Alto,711 - Multiple Family Residential (with Hotel Overlay),1,40,40,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,7/x/x998
-61490,,Palo Alto,711 - Neighborhood Commercial,0.4,25,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
-61491,,Palo Alto,711 - Open Space/Controlled Development,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61492,,Palo Alto,711 - Public Conservation Land,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61493,,Palo Alto,711 - Public Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61494,,Palo Alto,711 - Regional/Community Commercial,2,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
-61495,,Palo Alto,711 - Research/Office Park,0.5,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
-61496,,Palo Alto,711 - School District Land,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998
-61497,,Palo Alto,711 - Service Commercial,0.4,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
-61498,,Palo Alto,711 - Single Family Residential,0.45,30,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61499,,Palo Alto,711 - Streamside Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61500,,Palo Alto,711 - Transit-Oriented Residential,,,50,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
-61501,,San Jose,712 - Administrative Office/Research and Development,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61502,,San Jose,712 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61503,,San Jose,712 - Arts Related Mixed Use,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61504,,San Jose,712 - Campus Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61505,,San Jose,712 - Combined Industrial/Commercial,3,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
-61506,,San Jose,712 - Combined Industrial/Commercial with Live/Work Overlay,3,,25,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
-61507,,San Jose,712 - Combined Residential/Commercial,3,,25,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61508,,San Jose,712 - Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61509,,San Jose,712 - Commercial/Light Industrial,3,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
-61510,,San Jose,712 - Commercial/Mixed Use,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61511,,San Jose,712 - Core Area,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61512,,San Jose,712 - Estate Residential (1.0 DU/AC),,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61513,,San Jose,712 - Existing Hotel (Limited Expansion),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61514,,San Jose,712 - General Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61515,,San Jose,712 - General Commercial/Industrial Park,3,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
-61516,,San Jose,712 - Heavy Industrial,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22
-61517,,San Jose,712 - High Density Residential (25-50 DU/AC),,,50,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61518,,San Jose,712 - High Density Residential (25-50 DU/AC)/General Commercial,,,50,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61519,,San Jose,712 - Industrial Core Area,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61520,,San Jose,712 - Industrial Park,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61521,,San Jose,712 - Industrial Park with Mixed Industrial Overlay,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61522,,San Jose,712 - Integrated Residential/Recreational,,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61523,,San Jose,712 - Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61524,,San Jose,712 - Low Density Residential (5.0 DU/AC),,,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61525,,San Jose,712 - Medium Density Residential (8-16 DU/AC),,,14,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61526,,San Jose,712 - Medium High Density Residential (12-25 DU/AC),,,22,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61527,,San Jose,712 - Medium High Density Residential (12-25 DU/AC)/General Commercial,,,22,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61528,,San Jose,712 - Medium Low Density Residential (8.0 DU/AC),,,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61529,,San Jose,712 - Mixed Use,,,25,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61530,,San Jose,"712 - Mixed Use 1, 2, 3 & 4 see GP text",,,25,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61531,,San Jose,712 - Neighborhood/Community Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61532,,San Jose,712 - No Underlying Designation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61533,,San Jose,712 - Non-Urban Hillside,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61534,,San Jose,712 - Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
-61535,,San Jose,712 - Open Space/Trails,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61536,,San Jose,712 - Parks/Play Fields,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61537,,San Jose,712 - Pedestrian Emphasis Public Street,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61538,,San Jose,712 - Pedestrian/Exhibit/Cafe Corridor,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61539,,San Jose,712 - Preferred Hotel Site (expansion permitted),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61540,,San Jose,712 - Private Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61541,,San Jose,712 - Private Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61542,,San Jose,712 - Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-61543,,San Jose,712 - Public Park and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61544,,San Jose,712 - Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-61545,,San Jose,712 - Regional Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61546,,San Jose,712 - Research and Development,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61547,,San Jose,712 - Residential Support for the Core Area (25+ DU/AC),,,30,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61548,,San Jose,712 - Residential Support for the Core Area (25+ DU/AC)/General Commercial,,,30,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61549,,San Jose,712 - River Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61550,,San Jose,712 - Rural Residential (0.2 DU/AC),,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61551,,San Jose,712 - Transit-Oriented Mixed Use (40-150 DU/AC),,,145,,0,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
-61552,,San Jose,712 - Transit Corridor Mixed Use (40-100 DU/AC),,,95,,0,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
-61553,,San Jose,712 - Transit Corridor Residential (12+ DU/AC),,,15,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61554,,San Jose,712 - Transit Corridor Residential (12+ DU/AC)/General Commercial,,,15,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61555,,San Jose,712 - Transit Mall,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61556,,San Jose,712 - Urban Hillside,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61557,,San Jose,712 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61558,,San Jose,712 - Very Low Density Residential (2.0 DU/AC),,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61559,,San Jose,712 - Victorian Preservation/Mixed Use,,,10,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-61560,,San Jose,712 - Village Center,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61561,,San Jose,712 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61562,,Santa Clara,713 - Community & Regional Shopping,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61563,,Santa Clara,713 - Education,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-61564,,Santa Clara,713 - Gateway Thoroughfare,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61565,,Santa Clara,713 - Heavy Industrial,0.45,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22
-61566,,Santa Clara,713 - High Density Residential,,,50,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61567,,Santa Clara,713 - Industrial Transition,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61568,,Santa Clara,713 - Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-61569,,Santa Clara,713 - Light Industrial,0.6,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61570,,Santa Clara,713 - Medium Density Residential,,,36,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61571,,Santa Clara,713 - Mixed Use,,,36,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61572,,Santa Clara,713 - Moderate Density Residential,,,18,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61573,,Santa Clara,713 - Office,1,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
-61574,,Santa Clara,713 - Office/Research & Development,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61575,,Santa Clara,713 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61576,,Santa Clara,713 - Parks & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61577,,Santa Clara,713 - Retention Basin,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61578,,Santa Clara,713 - Single Family Attached,,,10,,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61579,,Santa Clara,713 - Single Family Detached,,,10,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61580,,Santa Clara,713 - Thoroughfare Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61581,,Santa Clara,713 - Tourist,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61582,,Santa Clara,713 - Transit-Oriented Mixed Use,,,36,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
-61583,,Santa Clara,713 - Transit/Station/Airport,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61480,,Palo Alto,Hotel Commercial,1.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
+61481,,Palo Alto,Light Industrial,0.5,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,7/x/x998
+61482,,Palo Alto,Major Institution/Special Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998
+61483,,Palo Alto,Major Institution/University Lands/Academic Reserve and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61484,,Palo Alto,Major Institution/University Lands/Campus Educational Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998
+61485,,Palo Alto,Major Institution/University Lands/Campus Multiple Family,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61486,,Palo Alto,Major Institution/University Lands/Campus Single Family,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61487,,Palo Alto,Mixed Use/Coordinated Area Plan (CAP),,,40,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,7/x/x998
+61488,,Palo Alto,Multiple Family Residential,1,40,40,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61489,,Palo Alto,Multiple Family Residential (with Hotel Overlay),1,40,40,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,7/x/x998
+61490,,Palo Alto,Neighborhood Commercial,0.4,25,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
+61491,,Palo Alto,Open Space/Controlled Development,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61492,,Palo Alto,Public Conservation Land,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61493,,Palo Alto,Public Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61494,,Palo Alto,Regional/Community Commercial,2,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
+61495,,Palo Alto,Research/Office Park,0.5,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
+61496,,Palo Alto,School District Land,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998
+61497,,Palo Alto,Service Commercial,0.4,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998
+61498,,Palo Alto,Single Family Residential,0.45,30,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61499,,Palo Alto,Streamside Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61500,,Palo Alto,Transit-Oriented Residential,,,50,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998
+61501,,San Jose,Administrative Office/Research and Development,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61502,,San Jose,Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61503,,San Jose,Arts Related Mixed Use,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61504,,San Jose,Campus Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61505,,San Jose,Combined Industrial/Commercial,3,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
+61506,,San Jose,Combined Industrial/Commercial with Live/Work Overlay,3,,25,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
+61507,,San Jose,Combined Residential/Commercial,3,,25,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61508,,San Jose,Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61509,,San Jose,Commercial/Light Industrial,3,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
+61510,,San Jose,Commercial/Mixed Use,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61511,,San Jose,Core Area,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61512,,San Jose,Estate Residential (1.0 DU/AC),,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61513,,San Jose,Existing Hotel (Limited Expansion),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61514,,San Jose,General Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61515,,San Jose,General Commercial/Industrial Park,3,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
+61516,,San Jose,Heavy Industrial,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22
+61517,,San Jose,High Density Residential (25-50 DU/AC),,,50,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61518,,San Jose,High Density Residential (25-50 DU/AC)/General Commercial,,,50,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61519,,San Jose,Industrial Core Area,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61520,,San Jose,Industrial Park,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61521,,San Jose,Industrial Park with Mixed Industrial Overlay,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61522,,San Jose,Integrated Residential/Recreational,,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61523,,San Jose,Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61524,,San Jose,Low Density Residential (5.0 DU/AC),,,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61525,,San Jose,Medium Density Residential (8-16 DU/AC),,,14,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61526,,San Jose,Medium High Density Residential (12-25 DU/AC),,,22,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61527,,San Jose,Medium High Density Residential (12-25 DU/AC)/General Commercial,,,22,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61528,,San Jose,Medium Low Density Residential (8.0 DU/AC),,,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61529,,San Jose,Mixed Use,,,25,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61530,,San Jose,"Mixed Use 1, 2, 3 & 4 see GP text",,,25,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61531,,San Jose,Neighborhood/Community Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61532,,San Jose,No Underlying Designation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61533,,San Jose,Non-Urban Hillside,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61534,,San Jose,Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
+61535,,San Jose,Open Space/Trails,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61536,,San Jose,Parks/Play Fields,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61537,,San Jose,Pedestrian Emphasis Public Street,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61538,,San Jose,Pedestrian/Exhibit/Cafe Corridor,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61539,,San Jose,Preferred Hotel Site (expansion permitted),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61540,,San Jose,Private Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61541,,San Jose,Private Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61542,,San Jose,Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+61543,,San Jose,Public Park and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61544,,San Jose,Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+61545,,San Jose,Regional Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61546,,San Jose,Research and Development,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61547,,San Jose,Residential Support for the Core Area (25+ DU/AC),,,30,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61548,,San Jose,Residential Support for the Core Area (25+ DU/AC)/General Commercial,,,30,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61549,,San Jose,River Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61550,,San Jose,Rural Residential (0.2 DU/AC),,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61551,,San Jose,Transit-Oriented Mixed Use (40-150 DU/AC),,,145,,0,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
+61552,,San Jose,Transit Corridor Mixed Use (40-100 DU/AC),,,95,,0,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
+61553,,San Jose,Transit Corridor Residential (12+ DU/AC),,,15,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61554,,San Jose,Transit Corridor Residential (12+ DU/AC)/General Commercial,,,15,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61555,,San Jose,Transit Mall,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61556,,San Jose,Urban Hillside,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61557,,San Jose,Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61558,,San Jose,Very Low Density Residential (2.0 DU/AC),,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61559,,San Jose,Victorian Preservation/Mixed Use,,,10,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+61560,,San Jose,Village Center,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61561,,San Jose,Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61562,,Santa Clara,Community & Regional Shopping,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61563,,Santa Clara,Education,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+61564,,Santa Clara,Gateway Thoroughfare,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61565,,Santa Clara,Heavy Industrial,0.45,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22
+61566,,Santa Clara,High Density Residential,,,50,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61567,,Santa Clara,Industrial Transition,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61568,,Santa Clara,Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+61569,,Santa Clara,Light Industrial,0.6,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61570,,Santa Clara,Medium Density Residential,,,36,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61571,,Santa Clara,Mixed Use,,,36,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61572,,Santa Clara,Moderate Density Residential,,,18,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61573,,Santa Clara,Office,1,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
+61574,,Santa Clara,Office/Research & Development,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61575,,Santa Clara,Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61576,,Santa Clara,Parks & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61577,,Santa Clara,Retention Basin,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61578,,Santa Clara,Single Family Attached,,,10,,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61579,,Santa Clara,Single Family Detached,,,10,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61580,,Santa Clara,Thoroughfare Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61581,,Santa Clara,Tourist,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61582,,Santa Clara,Transit-Oriented Mixed Use,,,36,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22
+61583,,Santa Clara,Transit/Station/Airport,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
 61584,,Saratoga,714 - Commercial Retail,1.2,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
 61585,,Saratoga,714 - Community Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,
 61586,,Saratoga,714 - Hillside Conservation Single Family,0.5,30,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,

@@ -115,12 +115,8 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61237,,San Carlos,616 - Multiple Family-Low Density,0.75,35.0,20.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,x992,1,61237
 61244,,San Carlos,616 - Single Family,,28.0,6.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x992,1,61244
 61245,,San Carlos,616 - Single Family-Low Density,,28.0,3.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x992,1,61245
-61246,,San Mateo,617 - Downtown Retail Core,3.0,55.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22,1,61246
-61250,,San Mateo,617 - Low Density Multi-Family,,24.0,17.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22,6,61250
-61253,,San Mateo,617 - Medium Density Multi-Family,,55.0,35.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22,4,61253
-61258,,San Mateo,617 - Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,3,61258
-61262,,San Mateo,617 - Single Family Residential,,24.0,9.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,6,61262
-61263,,San Mateo,617 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,1,61263
+61258,,San Mateo,Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,3,61258
+61262,,San Mateo,Single Family Residential,,24.0,9.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,6,61262
 61313,,San Mateo County,699 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,xx/x/x986,7,61313
 61316,,San Mateo County,699 - Commercial/Future Study,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,xx/x/x986,7,61316
 61319,,San Mateo County,699 - General Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,xx/x/x986,1,61319
@@ -142,64 +138,29 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61422,,Los Gatos,706 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,4,61422
 61437,,Milpitas,707 - Parks/Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,1,61437
 61441,,Milpitas,707 - Single Family Low Density Residential,,,5.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,1,61441
-61482,,Palo Alto,711 - Major Institution/Special Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998,27,61482
-61486,,Palo Alto,711 - Major Institution/University Lands/Campus Single Family,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,2,61486
-61487,,Palo Alto,711 - Mixed Use/Coordinated Area Plan (CAP),,,40.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,7/x/x998,6,61487
-61488,,Palo Alto,711 - Multiple Family Residential,1.0,40.0,40.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,139,61488
-61490,,Palo Alto,711 - Neighborhood Commercial,0.4,25.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998,14,61490
-61491,,Palo Alto,711 - Open Space/Controlled Development,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,1,61491
-61493,,Palo Alto,711 - Public Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,31,61493
-61494,,Palo Alto,711 - Regional/Community Commercial,2.0,50.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998,64,61494
-61495,,Palo Alto,711 - Research/Office Park,0.5,50.0,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/x/x998,74,61495
-61496,,Palo Alto,711 - School District Land,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/x/x998,69,61496
-61498,,Palo Alto,711 - Single Family Residential,0.45,30.0,7.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,12031,61498
-61499,,Palo Alto,711 - Streamside Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,1,61499
-61500,,Palo Alto,711 - Transit-Oriented Residential,,,50.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,684,61500
-61505,,San Jose,712 - Combined Industrial/Commercial,3.0,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22,6,61505
-61506,,San Jose,712 - Combined Industrial/Commercial with Live/Work Overlay,3.0,,25.0,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22,1,61506
-61511,,San Jose,712 - Core Area,3.0,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,2,61511
-61514,,San Jose,712 - General Commercial,3.0,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,24,61514
-61516,,San Jose,712 - Heavy Industrial,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22,1,61516
-61517,,San Jose,712 - High Density Residential (25-50 DU/AC),,,50.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,7,61517
-61519,,San Jose,712 - Industrial Core Area,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,1,61519
-61520,,San Jose,712 - Industrial Park,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,9,61520
-61521,,San Jose,712 - Industrial Park with Mixed Industrial Overlay,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,1,61521
-61523,,San Jose,712 - Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,7,61523
-61525,,San Jose,712 - Medium Density Residential (8-16 DU/AC),,,14.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,9,61525
-61526,,San Jose,712 - Medium High Density Residential (12-25 DU/AC),,,22.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,16,61526
-61528,,San Jose,712 - Medium Low Density Residential (8.0 DU/AC),,,6.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,178,61528
-61529,,San Jose,712 - Mixed Use,,,25.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22,1,61529
-61532,,San Jose,712 - No Underlying Designation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,1,61532
-61533,,San Jose,712 - Non-Urban Hillside,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,1,61533
-61534,,San Jose,712 - Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22,12,61534
-61543,,San Jose,712 - Public Park and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,4,61543
-61544,,San Jose,712 - Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22,17,61544
-61545,,San Jose,712 - Regional Commercial,3.0,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,5,61545
-61548,,San Jose,712 - Residential Support for the Core Area (25+ DU/AC)/General Commercial,,,30.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22,2,61548
-61552,,San Jose,712 - Transit Corridor Mixed Use (40-100 DU/AC),,,95.0,,0,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22,1,61552
-61553,,San Jose,712 - Transit Corridor Residential (12+ DU/AC),,,15.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,1,61553
-61556,,San Jose,712 - Urban Hillside,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,3,61556
-61558,,San Jose,712 - Very Low Density Residential (2.0 DU/AC),,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,2,61558
-61559,,San Jose,712 - Victorian Preservation/Mixed Use,,,10.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22,1,61559
-61562,,Santa Clara,713 - Community & Regional Shopping,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,48,61562
-61563,,Santa Clara,713 - Education,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22,81,61563
-61564,,Santa Clara,713 - Gateway Thoroughfare,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,196,61564
-61565,,Santa Clara,713 - Heavy Industrial,0.45,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22,320,61565
-61567,,Santa Clara,713 - Industrial Transition,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,26,61567
-61568,,Santa Clara,713 - Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22,42,61568
-61569,,Santa Clara,713 - Light Industrial,0.6,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,777,61569
-61570,,Santa Clara,713 - Medium Density Residential,,,36.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,71,61570
-61571,,Santa Clara,713 - Mixed Use,,,36.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,1458,61571
-61572,,Santa Clara,713 - Moderate Density Residential,,,18.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,2472,61572
-61573,,Santa Clara,713 - Office,1.0,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22,44,61573
-61574,,Santa Clara,713 - Office/Research & Development,2.0,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,148,61574
-61575,,Santa Clara,713 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,18,61575
-61576,,Santa Clara,713 - Parks & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,172,61576
-61578,,Santa Clara,713 - Single Family Attached,,,10.0,,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Post22,1785,61578
-61579,,Santa Clara,713 - Single Family Detached,,,10.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,17202,61579
-61580,,Santa Clara,713 - Thoroughfare Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,181,61580
-61581,,Santa Clara,713 - Tourist,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,57,61581
-61582,,Santa Clara,713 - Transit-Oriented Mixed Use,,,36.0,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22,73,61582
+61487,,Palo Alto,Mixed Use/Coordinated Area Plan (CAP),,,40.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,7/x/x998,6,61487
+61500,,Palo Alto,Transit-Oriented Residential,,,50.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/x/x998,684,61500
+61506,,San Jose,Combined Industrial/Commercial with Live/Work Overlay,3.0,,25.0,,1,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22,1,61506
+61511,,San Jose,Core Area,3.0,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,2,61511
+61514,,San Jose,General Commercial,3.0,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,24,61514
+61517,,San Jose,High Density Residential (25-50 DU/AC),,,50.0,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,7,61517
+61519,,San Jose,Industrial Core Area,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,1,61519
+61521,,San Jose,Industrial Park with Mixed Industrial Overlay,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22,1,61521
+61525,,San Jose,Medium Density Residential (8-16 DU/AC),,,14.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,9,61525
+61526,,San Jose,Medium High Density Residential (12-25 DU/AC),,,22.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,16,61526
+61528,,San Jose,Medium Low Density Residential (8.0 DU/AC),,,6.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,178,61528
+61529,,San Jose,Mixed Use,,,25.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22,1,61529
+61532,,San Jose,No Underlying Designation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,1,61532
+61533,,San Jose,Non-Urban Hillside,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,1,61533
+61534,,San Jose,Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22,12,61534
+61543,,San Jose,Public Park and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,4,61543
+61548,,San Jose,Residential Support for the Core Area (25+ DU/AC)/General Commercial,,,30.0,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22,2,61548
+61552,,San Jose,Transit Corridor Mixed Use (40-100 DU/AC),,,95.0,,0,1,1,1,0,1,1,1,0,1,1,0,1,1,Post22,1,61552
+61553,,San Jose,Transit Corridor Residential (12+ DU/AC),,,15.0,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22,1,61553
+61556,,San Jose,Urban Hillside,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,3,61556
+61558,,San Jose,Very Low Density Residential (2.0 DU/AC),,,2.0,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22,2,61558
+61559,,San Jose,Victorian Preservation/Mixed Use,,,10.0,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22,1,61559
+61580,,Santa Clara,Thoroughfare Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22,181,61580
 61626,,Unincorporated Santa Clara,799 - Hillside Residential,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,3,61626
 61628,,Unincorporated Santa Clara,799 - Low Density Residential,,,0.01,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22,2,61628
 61860,,Petaluma,904 - Mixed Use,2.5,40.0,30.0,,0,0,1,1,1,1,0,0,0,1,1,1,1,1,7/6/2x5,2,61860
