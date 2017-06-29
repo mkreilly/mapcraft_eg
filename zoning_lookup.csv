@@ -3439,18 +3439,18 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60284,,Fairview,119 - Residential 0-4 du/ac,,,4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 60285,,Fairview,119 - Residential 5-8 du/ac,,,8,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
 60286,,Fairview,119 - Vacant,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60287,,Alameda County,199 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60288,,Alameda County,199 - High Density Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
-60289,,Alameda County,199 - High Density Residential,,,86,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60290,,Alameda County,199 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
-60291,,Alameda County,199 - Light Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
-60292,,Alameda County,199 - Low Density Residential,,,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60293,,Alameda County,199 - Medium Density Residential,,,22,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60294,,Alameda County,199 - Mixed Use,,,22,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,
-60295,,Alameda County,199 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60296,,Alameda County,199 - Other,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60297,,Alameda County,199 - Urban Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60298,,Alameda County,199 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60287,,Unincorporated Alameda,199 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60288,,Unincorporated Alameda,199 - High Density Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
+60289,,Unincorporated Alameda,199 - High Density Residential,,,86,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60290,,Unincorporated Alameda,199 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
+60291,,Unincorporated Alameda,199 - Light Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
+60292,,Unincorporated Alameda,199 - Low Density Residential,,,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60293,,Unincorporated Alameda,199 - Medium Density Residential,,,22,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60294,,Unincorporated Alameda,199 - Mixed Use,,,22,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,
+60295,,Unincorporated Alameda,199 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60296,,Unincorporated Alameda,199 - Other,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60297,,Unincorporated Alameda,199 - Urban Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60298,,Unincorporated Alameda,199 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 60299,,Antioch,201 - A Street Interchange,0.4,,,,0,0,0,1,1,0,0,0,0,1,1,0,1,1,x99
 60300,,Antioch,201 - Business Park,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x99
 60301,,Antioch,201 - Conveniance Commercial,0.6,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x99
@@ -3769,44 +3769,44 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60614,,San Ramon,226 - Single Family Low/ Medium Density,,35,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x995
 60615,,San Ramon,226 - Single Family Medium Density,,35,14,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x995
 60616,,San Ramon,226 - Thoroughfare Commercial,0.5,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x/x/x995
-60617,,Contra Costa County,299 - Agricultural Core,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60618,,Contra Costa County,299 - Agricultural Lands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60619,,Contra Costa County,299 - Agricultural Lands & Off Island Bonus Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60620,,Contra Costa County,299 - Airport Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60621,,Contra Costa County,299 - Bay Point Residential Mixed-Use,,,30,,1,1,1,1,0,1,0,0,0,1,1,0,1,1,Post22
-60622,,Contra Costa County,299 - Business Park,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60623,,Contra Costa County,299 - Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60624,,Contra Costa County,299 - Commercial Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60625,,Contra Costa County,299 - Congregate Care/Senior Housing,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60626,,Contra Costa County,299 - Delta Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60627,,Contra Costa County,299 - Dougherty Valley Village Center Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60628,,Contra Costa County,299 - Downtown/Waterfront Rodeo Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60629,,Contra Costa County,299 - Heavy Industry,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22
-60630,,Contra Costa County,299 - Landfill,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60631,,Contra Costa County,299 - Light Industry,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-60632,,Contra Costa County,299 - Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60633,,Contra Costa County,299 - Mobile Home,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60634,,Contra Costa County,299 - Montalvin Manor Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60635,,Contra Costa County,299 - Multiple Family Residential - High,,,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60636,,Contra Costa County,299 - Multiple Family Residential - Low,,,12,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60637,,Contra Costa County,299 - Multiple Family Residential - Medium,,,21,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60638,,Contra Costa County,299 - Multiple Family Residential - Very High,,,45,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60639,,Contra Costa County,299 - Multiple Family Residential - Very High Special,,,100,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60640,,Contra Costa County,299 - Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
-60641,,Contra Costa County,299 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60642,,Contra Costa County,299 - Parker Avenue Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60643,,Contra Costa County,299 - Parks and Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60644,,Contra Costa County,299 - Pittsburg/Bay Point BART Station Area Mixed-Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60645,,Contra Costa County,299 - Pleasant Hill BART Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60646,,Contra Costa County,299 - Public/Semi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-60647,,Contra Costa County,299 - Single Family Residential - High,,,7.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60648,,Contra Costa County,299 - Single Family Residential - Low,,,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60649,,Contra Costa County,299 - Single Family Residential - Medium,,,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60650,,Contra Costa County,299 - Single Family Residential - Very Low,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60651,,Contra Costa County,299 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60652,,Contra Costa County,299 - Watershed,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60653,,Contra Costa County,299 - Willow Pass Road Commercial Mixed-Use,,,30,,1,1,1,1,0,1,0,0,0,1,1,0,1,1,Post22
-60654,,Contra Costa County,299 - Willow Pass Road Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60617,,Unincorporated Contra Costa,299 - Agricultural Core,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60618,,Unincorporated Contra Costa,299 - Agricultural Lands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60619,,Unincorporated Contra Costa,299 - Agricultural Lands & Off Island Bonus Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60620,,Unincorporated Contra Costa,299 - Airport Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60621,,Unincorporated Contra Costa,299 - Bay Point Residential Mixed-Use,,,30,,1,1,1,1,0,1,0,0,0,1,1,0,1,1,Post22
+60622,,Unincorporated Contra Costa,299 - Business Park,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60623,,Unincorporated Contra Costa,299 - Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60624,,Unincorporated Contra Costa,299 - Commercial Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60625,,Unincorporated Contra Costa,299 - Congregate Care/Senior Housing,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60626,,Unincorporated Contra Costa,299 - Delta Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60627,,Unincorporated Contra Costa,299 - Dougherty Valley Village Center Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60628,,Unincorporated Contra Costa,299 - Downtown/Waterfront Rodeo Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60629,,Unincorporated Contra Costa,299 - Heavy Industry,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Post22
+60630,,Unincorporated Contra Costa,299 - Landfill,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60631,,Unincorporated Contra Costa,299 - Light Industry,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+60632,,Unincorporated Contra Costa,299 - Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60633,,Unincorporated Contra Costa,299 - Mobile Home,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60634,,Unincorporated Contra Costa,299 - Montalvin Manor Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60635,,Unincorporated Contra Costa,299 - Multiple Family Residential - High,,,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60636,,Unincorporated Contra Costa,299 - Multiple Family Residential - Low,,,12,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60637,,Unincorporated Contra Costa,299 - Multiple Family Residential - Medium,,,21,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60638,,Unincorporated Contra Costa,299 - Multiple Family Residential - Very High,,,45,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60639,,Unincorporated Contra Costa,299 - Multiple Family Residential - Very High Special,,,100,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60640,,Unincorporated Contra Costa,299 - Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
+60641,,Unincorporated Contra Costa,299 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60642,,Unincorporated Contra Costa,299 - Parker Avenue Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60643,,Unincorporated Contra Costa,299 - Parks and Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60644,,Unincorporated Contra Costa,299 - Pittsburg/Bay Point BART Station Area Mixed-Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60645,,Unincorporated Contra Costa,299 - Pleasant Hill BART Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60646,,Unincorporated Contra Costa,299 - Public/Semi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+60647,,Unincorporated Contra Costa,299 - Single Family Residential - High,,,7.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60648,,Unincorporated Contra Costa,299 - Single Family Residential - Low,,,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60649,,Unincorporated Contra Costa,299 - Single Family Residential - Medium,,,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60650,,Unincorporated Contra Costa,299 - Single Family Residential - Very Low,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60651,,Unincorporated Contra Costa,299 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60652,,Unincorporated Contra Costa,299 - Watershed,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60653,,Unincorporated Contra Costa,299 - Willow Pass Road Commercial Mixed-Use,,,30,,1,1,1,1,0,1,0,0,0,1,1,0,1,1,Post22
+60654,,Unincorporated Contra Costa,299 - Willow Pass Road Mixed Use,,,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
 60655,,Belvedere,301 - Church or School,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 60656,,Belvedere,301 - Commercial,1,36,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
 60657,,Belvedere,301 - High Density Residential -over 5 units,,,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -3971,136 +3971,136 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60816,,Tiburon,311 - Very High Density Residential,,,12.4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/5/2x5
 60817,,Tiburon,311 - Very High Density Residential/Affordable Housing Overlay,,,14,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/5/2x5
 60818,,Tiburon,311 - Village Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,8/5/2x5
-60819,,Marin County,399 - Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60820,,Marin County,399 - Agricultural 1/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60821,,Marin County,399 - Agricultural 1/Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60822,,Marin County,399 - Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60823,,Marin County,399 - Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60824,,Marin County,399 - Agricultural 3/Recreational Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60825,,Marin County,399 - Agricultural 3/Residential Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60826,,Marin County,399 - Agricultural 3/Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60827,,Marin County,399 - Agriculture and Conservation 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60828,,Marin County,399 - Agriculture and Conservation 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60829,,Marin County,399 - Coastal Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60830,,Marin County,399 - Coastal Agricultural 1/Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60831,,Marin County,399 - Coastal Agricultural 1/Coastal Single Family 5,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60832,,Marin County,399 - Coastal Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60833,,Marin County,399 - Coastal Agricultural 2/Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60834,,Marin County,399 - Coastal Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60835,,Marin County,399 - Coastal Agricultural 3/Coastal Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60836,,Marin County,399 - Coastal Agricultural 3/Coastal Residential Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60837,,Marin County,399 - Coastal Agricultural 3/Coastal Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60838,,Marin County,399 - Coastal General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60839,,Marin County,399 - Coastal General Commercial/Coastal Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60840,,Marin County,399 - Coastal General Commercial/Coastal Single Family 3,,,1,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60841,,Marin County,399 - Coastal Multi Family 2,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60842,,Marin County,399 - Coastal Multi Family 2/Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60843,,Marin County,399 - Coastal Multi Family 3,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60844,,Marin County,399 - Coastal Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60845,,Marin County,399 - Coastal Open Space/Coastal Multi Family 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60846,,Marin County,399 - Coastal Open Space/Coastal Single Family 4,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60847,,Marin County,399 - Coastal Open Space/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60848,,Marin County,399 - Coastal Planned Residential,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60849,,Marin County,399 - Coastal Public Facility/Coastal Residential Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60850,,Marin County,399 - Coastal Recreational Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60851,,Marin County,399 - Coastal Recreational Commercial/Coastal Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60852,,Marin County,399 - Coastal Residential Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60853,,Marin County,399 - Coastal Single Family 2,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60854,,Marin County,399 - Coastal Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60855,,Marin County,399 - Coastal Single Family 3/Coastal Residential Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60856,,Marin County,399 - Coastal Single Family 3/Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60857,,Marin County,399 - Coastal Single Family 3/Coastal Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60858,,Marin County,399 - Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60859,,Marin County,399 - Coastal Single Family 4/Coastal Single Family 6,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60860,,Marin County,399 - Coastal Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60861,,Marin County,399 - Coastal Single Family 5/Coastal Agricultural 2,,,4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60862,,Marin County,399 - Coastal Single Family 5/Coastal Residential Commercial,,,4,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60863,,Marin County,399 - Coastal Single Family 5/Coastal Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60864,,Marin County,399 - Coastal Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60865,,Marin County,399 - Coastal Single Family 6/Coastal Agricultural 3,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60866,,Marin County,399 - Coastal Single Family 6/Coastal Retail Commercial,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60867,,Marin County,399 - Coastal Single Family 6/Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60868,,Marin County,399 - Floating Homes,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60869,,Marin County,399 - Floating Homes/General Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60870,,Marin County,399 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60871,,Marin County,399 - General Commercial/Single Family 4,,,2,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60872,,Marin County,399 - General Commercial/Single Family 6,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60873,,Marin County,399 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-60874,,Marin County,399 - Mineral Resources Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60875,,Marin County,399 - Multi Family 2,,,4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60876,,Marin County,399 - Multi Family 2/Single Family 5,,,0.2,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60877,,Marin County,399 - Multi Family 2/Single Family 6,,,4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60878,,Marin County,399 - Multi Family 3,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60879,,Marin County,399 - Multi Family 3/Single Family 4,,,2,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60880,,Marin County,399 - Multi Family 4,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60881,,Marin County,399 - Multi Family 4.5,,,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60882,,Marin County,399 - Multi Family 4/Single Family 6,,,7,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60883,,Marin County,399 - Multi Family 4/Single Family 6/General Commercial,,,7,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60884,,Marin County,399 - Office Commercial,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
-60885,,Marin County,399 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60886,,Marin County,399 - Open Space/Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60887,,Marin County,399 - Open Space/Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60888,,Marin County,399 - Open Space/Planned Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60889,,Marin County,399 - Open Space/Single Family 5,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60890,,Marin County,399 - Open Space/Single Family 6,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60891,,Marin County,399 - Planned Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60892,,Marin County,399 - Planned Residential/Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60893,,Marin County,399 - Planned Residential/Single Family 6,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60894,,Marin County,399 - Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-60895,,Marin County,399 - Public Facility/Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60896,,Marin County,399 - Public Facility/Coastal Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60897,,Marin County,399 - Public Facility/Coastal Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60898,,Marin County,399 - Public Facility/Industrial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60899,,Marin County,399 - Public Facility/Multi Family 5,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60900,,Marin County,399 - Public Facility/Single Family 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60901,,Marin County,399 - Public Facility/Single Family 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60902,,Marin County,399 - Public Facility/Single Family 4,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60903,,Marin County,399 - Public Facility/Single Family 5,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60904,,Marin County,399 - Public Facility/Single Family 5/Single Family 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60905,,Marin County,399 - Public Facility/Single Family 6,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60906,,Marin County,399 - Public Facility/Urban and Conservation Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60907,,Marin County,399 - Quasi-Public Facility/Planned Residential,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60908,,Marin County,399 - Quasi-Public Facility/Single Family 6/Planned Residential,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60909,,Marin County,399 - Recreational Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60910,,Marin County,399 - Residential Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60911,,Marin County,399 - Residential Commercial/Single Family 3,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60912,,Marin County,399 - Retail Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60913,,Marin County,399 - Single Family 1,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60914,,Marin County,399 - Single Family 1/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60915,,Marin County,399 - Single Family 2,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60916,,Marin County,399 - Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60917,,Marin County,399 - Single Family 3/General Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60918,,Marin County,399 - Single Family 3/Residential Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60919,,Marin County,399 - Single Family 3/Single Family 1,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60920,,Marin County,399 - Single Family 3/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60921,,Marin County,399 - Single Family 3/Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60922,,Marin County,399 - Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60923,,Marin County,399 - Single Family 4/General Commercial,,,2,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60924,,Marin County,399 - Single Family 4/Residential Commercial,,,2,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60925,,Marin County,399 - Single Family 4/Single Family 3,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60926,,Marin County,399 - Single Family 4/Single Family 5,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60927,,Marin County,399 - Single Family 4/Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60928,,Marin County,399 - Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60929,,Marin County,399 - Single Family 5/Multi Family 2,,,4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60930,,Marin County,399 - Single Family 5/Multi Family 4.5,,,40,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60931,,Marin County,399 - Single Family 5/Planned Residential,,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60932,,Marin County,399 - Single Family 5/Residential Commercial,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60933,,Marin County,399 - Single Family 5/Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60934,,Marin County,399 - Single Family 5/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60935,,Marin County,399 - Single Family 5/Single Family 6,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60936,,Marin County,399 - Single Family 5/Single Family 6/Multi Family 2,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60937,,Marin County,399 - Single Family 6,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60938,,Marin County,399 - Single Family 6/Agricultural 3,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60939,,Marin County,399 - Single Family 6/Multi Family 2,,,2,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60940,,Marin County,399 - Single Family 6/Multi Family 4.5,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60941,,Marin County,399 - Single Family 6/Planned Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60942,,Marin County,399 - Single Family 6/Retail Commercial,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
-60943,,Marin County,399 - Single Family 6/Single Family 3,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60944,,Marin County,399 - Single Family 6/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60945,,Marin County,399 - Single Family 6/Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60946,,Marin County,399 - Tidelands: Subject to State Lands Jurisdiction,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60947,,Marin County,399 - Unknown,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60948,,Marin County,399 - Urban and Conservation Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60819,,Unincorporated Marin,399 - Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60820,,Unincorporated Marin,399 - Agricultural 1/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60821,,Unincorporated Marin,399 - Agricultural 1/Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60822,,Unincorporated Marin,399 - Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60823,,Unincorporated Marin,399 - Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60824,,Unincorporated Marin,399 - Agricultural 3/Recreational Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60825,,Unincorporated Marin,399 - Agricultural 3/Residential Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60826,,Unincorporated Marin,399 - Agricultural 3/Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60827,,Unincorporated Marin,399 - Agriculture and Conservation 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60828,,Unincorporated Marin,399 - Agriculture and Conservation 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60829,,Unincorporated Marin,399 - Coastal Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60830,,Unincorporated Marin,399 - Coastal Agricultural 1/Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60831,,Unincorporated Marin,399 - Coastal Agricultural 1/Coastal Single Family 5,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60832,,Unincorporated Marin,399 - Coastal Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60833,,Unincorporated Marin,399 - Coastal Agricultural 2/Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60834,,Unincorporated Marin,399 - Coastal Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60835,,Unincorporated Marin,399 - Coastal Agricultural 3/Coastal Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60836,,Unincorporated Marin,399 - Coastal Agricultural 3/Coastal Residential Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60837,,Unincorporated Marin,399 - Coastal Agricultural 3/Coastal Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60838,,Unincorporated Marin,399 - Coastal General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60839,,Unincorporated Marin,399 - Coastal General Commercial/Coastal Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60840,,Unincorporated Marin,399 - Coastal General Commercial/Coastal Single Family 3,,,1,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60841,,Unincorporated Marin,399 - Coastal Multi Family 2,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60842,,Unincorporated Marin,399 - Coastal Multi Family 2/Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60843,,Unincorporated Marin,399 - Coastal Multi Family 3,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60844,,Unincorporated Marin,399 - Coastal Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60845,,Unincorporated Marin,399 - Coastal Open Space/Coastal Multi Family 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60846,,Unincorporated Marin,399 - Coastal Open Space/Coastal Single Family 4,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60847,,Unincorporated Marin,399 - Coastal Open Space/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60848,,Unincorporated Marin,399 - Coastal Planned Residential,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60849,,Unincorporated Marin,399 - Coastal Public Facility/Coastal Residential Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60850,,Unincorporated Marin,399 - Coastal Recreational Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60851,,Unincorporated Marin,399 - Coastal Recreational Commercial/Coastal Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60852,,Unincorporated Marin,399 - Coastal Residential Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60853,,Unincorporated Marin,399 - Coastal Single Family 2,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60854,,Unincorporated Marin,399 - Coastal Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60855,,Unincorporated Marin,399 - Coastal Single Family 3/Coastal Residential Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60856,,Unincorporated Marin,399 - Coastal Single Family 3/Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60857,,Unincorporated Marin,399 - Coastal Single Family 3/Coastal Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60858,,Unincorporated Marin,399 - Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60859,,Unincorporated Marin,399 - Coastal Single Family 4/Coastal Single Family 6,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60860,,Unincorporated Marin,399 - Coastal Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60861,,Unincorporated Marin,399 - Coastal Single Family 5/Coastal Agricultural 2,,,4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60862,,Unincorporated Marin,399 - Coastal Single Family 5/Coastal Residential Commercial,,,4,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60863,,Unincorporated Marin,399 - Coastal Single Family 5/Coastal Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60864,,Unincorporated Marin,399 - Coastal Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60865,,Unincorporated Marin,399 - Coastal Single Family 6/Coastal Agricultural 3,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60866,,Unincorporated Marin,399 - Coastal Single Family 6/Coastal Retail Commercial,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60867,,Unincorporated Marin,399 - Coastal Single Family 6/Coastal Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60868,,Unincorporated Marin,399 - Floating Homes,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60869,,Unincorporated Marin,399 - Floating Homes/General Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60870,,Unincorporated Marin,399 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60871,,Unincorporated Marin,399 - General Commercial/Single Family 4,,,2,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60872,,Unincorporated Marin,399 - General Commercial/Single Family 6,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60873,,Unincorporated Marin,399 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+60874,,Unincorporated Marin,399 - Mineral Resources Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60875,,Unincorporated Marin,399 - Multi Family 2,,,4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60876,,Unincorporated Marin,399 - Multi Family 2/Single Family 5,,,0.2,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60877,,Unincorporated Marin,399 - Multi Family 2/Single Family 6,,,4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60878,,Unincorporated Marin,399 - Multi Family 3,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60879,,Unincorporated Marin,399 - Multi Family 3/Single Family 4,,,2,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60880,,Unincorporated Marin,399 - Multi Family 4,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60881,,Unincorporated Marin,399 - Multi Family 4.5,,,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60882,,Unincorporated Marin,399 - Multi Family 4/Single Family 6,,,7,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60883,,Unincorporated Marin,399 - Multi Family 4/Single Family 6/General Commercial,,,7,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60884,,Unincorporated Marin,399 - Office Commercial,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
+60885,,Unincorporated Marin,399 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60886,,Unincorporated Marin,399 - Open Space/Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60887,,Unincorporated Marin,399 - Open Space/Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60888,,Unincorporated Marin,399 - Open Space/Planned Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60889,,Unincorporated Marin,399 - Open Space/Single Family 5,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60890,,Unincorporated Marin,399 - Open Space/Single Family 6,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60891,,Unincorporated Marin,399 - Planned Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60892,,Unincorporated Marin,399 - Planned Residential/Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60893,,Unincorporated Marin,399 - Planned Residential/Single Family 6,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60894,,Unincorporated Marin,399 - Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+60895,,Unincorporated Marin,399 - Public Facility/Agricultural 1,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60896,,Unincorporated Marin,399 - Public Facility/Coastal Agricultural 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60897,,Unincorporated Marin,399 - Public Facility/Coastal Agricultural 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60898,,Unincorporated Marin,399 - Public Facility/Industrial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60899,,Unincorporated Marin,399 - Public Facility/Multi Family 5,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60900,,Unincorporated Marin,399 - Public Facility/Single Family 2,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60901,,Unincorporated Marin,399 - Public Facility/Single Family 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60902,,Unincorporated Marin,399 - Public Facility/Single Family 4,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60903,,Unincorporated Marin,399 - Public Facility/Single Family 5,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60904,,Unincorporated Marin,399 - Public Facility/Single Family 5/Single Family 3,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60905,,Unincorporated Marin,399 - Public Facility/Single Family 6,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60906,,Unincorporated Marin,399 - Public Facility/Urban and Conservation Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60907,,Unincorporated Marin,399 - Quasi-Public Facility/Planned Residential,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60908,,Unincorporated Marin,399 - Quasi-Public Facility/Single Family 6/Planned Residential,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60909,,Unincorporated Marin,399 - Recreational Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60910,,Unincorporated Marin,399 - Residential Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60911,,Unincorporated Marin,399 - Residential Commercial/Single Family 3,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60912,,Unincorporated Marin,399 - Retail Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60913,,Unincorporated Marin,399 - Single Family 1,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60914,,Unincorporated Marin,399 - Single Family 1/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60915,,Unincorporated Marin,399 - Single Family 2,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60916,,Unincorporated Marin,399 - Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60917,,Unincorporated Marin,399 - Single Family 3/General Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60918,,Unincorporated Marin,399 - Single Family 3/Residential Commercial,,,1,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60919,,Unincorporated Marin,399 - Single Family 3/Single Family 1,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60920,,Unincorporated Marin,399 - Single Family 3/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60921,,Unincorporated Marin,399 - Single Family 3/Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60922,,Unincorporated Marin,399 - Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60923,,Unincorporated Marin,399 - Single Family 4/General Commercial,,,2,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60924,,Unincorporated Marin,399 - Single Family 4/Residential Commercial,,,2,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60925,,Unincorporated Marin,399 - Single Family 4/Single Family 3,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60926,,Unincorporated Marin,399 - Single Family 4/Single Family 5,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60927,,Unincorporated Marin,399 - Single Family 4/Single Family 6,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60928,,Unincorporated Marin,399 - Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60929,,Unincorporated Marin,399 - Single Family 5/Multi Family 2,,,4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60930,,Unincorporated Marin,399 - Single Family 5/Multi Family 4.5,,,40,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60931,,Unincorporated Marin,399 - Single Family 5/Planned Residential,,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60932,,Unincorporated Marin,399 - Single Family 5/Residential Commercial,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60933,,Unincorporated Marin,399 - Single Family 5/Single Family 3,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60934,,Unincorporated Marin,399 - Single Family 5/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60935,,Unincorporated Marin,399 - Single Family 5/Single Family 6,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60936,,Unincorporated Marin,399 - Single Family 5/Single Family 6/Multi Family 2,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60937,,Unincorporated Marin,399 - Single Family 6,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60938,,Unincorporated Marin,399 - Single Family 6/Agricultural 3,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60939,,Unincorporated Marin,399 - Single Family 6/Multi Family 2,,,2,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60940,,Unincorporated Marin,399 - Single Family 6/Multi Family 4.5,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60941,,Unincorporated Marin,399 - Single Family 6/Planned Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60942,,Unincorporated Marin,399 - Single Family 6/Retail Commercial,,,7,,1,0,0,1,1,1,0,0,0,1,1,1,1,1,Post22
+60943,,Unincorporated Marin,399 - Single Family 6/Single Family 3,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60944,,Unincorporated Marin,399 - Single Family 6/Single Family 4,,,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60945,,Unincorporated Marin,399 - Single Family 6/Single Family 5,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60946,,Unincorporated Marin,399 - Tidelands: Subject to State Lands Jurisdiction,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60947,,Unincorporated Marin,399 - Unknown,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60948,,Unincorporated Marin,399 - Urban and Conservation Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
 60949,,Calistoga,401 - Airport Commercial,0.1,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x/4/2x5
 60950,,Calistoga,401 - Community Commercial,0.8,30,20,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,x/4/2x5
 60951,,Calistoga,401 - Downtown Commercial,2,30,20,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,x/4/2x5
@@ -4167,14 +4167,14 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61012,,American Canyon,407 - Specific Plan: Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 61013,,American Canyon,407 - Specific Plan: Single Family,,,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,xx/x/x994
 61014,,American Canyon,407 - Town Center Mixed Use,0.5,,20,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,
-61015,,Napa County,499 - Agricultural Resource,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
-61016,,Napa County,"499 - Agriculture, Watershed & Open Space",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
-61017,,Napa County,499 - Airport Clear Zone,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
-61018,,Napa County,499 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,x/x/x998
-61019,,Napa County,499 - Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
-61020,,Napa County,499 - Public-Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x/x/x998
-61021,,Napa County,499 - Rural Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
-61022,,Napa County,499 - Urban Residential,,,1,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
+61015,,Unincorporated Napa,499 - Agricultural Resource,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
+61016,,Unincorporated Napa,"499 - Agriculture, Watershed & Open Space",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
+61017,,Unincorporated Napa,499 - Airport Clear Zone,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
+61018,,Unincorporated Napa,499 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,x/x/x998
+61019,,Unincorporated Napa,499 - Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
+61020,,Unincorporated Napa,499 - Public-Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x/x/x998
+61021,,Unincorporated Napa,499 - Rural Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
+61022,,Unincorporated Napa,499 - Urban Residential,,,1,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,x/x/x998
 61023,,San Francisco,500 - Downtown General Commercial,,,100,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61024,,San Francisco,500 - Downtown Office,,,100,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61025,,San Francisco,500 - Downtown Residential,,,100,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
@@ -4774,24 +4774,24 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61619,,Sunnyvale,715 - Parks,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
 61620,,Sunnyvale,715 - Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
 61621,,Sunnyvale,715 - Very High Density Residential (45-65 du/ac),,55,65,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61622,,Santa Clara County,799 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61623,,Santa Clara County,799 - Agriculture Large Scale,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61624,,Santa Clara County,799 - Agriculture Medium Scale,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61625,,Santa Clara County,799 - Baylands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61626,,Santa Clara County,799 - Hillside Residential,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61627,,Santa Clara County,799 - Hillsides,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61628,,Santa Clara County,799 - Low Density Residential,,,0.01,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61629,,Santa Clara County,799 - Major Educational & Institutional Uses,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x994
-61630,,Santa Clara County,799 - Major Gas and Electric Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61631,,Santa Clara County,799 - Major Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x994
-61632,,Santa Clara County,799 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61633,,Santa Clara County,799 - Open Space Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61634,,Santa Clara County,799 - Other Public Open Lands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61635,,Santa Clara County,799 - Ranchlands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61636,,Santa Clara County,"799 - Regional Parks, Existing",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61637,,Santa Clara County,799 - Roadside Services,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,6/x/x994
-61638,,Santa Clara County,799 - Rural Residential,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
-61639,,Santa Clara County,799 - Transportation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61622,,Unincorporated Santa Clara,799 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61623,,Unincorporated Santa Clara,799 - Agriculture Large Scale,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61624,,Unincorporated Santa Clara,799 - Agriculture Medium Scale,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61625,,Unincorporated Santa Clara,799 - Baylands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61626,,Unincorporated Santa Clara,799 - Hillside Residential,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61627,,Unincorporated Santa Clara,799 - Hillsides,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61628,,Unincorporated Santa Clara,799 - Low Density Residential,,,0.01,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61629,,Unincorporated Santa Clara,799 - Major Educational & Institutional Uses,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x994
+61630,,Unincorporated Santa Clara,799 - Major Gas and Electric Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61631,,Unincorporated Santa Clara,799 - Major Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x994
+61632,,Unincorporated Santa Clara,799 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61633,,Unincorporated Santa Clara,799 - Open Space Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61634,,Unincorporated Santa Clara,799 - Other Public Open Lands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61635,,Unincorporated Santa Clara,799 - Ranchlands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61636,,Unincorporated Santa Clara,"799 - Regional Parks, Existing",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61637,,Unincorporated Santa Clara,799 - Roadside Services,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,6/x/x994
+61638,,Unincorporated Santa Clara,799 - Rural Residential,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
+61639,,Unincorporated Santa Clara,799 - Transportation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x994
 61640,,Benicia,801 - Commercial - Business and Professional,1.2,,,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61641,,Benicia,801 - Commercial - Community,1.2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61642,,Benicia,801 - Commercial - Downtown,2.4,,,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
@@ -4926,8 +4926,8 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61771,,Vacaville,806 - Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,7/6/2x5
 61772,,Vacaville,806 - Service,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,7/6/2x5
 61773,,Vacaville,806 - Urban High Density Residential,,,36,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,7/6/2x5
-61774,,Solano County,807 - Employment,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
-61775,,Solano County,807 - High Density Residential,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61774,,Unincorporated Solano,807 - Employment,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
+61775,,Unincorporated Solano,807 - High Density Residential,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
 61776,,Vallejo,807 - Highway Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61777,,Vallejo,807 - Low Density Residential,,,8.7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61778,,Vallejo,807 - Medical,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
@@ -4936,32 +4936,32 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61781,,Vallejo,807 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61782,,Vallejo,807 - Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61783,,Vallejo,807 - Public/Semi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-61784,,Solano County,807 - Retail Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61784,,Unincorporated Solano,807 - Retail Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
 61785,,Vallejo,807 - School,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
 61786,,Vallejo,807 - Waterfront Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61787,,Vallejo,807 - Wetland,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61788,,Solano County,899 - Commercial Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
-61789,,Solano County,899 - Commercial Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61790,,Solano County,899 - Commercial Service,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61791,,Solano County,899 - Commercial Service - Light Industrial,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
-61792,,Solano County,899 - Community Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61788,,Unincorporated Solano,899 - Commercial Office,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Post22
+61789,,Unincorporated Solano,899 - Commercial Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61790,,Unincorporated Solano,899 - Commercial Service,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61791,,Unincorporated Solano,899 - Commercial Service - Light Industrial,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Post22
+61792,,Unincorporated Solano,899 - Community Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
 61793,,Fairfield,899 - Extensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x992
-61794,,Solano County,899 - General Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61795,,Solano County,899 - Highway Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61796,,Solano County,899 - Intensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61794,,Unincorporated Solano,899 - General Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61795,,Unincorporated Solano,899 - Highway Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61796,,Unincorporated Solano,899 - Intensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
 61797,,Fairfield,899 - Limited Industrial,0.6,50,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,6/x/x992
 61798,,Fairfield,899 - Low Density Residential (2 to 7 units per acre),,35,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x992
-61799,,Solano County,899 - Marsh,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61800,,Solano County,899 - Medium Density Residential (8 to 15 units per acre),,,15,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-61801,,Solano County,899 - Neighborhood Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61799,,Unincorporated Solano,899 - Marsh,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61800,,Unincorporated Solano,899 - Medium Density Residential (8 to 15 units per acre),,,15,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+61801,,Unincorporated Solano,899 - Neighborhood Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
 61802,,Fairfield,899 - Park & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x992
 61803,,Fairfield,899 - Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x992
-61804,,Solano County,899 - Roads,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61805,,Solano County,899 - Rural Residential (2.5 to 10 acres per unit),,,10,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61806,,Solano County,899 - Suburban Residential (1 to 4 units per acre),,,4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61807,,Solano County,899 - Water Bodies & Courses,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61808,,Solano County,899 - Water Dependent Industrial Reserve,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61809,,Solano County,899 - Watershed,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61804,,Unincorporated Solano,899 - Roads,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61805,,Unincorporated Solano,899 - Rural Residential (2.5 to 10 acres per unit),,,10,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61806,,Unincorporated Solano,899 - Suburban Residential (1 to 4 units per acre),,,4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61807,,Unincorporated Solano,899 - Water Bodies & Courses,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61808,,Unincorporated Solano,899 - Water Dependent Industrial Reserve,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61809,,Unincorporated Solano,899 - Watershed,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
 61810,,Cloverdale,901 - Business Park,0.6,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61811,,Cloverdale,901 - Conservation Features,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61812,,Cloverdale,901 - Destination Commercial,3,40,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
@@ -5110,20 +5110,20 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61955,,Windsor,920 - Retail Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61956,,Windsor,920 - Service Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61957,,Windsor,920 - Very Low Density Residential,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61958,,Sonoma County,999 - Diverse Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61959,,Sonoma County,999 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61960,,Sonoma County,999 - General Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61961,,Sonoma County,999 - Land Extensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61962,,Sonoma County,999 - Land Intensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61963,,Sonoma County,999 - Limited Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61964,,Sonoma County,999 - Limited Commercial Traffic Sensitive,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-61965,,Sonoma County,999 - Limited Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-61966,,Sonoma County,999 - Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-61967,,Sonoma County,999 - Recreation/Visitor-Serving Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61968,,Sonoma County,999 - Resources and Rural Development,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61969,,Sonoma County,999 - River,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61970,,Sonoma County,999 - Rural Residential,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-61971,,Sonoma County,999 - Urban Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61958,,Unincorporated Sonoma,999 - Diverse Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61959,,Unincorporated Sonoma,999 - General Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61960,,Unincorporated Sonoma,999 - General Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61961,,Unincorporated Sonoma,999 - Land Extensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61962,,Unincorporated Sonoma,999 - Land Intensive Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61963,,Unincorporated Sonoma,999 - Limited Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61964,,Unincorporated Sonoma,999 - Limited Commercial Traffic Sensitive,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+61965,,Unincorporated Sonoma,999 - Limited Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+61966,,Unincorporated Sonoma,999 - Public/Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+61967,,Unincorporated Sonoma,999 - Recreation/Visitor-Serving Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61968,,Unincorporated Sonoma,999 - Resources and Rural Development,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61969,,Unincorporated Sonoma,999 - River,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61970,,Unincorporated Sonoma,999 - Rural Residential,,,0.05,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+61971,,Unincorporated Sonoma,999 - Urban Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
 62000,,Emeryville,104 - Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 62001,,Emeryville,104 - High Density Residential,4,,135,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
 62002,,Emeryville,104 - Industrial,1,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
@@ -5149,7 +5149,7 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 99014,38,San Bruno,Neighborhood Commercial,1.2,30,,,0,0,0,1,1,0,0,0,0,1,1,0,0,0,
 99015,38,San Bruno,Very Low Density Residential,,30,6,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
 99016,40,Cupertino,A,0.45,28,0.202604651,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-99017,40,Cupertino,Sep-18,0.45,28,0.202604651,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+99017,40,Cupertino,18-Sep,0.45,28,0.202604651,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 99019,40,Cupertino,Pre R1-10,0.45,28,5.808,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 99020,40,Cupertino,Pre RHS-21,,30,2.074285714,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
 99021,40,Cupertino,Pre RHS-40,,30,1.089,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,

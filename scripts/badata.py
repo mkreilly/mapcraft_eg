@@ -16,7 +16,7 @@ def merge_gp_spatial_data(cities_and_counties, path_format="{}/{}/*.geojson"):
             for geojson in glob.glob(path_format.format(county, city)):
                 print geojson
                 gdf = gpd.GeoDataFrame.from_file(geojson)
-                gdf["city"] = city
+                gdf["city"] = city.replace('_', ' ').title()
                 gdfs.append(gdf)
 
     return gpd.GeoDataFrame(pd.concat(gdfs))
@@ -27,11 +27,7 @@ def merge_gp_spatial_data(cities_and_counties, path_format="{}/{}/*.geojson"):
 def diagnose_merge(df, gdf):
     print "Number of records in zoning data that have a shape to join to:"
     df["zoning_id"] = df.id  # need to rename so names don't clash in merge
-    df["city"] = df.city.str.upper().replace('ST. HELENA', 'SAINT HELENA')
     df["name"] = df.name.str.upper()
-    gdf["city"] = gdf.city.str.upper().str.replace('_', ' ')
-    df["city"] = df.city.apply(lambda n: n if "COUNTY" not in n else
-                               "UNINCORPORATED " + n.replace(" COUNTY", ""))
     gdf["general_plan_name"] = gdf.general_plan_name.str.upper()
 
     df["name"] = df.name.str.replace(r'^[0-9][0-9][0-9] - ', '')
@@ -48,7 +44,7 @@ def diagnose_merge(df, gdf):
     missing.to_csv("missing_zoning_ids.csv", index=False)
 
 
-parser = argparse.ArgumentParser(description='Run capacity calculator.')
+parser = argparse.ArgumentParser(description='Run Bay Area data script.')
 
 parser.add_argument('--mode', action='store', dest='mode',
                     help='which mode to run (see code for mode options)')
@@ -61,6 +57,8 @@ if MODE == "merge_gp_data":
     print "Reading geojson data by juris"
     gdf = merge_gp_spatial_data(cities_and_counties)
     print "Writing general plan data as csvfile"
+    # writing to csv makes reading the attributes in very fast
+    # shapefiles take a long time to read in python
     gdf.to_csv("merged_general_plan_data.csv")
 
 elif MODE == "diagnose_merge":
