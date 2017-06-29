@@ -3155,22 +3155,22 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 40108,40,Cupertino,P(Res),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 40109,40,Cupertino,P(Res)-70,,,70,,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
 40110,40,Cupertino,P(MP),,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60001,,Alameda,101 - Ballena Isle,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60002,,Alameda,101 - Business Park,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60003,,Alameda,101 - Commercial Recreation,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60004,,Alameda,101 - Community Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,0,0,1,1,Pre22
-60005,,Alameda,101 - Federal Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-60006,,Alameda,101 - General Industry,0.5,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
-60007,,Alameda,101 - Island Auto Movie,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60008,,Alameda,101 - Low Density Residential,,,8.7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60009,,Alameda,101 - Mariner Square,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60010,,Alameda,101 - Medium Density Residential,,,21.8,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60011,,Alameda,101 - Neighborhood Business,2,,,,0,0,0,1,1,1,0,0,0,1,0,0,1,1,Pre22
-60012,,Alameda,101 - Northern Waterfront (Grand Street to Willow Street),,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60013,,Alameda,101 - Northern Waterfront (Willow Street to Oak Street),,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60014,,Alameda,101 - Office,0.45,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Pre22
-60015,,Alameda,101 - Parks & Public Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60016,,Alameda,101 - Public/ Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+60001,,Alameda,Ballena Isle,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60002,,Alameda,Business Park,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60003,,Alameda,Commercial Recreation,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60004,,Alameda,Community Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,0,0,1,1,Pre22
+60005,,Alameda,Federal Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+60006,,Alameda,General Industry,0.5,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
+60007,,Alameda,Island Auto Movie,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60008,,Alameda,Low Density Residential,,,8.7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60009,,Alameda,Mariner Square,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60010,,Alameda,Medium Density Residential,,,21.8,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60011,,Alameda,Neighborhood Business,2,,,,0,0,0,1,1,1,0,0,0,1,0,0,1,1,Pre22
+60012,,Alameda,Northern Waterfront (Grand Street to Willow Street),,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60013,,Alameda,Northern Waterfront (Willow Street to Oak Street),,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60014,,Alameda,Office,0.45,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Pre22
+60015,,Alameda,Parks & Public Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60016,,Alameda,Public/ Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
 60017,,Albany,102 - Churches,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
 60018,,Albany,102 - City Property,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
 60019,,Albany,102 - Commercial Recreation,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
@@ -3318,20 +3318,20 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60163,,Piedmont,110 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2/x/x996
 60164,,Piedmont,110 - Public/Quasi Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,2/x/x996
 60165,,Piedmont,110 - Suburban Residential,,35,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2/x/x996
-60166,,Pleasanton,111 - Agriculture and Grazing,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60167,,Pleasanton,111 - Business Park (Industrial/Commercial and Office),0.6,30,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,8/x/x996
-60168,,Pleasanton,111 - Commercial and Offices (Retail/Highway/Service/Professional),0.6,40,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,8/x/x996
-60169,,Pleasanton,111 - General and Limited Industrial,0.5,40,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,8/x/x996
-60170,,Pleasanton,111 - High Density Residential,,40,29,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60171,,Pleasanton,111 - Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60172,,Pleasanton,111 - Low Density Residential,,30,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60173,,Pleasanton,111 - Medium Density Residential,,30,8,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60174,,Pleasanton,111 - Parks and Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60175,,Pleasanton,111 - Public and Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
-60176,,Pleasanton,111 - Public Health and Safety,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
-60177,,Pleasanton,111 - Rural Density Residential,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60178,,Pleasanton,111 - Sand and Gravel Harvesting,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60179,,Pleasanton,111 - Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
+60166,,Pleasanton,Agriculture and Grazing,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60167,,Pleasanton,Business Park (Industrial/Commercial and Office),0.6,30,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,8/x/x996
+60168,,Pleasanton,Commercial and Offices (Retail/Highway/Service/Professional),0.6,40,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,8/x/x996
+60169,,Pleasanton,General and Limited Industrial,0.5,40,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,8/x/x996
+60170,,Pleasanton,High Density Residential,,40,29,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60171,,Pleasanton,Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60172,,Pleasanton,Low Density Residential,,30,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60173,,Pleasanton,Medium Density Residential,,30,8,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60174,,Pleasanton,Parks and Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60175,,Pleasanton,Public and Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
+60176,,Pleasanton,Public Health and Safety,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
+60177,,Pleasanton,Rural Density Residential,,,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60178,,Pleasanton,Sand and Gravel Harvesting,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60179,,Pleasanton,Schools,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
 60180,,San Leandro,112 - Corridor Mixed Use,1,50,20,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
 60181,,San Leandro,112 - Downtown Mixed Use,2,75,75,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
 60182,,San Leandro,112 - Garden Residential,,,5.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
@@ -3645,47 +3645,47 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60490,,Pleasant Hill,212 - Single Family High Density,,,7,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 60491,,Pleasant Hill,212 - Single Family Low Density,,,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 60492,,Pleasant Hill,212 - Single Family Medium Density,,,4.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60493,,Richmond,213 - City Center,2.5,,40,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60494,,Richmond,213 - General Commercial,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60495,,Richmond,213 - General Commercial and/or Industrial/Office Flex,2,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Pre22
-60496,,Richmond,213 - Heavy Industry,0.65,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Pre22
-60497,,Richmond,213 - High Density Residential,,,43,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60498,,Richmond,213 - Industrial/Office Flex,0.5,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Pre22
-60499,,Richmond,213 - Light Industry,0.65,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
-60500,,Richmond,213 - Low and/or Medium Density Residential,,,28,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60501,,Richmond,213 - Low Density Residential,,,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60502,,Richmond,213 - Low Density Residential and/or Preservation/Resource Areas,,,0.01,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60503,,Richmond,213 - Medium Density Residential,,,28,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60504,,Richmond,213 - Neighborhood Retail,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60505,,Richmond,213 - Other Types of Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60506,,Richmond,213 - Port/Marine Terminal/Ship Repair,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Pre22
-60507,,Richmond,213 - Preservation/Resource Areas,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60508,,Richmond,213 - Public & Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-60509,,Richmond,213 - Recreation Lands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60510,,Richmond,213 - Recreation Lands and/or Preservation/Resource Areas,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60511,,Richmond,213 - Recreation Lands and/or Water Related Commerce & Commercial Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60512,,Richmond,213 - Regional Office/Shopping,2,,43,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60513,,Richmond,213 - Very Low Density Residential,,,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-60514,,Richmond,213 - Water Related Commerce & Commercial Recreation,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-60515,,San Pablo,214 - Commercial,1.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,8/x/x996
-60516,,San Pablo,214 - Commercial and High Density Residential,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
-60517,,San Pablo,214 - Commercial and Industrial,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,8/x/x996
-60518,,San Pablo,214 - Commercial and Medium Density Residential,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
-60519,,San Pablo,214 - Commercial and Medium/High Density Residential,1.5,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
-60520,,San Pablo,"214 - Commercial and Public/Semi-Public, Institutional",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60521,,San Pablo,214 - High Density Residential,,,60,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60522,,San Pablo,214 - High Density Residential and Commercial,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
-60523,,San Pablo,"214 - High Density Residential and Open Space, Multi-Use Corridor",,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60524,,San Pablo,214 - Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,8/x/x996
-60525,,San Pablo,214 - Industrial and Medium/High Density Residential,,,24,,1,1,1,0,0,0,1,1,0,0,0,0,0,0,8/x/x996
-60526,,San Pablo,214 - Low Density Residential,,,12,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60527,,San Pablo,"214 - Low/Medium/High Density Residential and Public/Semi-Public, Institutional",,,24,,1,1,1,1,0,1,0,0,0,1,1,0,1,1,8/x/x996
-60528,,San Pablo,214 - Medium Density Residential,,,24,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60529,,San Pablo,214 - Medium/High Density Residential,,,24,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60530,,San Pablo,214 - Medium/High Density Residential and Commercial,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
-60531,,San Pablo,"214 - Open Space, Multi-Use Corridor",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
-60532,,San Pablo,"214 - Public/Semi-Public, Institutional",,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
-60533,,San Pablo,"214 - Public/Semi-Public, Institutional and Commercial",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60493,,Richmond,City Center,2.5,,40,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60494,,Richmond,General Commercial,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60495,,Richmond,General Commercial and/or Industrial/Office Flex,2,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Pre22
+60496,,Richmond,Heavy Industry,0.65,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Pre22
+60497,,Richmond,High Density Residential,,,43,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60498,,Richmond,Industrial/Office Flex,0.5,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,Pre22
+60499,,Richmond,Light Industry,0.65,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
+60500,,Richmond,Low and/or Medium Density Residential,,,28,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60501,,Richmond,Low Density Residential,,,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60502,,Richmond,Low Density Residential and/or Preservation/Resource Areas,,,0.01,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60503,,Richmond,Medium Density Residential,,,28,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60504,,Richmond,Neighborhood Retail,2,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60505,,Richmond,Other Types of Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60506,,Richmond,Port/Marine Terminal/Ship Repair,,,,,0,0,0,0,0,0,1,1,1,0,0,0,0,0,Pre22
+60507,,Richmond,Preservation/Resource Areas,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60508,,Richmond,Public & Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+60509,,Richmond,Recreation Lands,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60510,,Richmond,Recreation Lands and/or Preservation/Resource Areas,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60511,,Richmond,Recreation Lands and/or Water Related Commerce & Commercial Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60512,,Richmond,Regional Office/Shopping,2,,43,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60513,,Richmond,Very Low Density Residential,,,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+60514,,Richmond,Water Related Commerce & Commercial Recreation,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+60515,,San Pablo,Commercial,1.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,8/x/x996
+60516,,San Pablo,Commercial and High Density Residential,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
+60517,,San Pablo,Commercial and Industrial,,,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,8/x/x996
+60518,,San Pablo,Commercial and Medium Density Residential,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
+60519,,San Pablo,Commercial and Medium/High Density Residential,1.5,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
+60520,,San Pablo,"Commercial and Public/Semi-Public, Institutional",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60521,,San Pablo,High Density Residential,,,60,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60522,,San Pablo,High Density Residential and Commercial,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
+60523,,San Pablo,"High Density Residential and Open Space, Multi-Use Corridor",,,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60524,,San Pablo,Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,8/x/x996
+60525,,San Pablo,Industrial and Medium/High Density Residential,,,24,,1,1,1,0,0,0,1,1,0,0,0,0,0,0,8/x/x996
+60526,,San Pablo,Low Density Residential,,,12,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60527,,San Pablo,"Low/Medium/High Density Residential and Public/Semi-Public, Institutional",,,24,,1,1,1,1,0,1,0,0,0,1,1,0,1,1,8/x/x996
+60528,,San Pablo,Medium Density Residential,,,24,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60529,,San Pablo,Medium/High Density Residential,,,24,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60530,,San Pablo,Medium/High Density Residential and Commercial,,,24,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,8/x/x996
+60531,,San Pablo,"Open Space, Multi-Use Corridor",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
+60532,,San Pablo,"Public/Semi-Public, Institutional",,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,8/x/x996
+60533,,San Pablo,"Public/Semi-Public, Institutional and Commercial",,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8/x/x996
 60534,,Walnut Creek,215 - Auto Sales & Service,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,2/x/x989
 60535,,Walnut Creek,215 - Business Park,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,2/x/x989
 60536,,Walnut Creek,215 - Downtown Streets and Highways,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3254
@@ -3897,18 +3897,18 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60742,,Ross,307 - Public Park and Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3/x/x988
 60743,,Ross,307 - Public Service,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,3/x/x988
 60744,,Ross,307 - Very Low Density (.1-1 Unit/Acre),,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,3/x/x988
-60745,,San Anselmo,308 - Central Commercial,2,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x2/x/x988
-60746,,San Anselmo,308 - General Commercial,1.5,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
-60747,,San Anselmo,308 - High Density Residential,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60748,,San Anselmo,308 - Limited Commercial,1,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x2/x/x988
-60749,,San Anselmo,308 - Medium Density Residential,,,12,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60750,,San Anselmo,308 - Neighborhood Commercial,0.65,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x2/x/x988
-60751,,San Anselmo,308 - Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
-60752,,San Anselmo,308 - Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x2/x/x988
-60753,,San Anselmo,308 - Road,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
-60754,,San Anselmo,308 - Single Family-Conservation Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
-60755,,San Anselmo,308 - Single Family Residential,,,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
-60756,,San Anselmo,308 - Very Low Density Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
+60745,,San Anselmo,Central Commercial,2,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x2/x/x988
+60746,,San Anselmo,General Commercial,1.5,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
+60747,,San Anselmo,High Density Residential,,,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60748,,San Anselmo,Limited Commercial,1,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x2/x/x988
+60749,,San Anselmo,Medium Density Residential,,,12,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60750,,San Anselmo,Neighborhood Commercial,0.65,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x2/x/x988
+60751,,San Anselmo,Parks/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
+60752,,San Anselmo,Public Facility,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x2/x/x988
+60753,,San Anselmo,Road,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
+60754,,San Anselmo,Single Family-Conservation Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
+60755,,San Anselmo,Single Family Residential,,,6,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
+60756,,San Anselmo,Very Low Density Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x2/x/x988
 60757,,San Rafael,309 - Airport/Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 60758,,San Rafael,309 - Conservation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 60759,,San Rafael,309 - Fifth/Mission Residential/Office,0.5,42,32,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,
@@ -3936,26 +3936,26 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60781,,San Rafael,309 - Second/Third Street Mixed Use,1.5,54,62,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,
 60782,,San Rafael,309 - Water,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 60783,,San Rafael,309 - West End Village,0.7,36,32,,1,1,1,1,1,1,0,0,0,1,1,0,1,1,
-60784,,Sausalito,310 - Arks,0.3,,20,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60785,,Sausalito,310 - Central Commercial,1.3,,29,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,
-60786,,Sausalito,310 - Commercial Waterfront,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
-60787,,Sausalito,310 - High Density Residential,0.8,,29,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60788,,Sausalito,310 - Houseboats,0.25,,4.35,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60789,,Sausalito,310 - Industrial,0.4,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
-60790,,Sausalito,310 - Low Density Residential,0.4,,5.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60791,,Sausalito,310 - Medium Density Residential,0.45,,7.3,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60792,,Sausalito,310 - Medium High Density Residential,0.65,,17.4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60793,,Sausalito,310 - Medium Low Density Residential,0.45,,7.3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60794,,Sausalito,310 - Mixed Residential & Commercial,1,,29,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,
-60795,,Sausalito,310 - Neighborhood Commercial,0.5,,29,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,
-60796,,Sausalito,310 - Open Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60797,,Sausalito,310 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60798,,Sausalito,310 - Planned Development Residential,0.65,,22.3,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
-60799,,Sausalito,310 - Public Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,
-60800,,Sausalito,310 - Public Parks,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60801,,Sausalito,310 - Shopping Center,0.2,,,,0,0,0,1,0,1,0,0,0,1,1,0,1,1,
-60802,,Sausalito,310 - Very Low Density Residential,0.35,,2.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-60803,,Sausalito,310 - Waterfront,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
+60784,,Sausalito,Arks,0.3,,20,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60785,,Sausalito,Central Commercial,1.3,,29,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,
+60786,,Sausalito,Commercial Waterfront,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
+60787,,Sausalito,High Density Residential,0.8,,29,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60788,,Sausalito,Houseboats,0.25,,4.35,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60789,,Sausalito,Industrial,0.4,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,
+60790,,Sausalito,Low Density Residential,0.4,,5.4,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60791,,Sausalito,Medium Density Residential,0.45,,7.3,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60792,,Sausalito,Medium High Density Residential,0.65,,17.4,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60793,,Sausalito,Medium Low Density Residential,0.45,,7.3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60794,,Sausalito,Mixed Residential & Commercial,1,,29,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,
+60795,,Sausalito,Neighborhood Commercial,0.5,,29,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,
+60796,,Sausalito,Open Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60797,,Sausalito,Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60798,,Sausalito,Planned Development Residential,0.65,,22.3,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
+60799,,Sausalito,Public Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,
+60800,,Sausalito,Public Parks,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60801,,Sausalito,Shopping Center,0.2,,,,0,0,0,1,0,1,0,0,0,1,1,0,1,1,
+60802,,Sausalito,Very Low Density Residential,0.35,,2.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+60803,,Sausalito,Waterfront,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
 60804,,Tiburon,311 - High Density Residential,,,11.6,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,8/5/2x5
 60805,,Tiburon,311 - Low Density Residential,,,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/5/2x5
 60806,,Tiburon,311 - Medium Density Residential,,,3,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,8/5/2x5
@@ -4329,22 +4329,22 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61174,,Millbrae,611 - Public and Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x99x
 61175,,Millbrae,611 - Specific Plan,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x99x
 61176,,Millbrae,611 - Very Low Density Residential,,30,,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x99x
-61177,,Pacifica,612 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61178,,Pacifica,612 - Commercial,0.3,35,21.78,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,4/x/x995
-61179,,Pacifica,612 - Greenbelt,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61180,,Pacifica,612 - High Density Residential,,35,21,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61181,,Pacifica,612 - Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61182,,Pacifica,612 - Low Density Residential,,35,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61183,,Pacifica,612 - Medium Density Residential,,35,15,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61184,,Pacifica,612 - Mixed Use,0.3,35,21.78,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,4/x/x995
-61185,,Pacifica,612 - Open Space Residential,,35,0.000004591,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61186,,Pacifica,612 - Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61187,,Pacifica,612 - Parking,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4/x/x995
-61188,,Pacifica,612 - Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4/x/x995
-61189,,Pacifica,612 - Special Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61190,,Pacifica,612 - Transportation - CalTrans,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61191,,Pacifica,612 - Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
-61192,,Pacifica,612 - Very Low Density Residential,,35,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61177,,Pacifica,Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61178,,Pacifica,Commercial,0.3,35,21.78,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,4/x/x995
+61179,,Pacifica,Greenbelt,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61180,,Pacifica,High Density Residential,,35,21,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61181,,Pacifica,Lake,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61182,,Pacifica,Low Density Residential,,35,9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61183,,Pacifica,Medium Density Residential,,35,15,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61184,,Pacifica,Mixed Use,0.3,35,21.78,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,4/x/x995
+61185,,Pacifica,Open Space Residential,,35,0.000004591,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61186,,Pacifica,Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61187,,Pacifica,Parking,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4/x/x995
+61188,,Pacifica,Public Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4/x/x995
+61189,,Pacifica,Special Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61190,,Pacifica,Transportation - CalTrans,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61191,,Pacifica,Utilities,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
+61192,,Pacifica,Very Low Density Residential,,35,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,4/x/x995
 61193,,Portola Valley,613 - Conservation Residential,,28,0.5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,9/5/2x5
 61194,,Portola Valley,613 - Institutions,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,9/5/2x5
 61195,,Portola Valley,613 - Local Shopping & Service,0.18,20,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,9/5/2x5
@@ -4375,15 +4375,15 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61220,,Redwood City,614 - Public and Quasi-Public: Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x99
 61221,,Redwood City,614 - Public and Quasi-Public: School,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x/x/x99
 61222,,Redwood City,614 - Urban Reserve,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x/x/x99
-61223,,San Bruno,615 - High Density Residential,,50,40,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
-61224,,San Bruno,615 - Industrial,1.5,35,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,6/x/x984
-61225,,San Bruno,615 - Low Density Residential,,30,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
-61226,,San Bruno,615 - Medium Density Residential,,50,24,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
-61227,,San Bruno,615 - Neighborhood/Community Commercial,0.25,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,6/x/x984
-61228,,San Bruno,615 - Park/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
-61229,,San Bruno,615 - Public and Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x984
-61230,,San Bruno,615 - Regional Community/Office Commercial,1.2,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,6/x/x984
-61231,,San Bruno,615 - Very Low Density Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
+61223,,San Bruno,High Density Residential,,50,40,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
+61224,,San Bruno,Industrial,1.5,35,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,6/x/x984
+61225,,San Bruno,Low Density Residential,,30,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
+61226,,San Bruno,Medium Density Residential,,50,24,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
+61227,,San Bruno,Neighborhood/Community Commercial,0.25,30,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,6/x/x984
+61228,,San Bruno,Park/Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
+61229,,San Bruno,Public and Quasi-Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,6/x/x984
+61230,,San Bruno,Regional Community/Office Commercial,1.2,50,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,6/x/x984
+61231,,San Bruno,Very Low Density Residential,,,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,6/x/x984
 61232,,San Carlos,616 - Airport,,50,0,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x992
 61233,,San Carlos,616 - Highway Service,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x992
 61234,,San Carlos,616 - Industrial-Planned,2,100,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,x992
@@ -4564,19 +4564,19 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61409,,Los Altos Hills,705 - Recreation Area-Private,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 61410,,Los Altos Hills,705 - Recreation Area-Public,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 61411,,Los Altos Hills,705 - Very Low to Low Density Residential,0.137,32,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
-61412,,Los Gatos,706 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61413,,Los Gatos,706 - Central Business District,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61414,,Los Gatos,706 - High Density Residential,,35,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61415,,Los Gatos,706 - Hillside Residential,,30,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61416,,Los Gatos,706 - Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
-61417,,Los Gatos,706 - Low Density Residential,,30,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61418,,Los Gatos,706 - Medium Density Residential,,30,12,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61419,,Los Gatos,706 - Mixed Use Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61420,,Los Gatos,706 - Neighborhood Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61421,,Los Gatos,706 - Office Professional,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Pre22
-61422,,Los Gatos,706 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61423,,Los Gatos,706 - Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-61424,,Los Gatos,706 - Service Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61412,,Los Gatos,Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61413,,Los Gatos,Central Business District,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61414,,Los Gatos,High Density Residential,,35,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61415,,Los Gatos,Hillside Residential,,30,1,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61416,,Los Gatos,Light Industrial,,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
+61417,,Los Gatos,Low Density Residential,,30,5,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61418,,Los Gatos,Medium Density Residential,,30,12,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61419,,Los Gatos,Mixed Use Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61420,,Los Gatos,Neighborhood Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61421,,Los Gatos,Office Professional,,,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Pre22
+61422,,Los Gatos,Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61423,,Los Gatos,Public,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+61424,,Los Gatos,Service Commercial,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61425,,Milpitas,707 - Correctional Facility,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61426,,Milpitas,707 - General Commercial,0.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61427,,Milpitas,707 - Highway Service Commercial,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
@@ -5043,29 +5043,29 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61888,,Rohnert Park,905 - Public/Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
 61889,,Rohnert Park,905 - Regional Commercial,1.5,65,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61890,,Rohnert Park,905 - Rural Estate Residential (up to 2un/ac),,35,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61891,,Santa Rosa,906 - Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61892,,Santa Rosa,906 - Business Park,1.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61893,,Santa Rosa,906 - Country Residential,,35,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61894,,Santa Rosa,906 - Downtown Mixed,,,40,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61895,,Santa Rosa,906 - General Industry,,55,0,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
-61896,,Santa Rosa,906 - Light Industry,,55,0,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
-61897,,Santa Rosa,906 - Low Density Residential,,35,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61898,,Santa Rosa,906 - Low Density Residential/Open Space,,35,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61899,,Santa Rosa,906 - Medium-High Density Residential,,45,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61900,,Santa Rosa,906 - Medium-Low Density Residential,,35,13,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61901,,Santa Rosa,906 - Medium Density Residential,,35,18,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61902,,Santa Rosa,906 - Mobile Home Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61903,,Santa Rosa,906 - Office,0.25,35,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Pre22
-61904,,Santa Rosa,906 - Office/High Density Residential,4,140,40,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61905,,Santa Rosa,906 - Office/Medium Density Residential,3,95,18,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61906,,Santa Rosa,906 - Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61907,,Santa Rosa,906 - Parks/Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61908,,Santa Rosa,906 - Private Road,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61909,,Santa Rosa,906 - Public/Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
-61910,,Santa Rosa,906 - Retail and Business Service,1.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61911,,Santa Rosa,906 - Retail/High Density Residential,1.5,55,40,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61912,,Santa Rosa,906 - Retail/Medium Density Residential,3,95,18,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
-61913,,Santa Rosa,906 - Very Low Density Residential,,35,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61891,,Santa Rosa,Agriculture,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61892,,Santa Rosa,Business Park,1.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61893,,Santa Rosa,Country Residential,,35,0.2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61894,,Santa Rosa,Downtown Mixed,,,40,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61895,,Santa Rosa,General Industry,,55,0,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
+61896,,Santa Rosa,Light Industry,,55,0,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Pre22
+61897,,Santa Rosa,Low Density Residential,,35,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61898,,Santa Rosa,Low Density Residential/Open Space,,35,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61899,,Santa Rosa,Medium-High Density Residential,,45,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61900,,Santa Rosa,Medium-Low Density Residential,,35,13,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61901,,Santa Rosa,Medium Density Residential,,35,18,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61902,,Santa Rosa,Mobile Home Park,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61903,,Santa Rosa,Office,0.25,35,,,0,0,0,1,0,0,0,0,0,0,0,0,1,1,Pre22
+61904,,Santa Rosa,Office/High Density Residential,4,140,40,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61905,,Santa Rosa,Office/Medium Density Residential,3,95,18,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61906,,Santa Rosa,Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61907,,Santa Rosa,Parks/Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61908,,Santa Rosa,Private Road,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61909,,Santa Rosa,Public/Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
+61910,,Santa Rosa,Retail and Business Service,1.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61911,,Santa Rosa,Retail/High Density Residential,1.5,55,40,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61912,,Santa Rosa,Retail/Medium Density Residential,3,95,18,,0,1,1,1,1,1,0,0,0,1,1,1,1,1,Pre22
+61913,,Santa Rosa,Very Low Density Residential,,35,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61914,,Sebastopol,907 - Community Facilities,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,
 61915,,Sebastopol,907 - Downtown Core,2,,44,,0,1,1,1,1,1,0,0,0,1,1,0,1,1,
 61916,,Sebastopol,907 - General Commercial,1,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,
@@ -5139,7 +5139,7 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 99004,71,Vacaville,Professional Office Restriction Commercial,0.3,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
 99005,96,Pleasanton,BART-EXISTING,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 99006,71,Vacaville,Agricultural Buffer,0.01,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-99007,75,Alameda,222 - COMMERCIAL RECREATION,,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+99007,75,Alameda,COMMERCIAL RECREATION,,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
 99008,2,Berkeley,C-2,3,50,26.4,,1,1,1,1,1,1,0,0,0,1,1,1,0,0,
 99009,9,Dixon,802 - High Density Residential,,,27,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
 99010,21,Menlo Park,RE,,28,2.9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
