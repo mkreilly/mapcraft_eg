@@ -3297,21 +3297,21 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 60142,,Newark,108 - Regional Commercial,0.4,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x/x/2x5
 60143,,Newark,108 - Special Industrial,0.4,,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,x/x/2x5
 60144,,Newark,108 - Specialty Commercial,0.3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x/x/2x5
-60145,,Oakland,109 - Business Mix,4,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
-60146,,Oakland,109 - Central Business District,20,10000,300,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
-60147,,Oakland,109 - Community Commercial,5,160,125,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
-60148,,Oakland,109 - Detached Unit Residential,,30,11,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60149,,Oakland,109 - Estuary Plan Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60150,,Oakland,109 - General Industry and Transportation,2,1000,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
-60151,,Oakland,109 - Hillside Residential,,30,5,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60152,,Oakland,109 - Housing and Business Mix,3,55,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
-60153,,Oakland,109 - Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
-60154,,Oakland,109 - Mixed Housing Type,,30,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
-60155,,Oakland,109 - Neighborhood Center Mixed Use,4,90,125,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
-60156,,Oakland,109 - Regional Commercial,1,160,125,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
-60157,,Oakland,109 - Resource Conservation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60158,,Oakland,109 - Urban Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
-60159,,Oakland,109 - Urban Residential,,90,125,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60145,,Oakland,Business Mix,4,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Post22
+60146,,Oakland,Central Business District,20,10000,300,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
+60147,,Oakland,Community Commercial,5,160,125,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
+60148,,Oakland,Detached Unit Residential,,30,11,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60149,,Oakland,Estuary Plan Area,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60150,,Oakland,General Industry and Transportation,2,1000,,,0,0,0,0,0,0,1,1,0,0,0,0,0,0,Post22
+60151,,Oakland,Hillside Residential,,30,5,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60152,,Oakland,Housing and Business Mix,3,55,30,,1,1,1,1,1,1,0,0,0,1,1,1,1,1,Post22
+60153,,Oakland,Institutional,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Post22
+60154,,Oakland,Mixed Housing Type,,30,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
+60155,,Oakland,Neighborhood Center Mixed Use,4,90,125,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
+60156,,Oakland,Regional Commercial,1,160,125,,0,0,1,1,1,1,0,0,0,1,1,0,1,1,Post22
+60157,,Oakland,Resource Conservation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60158,,Oakland,Urban Open Space,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Post22
+60159,,Oakland,Urban Residential,,90,125,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Post22
 60160,,Piedmont,110 - Commercial,3,35,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,2/x/x996
 60161,,Piedmont,110 - Estate Residential,,35,2,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,2/x/x996
 60162,,Piedmont,110 - Medium Residential,,35,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,2/x/x996
@@ -5139,7 +5139,7 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 99004,71,Vacaville,Professional Office Restriction Commercial,0.3,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
 99005,96,Pleasanton,BART-EXISTING,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 99006,71,Vacaville,Agricultural Buffer,0.01,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-99007,75,Alameda,222 - Commercial Recreation,,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+99007,75,Alameda,222 - COMMERCIAL RECREATION,,,,,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
 99008,2,Berkeley,C-2,3,50,26.4,,1,1,1,1,1,1,0,0,0,1,1,1,0,0,
 99009,9,Dixon,802 - High Density Residential,,,27,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,
 99010,21,Menlo Park,RE,,28,2.9,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,

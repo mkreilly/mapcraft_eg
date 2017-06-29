@@ -27,12 +27,6 @@ def merge_gp_spatial_data(cities_and_counties, path_format="{}/{}/*.geojson"):
 def diagnose_merge(df, gdf):
     print "Number of records in zoning data that have a shape to join to:"
     df["zoning_id"] = df.id  # need to rename so names don't clash in merge
-    df["name"] = df.name.str.upper()
-    gdf["general_plan_name"] = gdf.general_plan_name.str.upper()
-
-    df["name"] = df.name.str.replace(r'^[0-9][0-9][0-9] - ', '')
-    gdf["general_plan_name"] = gdf.general_plan_name.str.replace(
-        r'^[0-9][0-9][0-9] - ', '')
 
     df2 = pd.merge(df, gdf,
                    left_on=["city", "name"],
