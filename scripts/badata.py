@@ -93,7 +93,7 @@ if MODE == "merge_gp_data":
     # shapefiles take a long time to read in python
     gdf.to_csv("merged_general_plan_data.csv", index=False)
 
-if MODE == "merge_parcels_and_gp_data":
+elif MODE == "merge_parcels_and_gp_data":
     print "Merging parcels and general plan data"
     df = pd.read_csv("merged_general_plan_data.csv")
     print "Converting geocsv"
