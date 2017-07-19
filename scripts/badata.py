@@ -16,21 +16,25 @@ def unzip_file(fname, out_dir):
     zip_ref.extractall(out_dir)
     zip_ref.close()
 
-
 # read all the general plan spatial data in and merge it
 def merge_gp_spatial_data(cities_and_counties, path_format="{}/{}/*.geojson"):
     gdfs = []
+    strings = []
     for county, cities in cities_and_counties.items():
         for city in cities:
             for geojson in glob.glob(path_format.format(county, city)):
-                print geojson
+                s = "'{}': 'http://oaklandanalytics.github.io/badata/{}',".format(city.replace('_', ' ').title(), geojson)
+                strings.append(s)
+                print s
                 gdf = gpd.GeoDataFrame.from_file(geojson)
                 gdf["city"] = city.replace('_', ' ').title()
                 gdf["priority"] = 2 if "plu" in geojson else 1
                 gdfs.append(gdf)
 
+    strings.sort()
+    for string in strings:
+        print string
     return gpd.GeoDataFrame(pd.concat(gdfs))
-
 
 # we store general plan data in a set of shapefiles and zoning attributes in
 # a csv this method tells us which join keys are missing from each dataset
@@ -70,7 +74,10 @@ def merge_parcels_and_gp_data(gp_data):
         # sort by prioity and drop duplicates, 1 priority is higher than 2 etc
         ret = ret.sort_values("priority").drop_duplicates(subset=["parcel_id"])
 
-        ret = ret[["parcel_id", "city", "general_plan_name"]]
+        ret["x"] = [shp.x for shp in ret.geometry]
+        ret["y"] = [shp.y for shp in ret.geometry]
+
+        ret = ret[["parcel_id", "city", "general_plan_name", "x", "y"]]
         joined_counties.append(ret)
 
     return pd.concat(joined_counties)
@@ -104,6 +111,9 @@ elif MODE == "merge_parcels_and_gp_data":
     print "Converted geocsv to geodataframe"
     df = merge_parcels_and_gp_data(gdf)
     df.to_csv("parcels_joined_to_general_plans.csv", index=False)
+
+    for name, grp in df.groupby("city"):
+        grp.to_csv("output/%s_zoning.csv" % name, index=False)
 
 elif MODE == "diagnose_merge":
     print "Reading gp data"
