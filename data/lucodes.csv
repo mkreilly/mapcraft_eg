@@ -1,0 +1,523 @@
+"county_id","land_use_type_id","development_type_id","description"
+"001","0",,"Unknown Use"
+"001","6200",,"Secured PI"
+"001","1000","HS","Vacant residential land, zoned 4 units or less"
+"001","1040","VT","Vacant residential land, R&T 402.1"
+"001","1100","HS","Single family residential homes used as such"
+"001","1101","OF","Medical-Residential Care Facility (SFR) <7 patient"
+"001","1120","HS","Residential Imps on Commercial Land"
+"001","1130","HS","Residential Imps on Industrial Land"
+"001","1140","HS","Single family residential home, R&T 402.1"
+"001","1150","HS","Historical residential"
+"001","1190","HS","Single family residential (tract) common area"
+"001","1200","HS","Single family res home with non-economic 2nd unit"
+"001","1300","HS","Single family res home with slight commercial use"
+"001","1400","HS","Single family res home with slight industrial use"
+"001","1500","HT","Planned development - Townhouse"
+"001","1520","HT","Planned Development - Townhouse, First Sale"
+"001","1540","HT","Planned development - Townhouse, R&T 402.1"
+"001","1590","HT","Planned Development - Townhouse, Common Area"
+"001","1600","HS","Single family res land with/subj. to communal imps"
+"001","1700","HS","Single family res home converted to boarding house"
+"001","1800","HS","Planned development tract SFR with common area"
+"001","1820","HS","Planned Development tract SFR, First Sale"
+"001","1840","HS","Planned development tract SFR, R&T 402.1"
+"001","1890","HS","Planned development tract SFR, Common Area"
+"001","1900","HS","Single family res - manufactured"
+"001","1901","HS","Single family modular built off site"
+"001","2100","HS","Two, three or four single family homes"
+"001","2200","HT","Double or duplex type - two units"
+"001","2300","HT","Triplex"
+"001","2400","HT","Four living units"
+"001","2440","HT","Four residential living units, R&T 402.1"
+"001","2500","HT","2 units, lesser quality than 2200 or unknown legal"
+"001","2600","HT","3 units, lesser quality than 2300 or unknown legal"
+"001","2700","HT","4 units, lesser quality than 2400 or unknown legal"
+"001","2800","HM","Res property of 2,3 or 4 units with rooming house"
+"001","2900","HS","More than 1 mobile home, or M/H w/other res units"
+"001","300","GV","Exempt Public Agency"
+"001","3000","VT","Vacant commercial land (may include misc. imps)"
+"001","3100","RS","One story store"
+"001","3120","RS","Commercial Imps on Residential Land"
+"001","3200","MR","Store on 1st floor, with offices, apts/lofts 2nd/3"
+"001","3300","RS","Miscellaneous improved commercial"
+"001","3400","RS","Department store"
+"001","3500","RS","Discount store"
+"001","3600","RS","Restaurant"
+"001","3700","RS","Shopping Center-NBHD/grocery anchor"
+"001","3701","RS","Shopping Center-Community"
+"001","3702","RS","Shopping Center-Regional Mall"
+"001","3703","RS","Shopping Center-NBHD without anchor (strip mall)"
+"001","3704","RB","Shopping Center-Power Center"
+"001","3800","RS","Supermarket"
+"001","3900","RS","Condominium-commercial retail"
+"001","3990","RS","Condominium-commercial retail, common area"
+"001","400","IL","Property leased to a public utility"
+"001","4000","VT","Vacant industrial land (may include misc. imps)"
+"001","4100","IW","Warehouse"
+"001","4101","IL","Condominium-industrial"
+"001","4102","IW","Warehouse-Self Storage"
+"001","4103","IW","Warehouse-Cold Storage"
+"001","4191","IL","Condominium-industrial, common area"
+"001","4200","IL","Industrial Light/Manufacturing"
+"001","4201","IL","Industrial Flex/R&D use"
+"001","4240","MR","Live-Work condominium, R&T 402.1"
+"001","4300","IH","Heavy industrial"
+"001","4400","IL","Misc. industrial (improved)"
+"001","4500","SC","Nurseries"
+"001","4600","VAC","Quarries, Sand and Gravel"
+"001","4601","VAC","Landfill"
+"001","4700","VAC","Salt Ponds"
+"001","4800","IW","Terminals, trucking and distribution"
+"001","4900","IH","Wrecking yards"
+"001","500","IL","Property owned by a public utility"
+"001","5000","VAC","Vacant rural-res homesites, may incl misc. imps"
+"001","5100","HS","Improved rural-residential homesite."
+"001","5200","HS","One or more mobile homes on rural home site."
+"001","5300","HS","Rural property with significant commercial use"
+"001","5400","HS","Rural property with significant industrial use"
+"001","5500","HS","Rural property used for agriculture, 10+ acres"
+"001","5600","HS","Rural property in transition to a higher use"
+"001","5700","VAC","Vacant rural land, not usable even for agriculture"
+"001","5800","VAC","Improved rural land, non-renewal Williamson Act"
+"001","5900","VAC","Vacant rural land, non-renewal Williamson Act"
+"001","600","HS","Mobile home on SFR land"
+"001","6000","VAC","Vacant land necessary part of institutional prop."
+"001","6100","GV","Government owned property"
+"001","6200",,"Secured PI"
+"001","6300","VAC","Golf course"
+"001","6400","SC","School"
+"001","6500","VP","Cemetery"
+"001","6600","OF","Church"
+"001","6700","OF","Other institutional property"
+"001","6800","OF","Lodgehall and/or clubhouse"
+"001","6850","RS","Historical commercial"
+"001","700","HS","Mobile home in a mobile home park"
+"001","7000","VT","Vacant apartment land, capable of 5 or more units"
+"001","7040","VT","Vacant apartment land, R&T 402.1"
+"001","7090","VAC","Vacant apartment common area"
+"001","7100","HS","Five or more single family res homes"
+"001","7200","HM","Residential property converted to 5 or more units"
+"001","7300","HM","Condominium - single residential living unit"
+"001","7301","MR","Condominium - residential live/work unit"
+"001","7302","ME","Condominium - urban res unit above retail/office"
+"001","7320","HM","Condominium - single res unit, first sale"
+"001","7321","MR","Condominium - res live/work unit, first sale"
+"001","7322","MR","Condominium - urban res unit above, first sale"
+"001","7340","HM","Condominium - single res unit, R&T 402.1"
+"001","7341","MR","Condominium - res live/work unit, R&T 402.1"
+"001","7342","HM","Condominium - urban res R&T 402.1"
+"001","7390","VAC","Condominium Common Area"
+"001","7391","VAC","Condominium - res live/work, common area"
+"001","7392","VAC","Condominium - urban res unit above, common area"
+"001","7400","HM","Cooperatives (divided)"
+"001","7430","HM","Cooperatives (undivided)"
+"001","750","HS","Floating home"
+"001","7500","HM","Restricted residential income property"
+"001","7600","HM","Fraternities and sororities"
+"001","7700","HM","Multiple residential building of 5 or more units."
+"001","7701","HM","Assisted living unit"
+"001","7800","HM","Residential high-rise (7 or more stories)"
+"001","7900","HM","Church Home"
+"001","800","VT","Vacant residential tract lot"
+"001","8000","RS","Car wash"
+"001","8100","RS","Commercial repair garage"
+"001","8200","RS","Automobile dealership"
+"001","8300","VAC","Parking lot"
+"001","840","VT","Tract land, R&T 402.1"
+"001","8400","RS","Parking garage"
+"001","8500","RS","Service Stations"
+"001","8600","RS","Funeral home"
+"001","8700","OF","Nursing/Custodial Care Facility"
+"001","8800","OF","Hospital (general)"
+"001","8801","OF","Medical clinic/outpatient surgery"
+"001","8802","OF","Skilled Nursing Facility"
+"001","8900","HO","Hotel"
+"001","900","HS","Partially complete residential tract home"
+"001","9000","HO","Motel"
+"001","9100","HS","Mobile home park parcel with improvements"
+"001","9200","OF","Bank"
+"001","9300","OF","Medical - Dental building"
+"001","9301","OF","Veterinarian Office"
+"001","940","VT","Tract residential PC, R&T 402.1"
+"001","9400","OF","One to five story office building"
+"001","9401","ME","Condominium-office"
+"001","9491","VAC","Condominium-office, common area"
+"001","9500","OF","Over five story office building"
+"001","9600","RS","Bowling alley"
+"001","9700","RS","Walk-in theater"
+"001","9800","RS","Drive-in theater"
+"001","9801","IL","Winery"
+"001","9802","IL","Winery, including retail/event center"
+"001","9900","RC","Other recreational activity, e.g. rinks, stadiums"
+"001","9901","RC","Boat berth privately owned"
+"001","9902","VAC","Subsurface right-oil, gas, mineral"
+"013","10","VA","vacant, unbuildable"
+"013","11","HS",
+"013","12","HS",
+"013","13","HS",
+"013","14","HS",
+"013","15","VT",
+"013","16","VT",
+"013","17","VT",
+"013","18","VT",
+"013","19","HS",
+"013","20","VT",
+"013","21","HT",
+"013","22","HT",
+"013","23","HT",
+"013","24","HT",
+"013","25","HM",
+"013","26","HM",
+"013","27","HM",
+"013","28","HM",
+"013","29","HM",
+"013","30","VT",
+"013","31","RS",
+"013","32","RS",
+"013","33","OF",
+"013","34","OF",
+"013","35","RS",
+"013","36","IL",
+"013","37","RC",
+"013","38","RC",
+"013","39","RS",
+"013","40","RC",
+"013","41","RS",
+"013","42","RS",
+"013","43","OF",
+"013","44","HO",
+"013","45","RS",
+"013","46","RS",
+"013","47","RS",
+"013","48","RS",
+"013","49","RS",
+"013","50","VT",
+"013","51","IL",
+"013","52","IL",
+"013","53","IL",
+"013","54","IH",
+"013","55","IW",
+"013","56","IL",
+"013","61","HS",
+"013","62","HS",
+"013","63","VA",
+"013","64","VA",
+"013","65","VA",
+"013","66","VA",
+"013","67","VA",
+"013","68","VA",
+"013","69","VP",
+"013","70","OF",
+"013","71","OF",
+"013","72","SC",
+"013","73","OF",
+"013","74","VP",
+"013","75","OF",
+"013","76","HM",
+"013","77","OF",
+"013","78","VP",
+"013","79","GV",
+"013","81","VA",
+"013","82","IL",
+"013","83","VA",
+"013","84","IL",
+"013","85","VA",
+"013","86","VA",
+"013","87","VA",
+"013","89","VA",
+"055","05","HS",
+"055","10","VT",
+"055","1001","VT",
+"055","1010","VT",
+"055","11","HS",
+"055","111","HS",
+"055","12","HT",
+"055","20","VT",
+"055","2001","VT",
+"055","21","HM",
+"055","212","HS","2 UNITS"
+"055","2122","HT","DUPLEX"
+"055","213","HS","3 UNITS"
+"055","2133","HT","TRIPLEX"
+"055","214","HS","4 UNITS"
+"055","2144","HT","FOURPLEX"
+"055","215","HM","5-9 UNITS"
+"055","216","HM","10-19"
+"055","217","HM","20-49"
+"055","218","HM",">50"
+"055","23","HS",
+"055","30","VT",
+"055","3001","VT",
+"055","31","HS",
+"055","3101","HS",
+"055","312","HS",
+"055","313","HS",
+"055","314","HS",
+"055","315","HS",
+"055","32","HS",
+"055","3201","HS",
+"055","322","HS",
+"055","323","HS",
+"055","324","HS",
+"055","325","HS",
+"055","33","IL",
+"055","3301","VAC",
+"055","34","IL",
+"055","3401","VAC",
+"055","341","VAC",
+"055","35","IL",
+"055","37","IL",
+"055","3701","VAC",
+"055","372","VAC",
+"055","373","VAC",
+"055","374","VAC",
+"055","375","VAC",
+"055","38","IL",
+"055","3801","VAC",
+"055","3811","VAC",
+"055","382","VAC",
+"055","3821","VAC",
+"055","383","VAC",
+"055","3831","VAC",
+"055","384","VAC",
+"055","385","VAC",
+"055","39","HS",
+"055","3901","HS","1 UNIT"
+"055","392","HS",
+"055","3921","HS","2"
+"055","393","HS",
+"055","3931","HS","3"
+"055","394","HS",
+"055","3941","HS","4"
+"055","395","HS",
+"055","40","VT",
+"055","4001","VT",
+"055","41","IL","(INCL IH IW)"
+"055","411","IL",
+"055","412","IH",
+"055","413","IW",
+"055","414","IW",
+"055","42","IL",
+"055","4210","IL",
+"055","4211","IL",
+"055","4212","IL",
+"055","4213","IL",
+"055","4215","IL",
+"055","50","VT",
+"055","5001","VT",
+"055","51","RS",
+"055","511","RS",
+"055","512","OF",
+"055","5121","OF",
+"055","513","HO",
+"055","514","RS",
+"055","5C12","RS",
+"055","60","VAC",
+"055","61","VAC",
+"055","70","VAC",
+"055","72","VAC",
+"055","80","VAC",
+"055","81","GV",
+"055","90","VAC",
+"055","91","VAC",
+"075","CIE",,
+"075","MED","OF",
+"075","MIPS",,
+"075","MISSING DATA",,
+"075","MIXED","ME",
+"075","MIXRES","MR",
+"075","OpenSpace",,
+"075","PDR",,
+"075","RESIDENT","RT",
+"075","RETAIL/ENT",,
+"075","VACANT","VAC",
+"075","VISITOR","HO",
+"081","90",,"MULTI-RESIDENTIAL"
+"081","00","VA","Vacant Land"
+"081","01","HS","Single Family Residential"
+"081","02","HT","Duplex"
+"081","03","HT","Triplex"
+"081","04","HT","Four Plex"
+"081","05","HM","Apartment Building w/ Five or more Units"
+"081","06","HO","Hotel or Motel"
+"081","07","HS","Mobile home"
+"081","08","HM","Boarding House"
+"081","09","HS","Mobile home Park"
+"081","11","RS","Store, one story"
+"081","12","RS","Store & Office"
+"081","13","MR","Store or Office & Residential"
+"081","14","RS","Supermarket"
+"081","15","RS","Department Store"
+"081","16","RS","Shopping Center"
+"081","17","OF","Office Building, one story"
+"081","18","OF","Office Building, multi story"
+"081","19","OF","Professional Building"
+"081","21","RS","Restaurant"
+"081","22","RS","Indoor Recreation"
+"081","23","OF","Financial"
+"081","24","RS","Service Shop"
+"081","25","RS","Service Station"
+"081","26","RS","Auto Sales, Repair"
+"081","27","VA","Parking Lot"
+"081","28","RB","Wholesale Outlet"
+"081","29","SC","School"
+"081","31","IL","Light Manufacturing & Industrial"
+"081","32","IH","Heavy Industry"
+"081","33","IW","Lumber Yard, Mill"
+"081","34","IW","Packing, Cotton Gin"
+"081","35","IW","Cannery"
+"081","36","IL","Food Processing"
+"081","37","IL","Mineral Processing"
+"081","38","IW","Warehouse"
+"081","39","VA","Open Storage"
+"081","41",,"Row Crops & Dry Farming"
+"081","42",,"TPZ (Timber Preserve Zone), vacant"
+"081","43",,"TPZ, Improved"
+"081","44",,"AP (Agricultural Preserve), Vacant"
+"081","45",,"AP, Improved"
+"081","46",,"Dry Farm, pasture"
+"081","47",,"Grazing land"
+"081","48",,"Wooded, Timber"
+"081","49",,"Brush, Barren"
+"081","50","VA","Vacant, Under 40 Acres"
+"081","51","HS","Single Family Res., under 5 acres"
+"081","52","HS","Single Family Res., 5 to 40 acres"
+"081","53","HS","Single Family Res., over 40 acres"
+"081","54","HS","Multi-use Ag. Imps, under 5 acres"
+"081","55","VA","Multi-use Ag. Imps, 5 to 40 acres"
+"081","56","VA","Multi-use Ag. Imps, over 40 acres"
+"081","57","VA","Aux. farm Improvements"
+"081","58","VA","Misc. Improvements"
+"081","59","VA","Nurseries and / or Greenhouses"
+"081","61","VA","Drive-In Theater"
+"081","62","IW","Airport"
+"081","63","RC","Marina"
+"081","64","OF","Club, Lodge, or Dance Hall"
+"081","65","RC","Auditorium, Stadium, or Pier"
+"081","66","RC","Golf Course"
+"081","67","RC","Race Track"
+"081","68","RC","Camp"
+"081","69","VP","Park"
+"081","71","OF","Church"
+"081","72","SC","School"
+"081","73","SC","College"
+"081","74","OF","Hospital"
+"081","75","OF","Nursing, Convalescent or Rest Home"
+"081","76","OF","Post Office"
+"081","77","VP","Mortuary, Cemetery or Mausoleum"
+"081","78","OF","Community Center"
+"081","79","RS","Commercial or Industrial Miscellaneous"
+"081","81","IW","Water Company, Radio Station"
+"081","82","VA","Mining"
+"081","83","VA","Gas or Oil Well"
+"081","84","VA","Pipeline, Canal"
+"081","85","VP","Right of Way"
+"081","86","VP","Water Right"
+"081","87","VA","Underwater, marsh"
+"081","88","VP","Highway or Street"
+"081","89","HS","Residential, Miscellaneous"
+"081","91","HS","More than one detached living unit"
+"081","92","HM","SFR Converted to 2 units"
+"081","93","HT","SFR and duplex or triplex"
+"081","94","HT","Two Duplexes"
+"081","95","HM","Any other combination of Multi-Family"
+"081","96","HT","Four Plex plus  res, duplex or triplex"
+"081","97","HM","Residential Condominium"
+"081","98","HM","Residential Co-operative"
+"085","ADAI",,"Dairy"
+"085","AFAR","VA","Farms, Crops"
+"085","ALIV","VA","Livestock, Animals"
+"085","AMSC","VA","Agricultural Miscellaneous"
+"085","AORC","VA","Orchards, Groves"
+"085","APAS","VA","Pasture"
+"085","APOU",,"Poultry"
+"085","ATIM","VA","Timber"
+"085","AVIN",,"Vines and Bush Fruits"
+"085","CAUT",,"Auto Sales, Services"
+"085","CCAS",,"Casino"
+"085","CCEM","VP","Cemeteries, Mortuaries"
+"085","CDEP","RS","Department Store"
+"085","CEAT",,"Restaurant, bar, Food Services"
+"085","CFIN",,"Financial Building"
+"085","CFOO","RS","Food Store, Market"
+"085","CHOS","OF","Hospitals, Convalescent Homes"
+"085","CHOT",,"Hotel / Motel"
+"085","CLAU",,"Laundry, Dry Cleaning"
+"085","CMED",,"Medical Building"
+"085","CMOB",,"Mobile Home Parks, Trailer Parks"
+"085","CMSC","RS","Commercial Miscellaneous"
+"085","CNUR",,"Nursery"
+"085","COFF","OF","Office Building"
+"085","CPAR","VA","Parking Lot, Parking Structure"
+"085","CSER","RS","Service Station, Gas Station"
+"085","CSHO","RS","Shopping Center"
+"085","CSTO",,"Stores, Retail Outlet"
+"085","CVET",,"Veterinary"
+"085","IFOO","IL","Food Processing"
+"085","IHEA","IH","Heavy Industry"
+"085","ILIG","IL","Light Industry"
+"085","ILUM","IW","Lumber, Building Materials"
+"085","IMIN","VA","Miniral, Quarries, Mining"
+"085","IMSC","IL","Industry Miscellaneous"
+"085","IPET","VA","Petroleum, Gas"
+"085","IPUB","IW","Public Storage, Mini Warehouse"
+"085","IWAR","IW","Warehouseh, Storage"
+"085","IWIN",,"Winery"
+"085","MBOW",,"Bowling Alley"
+"085","MCLU","OF","Clubs, Fraternal Organizations"
+"085","MCMN",,"Communications"
+"085","MGOL",,"Golf Course"
+"085","MGOV","GV","Governmental, Public"
+"085","MMAR",,"Marina"
+"085","MMSC",,"Miscellaneous"
+"085","MNAT","VA","Natural Resource Rights"
+"085","MREC","RC","Recreational"
+"085","MREL","OF","Religious"
+"085","MROA","VP","Roadways"
+"085","MSCH","SC","School"
+"085","MTHE",,"Theaters"
+"085","MTRA","IL","Transportation, Air, Rail, Bus"
+"085","MUTI","IL","Utilities"
+"085","RAPT","HM","Multifamily Residence (5+ Units)"
+"085","RCON","HT","Condomnium, PUD"
+"085","RCOO",,"Cooperative"
+"085","RDUP","HT","Duplex"
+"085","RMFD","HM","Multifamily Dwelling (2-4 Units)"
+"085","RMOB","HS","Mobile Home"
+"085","RMSC","HS","Residential Miscellaneous"
+"085","RQUA",,"Quadruplex"
+"085","RSFR","HS","Single Family Residence"
+"085","RTIM",,"Timeshare"
+"085","RTRI",,"Triplex"
+"085","VAGR",,"Agricultural / Rural"
+"085","VCOM",,"Commercial"
+"085","VIND","VA","Industrial Vacant"
+"085","VMSC","VA","Vacant-Miscellaneous"
+"085","VREC",,"Recreational"
+"085","VRES",,"Residential"
+"085","VWAS","VA","Vacant-Waste Land/Marshes"
+"095","1000","HS",
+"095","1100","VT",
+"095","1500","HT",
+"095","2000","VT",
+"095","2100","HM",
+"095","2700","HS",
+"095","3000","VT",
+"095","3100","REC","MARINA"
+"095","3400","RS",
+"095","3500","RS",
+"095","3800","HO",
+"095","4000","VT",
+"095","4400","IL","MANUF AND WARE"
+"095","5000","VAC",
+"095","6100","VAC",
+"095","6400","VAC",
+"095","8100","OF","CHURCH"
+"095","8200","SC",
+"095","8300","OF","HOSPITALS"
+"095","8400","VAC","CEMETARIES"
+"095","8500","OF","CULTURAL"
+"095","8700","OF","CLUBS AND LODGES"
+"095","9700","VAC","LOW TAX"
+"095","9800","GV","GOV"

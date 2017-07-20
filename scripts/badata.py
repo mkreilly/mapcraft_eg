@@ -59,25 +59,43 @@ def merge_parcels_and_gp_data(gp_data):
     for county, cities in cities_and_counties.items():
         print "Joining parcels to general plan data for {}".format(county)
 
-        path = "{}/{}_parcels_geom.shp".format(county, county)
-        zippath = "{}/{}_parcels_geom.zip".format(county, county)
-        if not os.path.exists(path):
-            unzip_file(zippath, os.path.join(".", county))
+        geopath = "{}/{}_parcels_geom.shp".format(county, county)
+        if not os.path.exists(geopath):
+            unzip_file(geopath.replace("shp", "zip"), os.path.join(".", county))
 
-        parcels = gpd.GeoDataFrame.from_file(path)
+        csvpath = "{}/{}_parcels.csv".format(county, county)
+        if not os.path.exists(csvpath):
+            unzip_file(csvpath.replace("csv", "zip"), os.path.join(".", county))
+
+        parcel_attributes = pd.read_csv(csvpath, low_memory=False)
+        parcels = gpd.GeoDataFrame.from_file(geopath)
+        # join attributes to shapes
+        parcels = gpd.GeoDataFrame(pd.merge(parcels, parcel_attributes, on="gid"))
+        parcels.crs = {'init': u'epsg:4326'}
         parcels["parcel_id"] = parcels.gid
-
-        print "  joining {} rows".format(len(parcels))
         parcels["geometry"] = parcels.centroid
-        ret = gpd.sjoin(parcels, gp_data, how="left", op="within")
+        print "  joining {} rows".format(len(parcels))
+
+        print "Joining to TAZs"
+        zones = gpd.GeoDataFrame.from_file("data/tazs.json")
+        zones.crs = {'init': u'epsg:4326'}
+        zones["zone_id"] = zones.ZONE_ID
+        ret = gpd.sjoin(parcels, zones, how="left", op="within")
+        # just keep the columns that we had before plus zone_id
+        # spatial join in the next step was breaking otherwise
+        ret = ret[list(parcels.columns) + ["zone_id"]]
+
+        print "Joining to GP data"
+        ret = gpd.sjoin(ret, gp_data, how="left", op="within")
 
         # sort by prioity and drop duplicates, 1 priority is higher than 2 etc
         ret = ret.sort_values("priority").drop_duplicates(subset=["parcel_id"])
+        ret = gpd.GeoDataFrame(ret)  # make spatial again
 
         ret["x"] = [shp.x for shp in ret.geometry]
         ret["y"] = [shp.y for shp in ret.geometry]
 
-        ret = ret[["parcel_id", "city", "general_plan_name", "x", "y"]]
+        ret = ret.drop(["geometry", "gid", "id", "index_right"], axis=1)
         joined_counties.append(ret)
 
     return pd.concat(joined_counties)
@@ -112,8 +130,8 @@ elif MODE == "merge_parcels_and_gp_data":
     df = merge_parcels_and_gp_data(gdf)
     df.to_csv("parcels_joined_to_general_plans.csv", index=False)
 
-    for name, grp in df.groupby("city"):
-        grp.to_csv("output/%s_zoning.csv" % name, index=False)
+    for name, grp in df.groupby("zone_id"):
+        grp.to_csv("output/taz{}_zoning.csv".format(int(name)), index=False)
 
 elif MODE == "diagnose_merge":
     print "Reading gp data"
