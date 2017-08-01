@@ -1,4 +1,4 @@
-# badata
+# BASIS
 
 This repository contains land use data for the Metropolitan Transportation Commission.  The primary data sources at this time are:
 
