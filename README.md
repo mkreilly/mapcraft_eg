@@ -7,7 +7,8 @@ This repository contains land use data and related code for Bay Area Metro. The 
 * deed restricted units: a database of current housing with low income residency requirements
 * institutions: a current and forecast database of large entities (e.g., universities, hospitals) and group quarters
 * pipeline: a list of building projects recently completed, under construction, or approved
-* policies: information on local and regional land use policies
+* policies: information on existing local and regional land use policies
+* scenarios: changes to policies and assumptions used to build alternate growth sceanrios
 * scripts: code to modify or integrate datasets
 * tests: code to assure the validity of database changes
 * zones: various boundary files and related data for TAZs, MAZs, Jurisdictions, PDAs, etc
