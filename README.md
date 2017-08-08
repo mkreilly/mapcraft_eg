@@ -27,23 +27,6 @@ The directory structure maintains one county directory for each of the 9 countie
 
 
 
-### Building Types
-
-* HS - single family residential
-* HT - townhomes
-* HM - multi family residential
-* OF - office
-* HO - hotel
-* SC - school
-* IL - light industrial
-* IW - warehouse industrial
-* IH - heavy industrial
-* RS - strip retail
-* RB - big box retail
-* MR - mixed use residential focused
-* MT - 
-* ME - mixed use employment focused
-
 ### badata.py
 
 `scripts/badata.py` is a script used to operate on this data.  There are several modes of operation (use the --mode command line option), analagous to baus.py in the bayarea_urbansim directory.  The modes include:
