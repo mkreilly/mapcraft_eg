@@ -1,6 +1,6 @@
 # BASIS
 
-This repository contains land use data and related code for Bay Area Metro. The major categories of data and code (equivalent to the direcrtory structure above) are:
+This repository contains land use data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
 
 * basemap: information on the current state of buildings and their inhabitants
 * control totals: region-wide forecasts for households and employment
