@@ -1,6 +1,6 @@
 # BASIS
 
-This repository contains land use data and related code for Bay Area Metro.  The major types of data (equivalent to the direcrtory structure above) are:
+This repository contains land use data and related code for Bay Area Metro. The major categories of data and code (equivalent to the direcrtory structure above) are:
 
 * basemap: information on the current state of buildings and their inhabitants
 * control totals: region-wide forecasts for households and employment
@@ -8,11 +8,20 @@ This repository contains land use data and related code for Bay Area Metro.  The
 * institutions: a current and forecast database of large entities (e.g., universities, hospitals) and group quarters
 * pipeline: a list of building projects recently completed, under construction, or planned with a fairly certain outcome
 * policies: infomration on local and regional land use policies
+* scripts
 * zones: various boundary files and related data for TAZs, MAZs, Jurisdictions, PDAs, etc
 
 
 
+BASIS is the working name for Bay Area Metro's land use and urban economics database. It stands for Bay Area Spatial Information System, the same name used by ABAG in the 1970's for the region's first digital geographic information system.
 
+Questions should be directed to:
+* Cynthia Kroll
+* Kearey Smith
+* Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
+
+
+-----------------------------
 
 
 The directory structure maintains one county directory for each of the 9 counties, and a jurisdictional directory for each city and unincorporated county.  A list of counties and jurisdictions is kept in the top level of this repository in [cities_and_counties.yaml](https://github.com/oaklandanalytics/badata/blob/master/cities_and_counties.yaml).
