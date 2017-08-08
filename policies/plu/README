@@ -20,6 +20,8 @@ Attributes in the zoning_lookup.csv file are:
 
 ### Building Types
 
+We categorize existing, allowed, and future buildings into 14 types.
+
 * HS - single family residential
 * HT - townhomes
 * HM - multi family residential
