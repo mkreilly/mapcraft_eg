@@ -6,7 +6,7 @@ This repository contains land use data and related code for Bay Area Metro. The 
 * control totals: region-wide forecasts for households and employment
 * deed restricted units: a database of current housing with low income residency requirements
 * institutions: a current and forecast database of large entities (e.g., universities, hospitals) and group quarters
-* pipeline: a list of building projects recently completed, under construction, or planned with a fairly certain outcome
+* pipeline: a list of building projects recently completed, under construction, or approved
 * policies: infomration on local and regional land use policies
 * scripts
 * zones: various boundary files and related data for TAZs, MAZs, Jurisdictions, PDAs, etc
@@ -16,8 +16,8 @@ This repository contains land use data and related code for Bay Area Metro. The 
 BASIS is the working name for Bay Area Metro's land use and urban economics database. It stands for Bay Area Spatial Information System, the same name used by ABAG in the 1970's for the region's first digital geographic information system.
 
 Questions should be directed to:
-* Cynthia Kroll
-* Kearey Smith
+* Cynthia Kroll on control totals and policies: ckroll@bayareametro.gov
+* Kearey Smith on the pipeline: ksmith@bayareametro.gov
 * Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
 
 
