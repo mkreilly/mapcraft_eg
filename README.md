@@ -13,7 +13,7 @@ This repository contains land use/urban economics data and related code for Bay 
 * scenarios: changes to policies and assumptions used to build alternate growth sceanrios
 * scripts: code to modify or integrate datasets
 * tests: code to assure the validity of database changes
-* zones: various boundary files and related data for TAZs, MAZs, Jurisdictions, PDAs, etc
+* zones: various boundary files and related data for TAZs, MAZs, Jurisdictions, PDAs, etc; geographic lookups
 
 BASIS is the working name for Bay Area Metro's land use and urban economics database. It stands for Bay Area Spatial Information System, the same name used by ABAG in the 1970's for the region's first digital geographic information system.
 
