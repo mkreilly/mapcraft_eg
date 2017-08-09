@@ -5,4 +5,8 @@ Most of the information that goes into the land use forecast comes from the data
 * schools_k12: 
 * universities_and_colleges: 
 * hospitals
+* airports and ports
+* major churches
 * gq: 
+
+We could model some large corporations this way as well. 
