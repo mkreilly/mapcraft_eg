@@ -10,6 +10,5 @@ This type of categorization has three advantages:
 * UrbanSim uses the household as the unit of analysis in its location choice models so each category of household will be modeled and tracked separately meaning that the information used to build the categories is explicitly considered in the intra-regional forecast
 * the travel model slso uses households (along with persons) as its unit of analysis so this categoriztion does a better job of transmitting regional forecast information through to the travel forecast
 
-
 ## 2. Regional or Group-Specific Characteristics
-
+The second means of providing household control totals is to provide a single number for the future year. In the last round, household size was approached this way. With one forecasted average househodl size for 2040, the explicit household sizes in the travel model were built by adjusting 2010 TAZ-level household sizes to account for income shifts in each zone and to conform to the overall regional forcast. While this is reasonable, it lacks the advantages listed above.
