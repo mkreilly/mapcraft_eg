@@ -1,5 +1,7 @@
 # BASIS
 
+DRAFT: This repository is under construction; nothing here should be considered current or correct.
+
 This repository contains land use/urban economics data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
 
 * basemap: information on the current state of buildings and their inhabitants
