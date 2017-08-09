@@ -1,6 +1,6 @@
 # BASIS
 
-This repository contains land use data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
+This repository contains land use/urban economics data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
 
 * basemap: information on the current state of buildings and their inhabitants
 * control totals: region-wide forecasts for households and employment
@@ -18,4 +18,6 @@ BASIS is the working name for Bay Area Metro's land use and urban economics data
 Questions should be directed to:
 * Cynthia Kroll on control totals and existing policies: ckroll@bayareametro.gov
 * Kearey Smith on the pipeline: ksmith@bayareametro.gov
+* Modeling Team member TBA on institutions:
+* RPP Team member TBA on scenarios:
 * Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
