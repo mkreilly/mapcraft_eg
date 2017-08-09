@@ -1,1 +1,8 @@
-name, units, start, end, address, x, y
+Variable Name, Long Name, Description, Type, Required, Notes
+name, Project Name, name of the deed-restricted building or group of buildings, string50, Y, can do name with A b C for multiple parcels
+units
+start
+end
+address
+x
+y
