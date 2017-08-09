@@ -1,8 +1,2 @@
-Variable Name, Long Name, Description, Required, Type, Notes
-name,
-units
-start
-end
-address
-x
-y
+name, units, start, end, street, city, zip, x, y
+Oaks, 67, 2010, 2100, 122 Main St, Berkeley, 94720, 234.5, 657.4
