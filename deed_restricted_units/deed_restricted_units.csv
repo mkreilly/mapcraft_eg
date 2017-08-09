@@ -1,1 +1,8 @@
-name, units, start, end, address, x, y
+Variable Name, Long Name, Description, Required, Type, Notes
+name,
+units
+start
+end
+address
+x
+y
