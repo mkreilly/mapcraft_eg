@@ -23,3 +23,13 @@ Questions should be directed to:
 * Modeling Team member TBA on institutions:
 * RPP Team member TBA on scenarios:
 * Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
+
+--------------
+## How to Use This Repository
+
+Backwards
+1) start with product 
+2) examines its readme and metadata file (i.e., starts with 'meta' and means information about the data)
+3) move back toward original main category indicated in metadata file
+4) look at readme and metadata file
+5) look at code and raw data
