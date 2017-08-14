@@ -28,24 +28,16 @@ def test_too_many_shapes(fname, df):
     assert len(df) < 2000
 
 
-'''
-    plan_names = pd.DataFrame.from_records(shapes).general_plan_name
+@pytest.mark.parametrize("fname, df", gpdata)
+def test_empty_general_plan_names(fname, df):
+    plan_names = df.general_plan_name
     empty_names = plan_names[plan_names.isnull()]
-
-    # general plan name is missing on shapes
     assert len(empty_names) == 0
 
-    unique_plan_names = plan_names.unique()
 
-    if not df.index.is_unique:
-        print pd.Series(df.index).value_counts().head()
-    # duplicated general plan names in the csv
-    assert df.index.is_unique
-
-    # all the names on the shapes exist in the csv file
-    assert len(df.loc[unique_plan_names]) == len(unique_plan_names)
-'''
-
+# test join to zoning_lookup.csv
+# test duplicate general plan names on zoning_lookup.csv
+# (not in gp files, where it's a-ok)
 
 '''
 @pytest.mark.parametrize("fname", jurises)
