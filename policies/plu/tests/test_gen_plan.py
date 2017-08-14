@@ -2,31 +2,33 @@ import pandas as pd
 import pytest
 import os
 import json
+import glob
+
+dirname = os.path.join("policies", "plu")
+files = glob.glob(os.path.join(dirname, "*.geojson"))
 
 
-counties = ['contra_costa', 'marin', 'alameda', 'napa', 'san_mateo',
-            'santa_clara', 'solano', 'sonoma', 'san_francisco']
-jurises = [(d, c) for c in counties for d in os.listdir(c)]
-# jurises = [("petaluma", "sonoma")]
-
-
-@pytest.mark.parametrize("juris,county", jurises)
-def test_csv_and_geojson_join(juris, county):
-
-    dirname = os.path.join(county, juris, 'general_plan')
-    csvname = os.path.join(dirname, '%s.csv' % juris)
-    geojsonname = os.path.join(dirname, '%s.geojson' % juris)
-
-    df = pd.read_csv(csvname, index_col="name")
-
-    shapes = json.load(open(geojsonname))
+def load_gp_data(file):
+    shapes = json.load(open(file))
     shapes = [f["properties"] for f in shapes["features"]]
+    df = pd.DataFrame.from_records(shapes)
+    return file, df
 
+gpdata = [load_gp_data(file) for file in files]
+print gpdata
+
+
+@pytest.mark.parametrize("fname, df", gpdata)
+def test_too_many_shapes(fname, df):
+    if "san_francisco" in fname or "san_jose" in fname:
+        return
     # only san francisco really has lots of general plan shapes
     # other cities are using parcels as their general plan shapes,
     # which need to be dissolved
-    assert len(shapes) < 2000 or juris in ["san_francisco", "san_jose"]
+    assert len(df) < 2000
 
+
+'''
     plan_names = pd.DataFrame.from_records(shapes).general_plan_name
     empty_names = plan_names[plan_names.isnull()]
 
@@ -42,10 +44,12 @@ def test_csv_and_geojson_join(juris, county):
 
     # all the names on the shapes exist in the csv file
     assert len(df.loc[unique_plan_names]) == len(unique_plan_names)
+'''
 
 
-@pytest.mark.parametrize("juris,county", jurises)
-def test_csv_schema(juris, county):
+'''
+@pytest.mark.parametrize("fname", jurises)
+def test_csv_schema(fname):
 
     dirname = os.path.join(county, juris, 'general_plan')
     csvname = os.path.join(dirname, '%s.csv' % juris)
@@ -79,3 +83,4 @@ def test_csv_schema(juris, county):
     assert df.max_dua.fillna(0).max() <= 350
     assert df.max_du_per_parcel.fillna(0).min() >= 0
     assert df.max_du_per_parcel.fillna(0).max() <= 10
+'''
