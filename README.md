@@ -1,5 +1,6 @@
 # BASIS
 
+[![Build Status](https://travis-ci.org/BayAreaMetro/basis.svg?branch=master)](https://travis-ci.org/BayAreaMetro/basis)
 
 DRAFT: This repository is under construction; nothing here should be considered current or correct.
 
