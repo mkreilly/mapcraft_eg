@@ -7,6 +7,6 @@ This product is a set of files containing information on the Bay Area's current 
 * insitutions
 * TAZ: emp per sqft, emp relocation rate?
 * MAZ: group quarters, school enrollment, (local) gov employment?
-* parcel: plu attributes (incl nodev), development projects???, deed-restricted unites
+* parcel: building attributes, hh and emp assignment, plu attributes (incl nodev), development projects???, deed-restricted unites
 
 ##
