@@ -1,0 +1,120 @@
+name, long_name, five_name, county
+alameda, , , ala
+albany, , , ala
+berkeley, , , ala
+castro_valley, , , ala
+cherryland, , , ala
+dublin, , , ala
+emeryville, , , ala
+fairview, , , ala
+fremont, , , ala
+hayward, , , ala
+livermore, , , ala
+newark, , , ala
+oakland, , , ala
+piedmont, , , ala
+pleasanton, , , ala
+san_leandro, , , ala
+unincorporated_alameda, , , ala
+union_city, , , ala
+- antioch, , , cnc
+- brentwood, , , cnc
+- clayton, , , cnc
+- concord, , , cnc
+- danville, , , cnc
+- el_cerrito, , , cnc
+- hercules, , , cnc
+- lafayette, , , cnc
+- martinez, , , cnc
+- moraga, , , cnc
+- oakley, , , cnc
+- orinda, , , cnc
+- pinole, , , cnc
+- pittsburg, , , cnc
+- pleasant_hill, , , cnc
+- richmond, , , cnc
+- san_pablo, , , cnc
+- san_ramon, , , cnc
+- unincorporated_contra_costa, , , cnc
+- walnut_creek, , , cnc
+marin:
+- belvedere, , , mar
+- corte_madera, , , mar
+- fairfax, , , mar
+- larkspur, , , mar
+- mill_valley, , , mar
+- novato, , , mar
+- ross, , , mar
+- san_anselmo, , , mar
+- san_rafael, , , mar
+- sausalito, , , mar
+- tiburon, , , mar
+- unincorporated_marin, , , mar
+napa:
+- american_canyon, , , nap
+- calistoga, , , nap
+- napa, , , nap
+- st_helena, , , nap
+- unincorporated_napa, , , nap
+- yountville, , , nap
+san_francisco:
+- san_francisco, , , sfr
+san_mateo:
+- atherton, , , smt
+- belmont, , , smt
+- brisbane, , , smt
+- burlingame, , , smt
+- colma, , , smt
+- daly_city, , , smt
+- east_palo_alto, , , smt
+- foster_city, , , smt
+- half_moon_bay, , , smt
+- hillsborough, , , smt
+- menlo_park, , , smt
+- millbrae, , , smt
+- pacifica, , , smt
+- portola_valley, , , smt
+- redwood_city, , , smt
+- san_bruno, , , smt
+- san_carlos, , , smt
+- san_mateo, , , smt
+- south_san_francisco, , , smt
+- unincorporated_san_mateo, , , smt
+- woodside, , , smt
+santa_clara:
+- campbell, , , scl
+- cupertino, , , scl
+- gilroy, , , scl
+- los_altos, , , scl
+- los_altos_hills, , , scl
+- los_gatos, , , scl
+- milpitas, , , scl
+- monte_sereno, , , scl
+- morgan_hill, , , scl
+- mountain_view, , , scl
+- palo_alto, , , scl
+- san_jose, , , scl
+- santa_clara, , , scl
+- saratoga, , , scl
+- sunnyvale, , , scl
+- unincorporated_santa_clara, , , scl
+solano:
+- benicia, , , sol
+- dixon, , , sol
+- fairfield, , , sol
+- rio_vista, , , sol
+- suisun_city, , , sol
+- unincorporated_solano, , , sol
+- vacaville, , , sol
+- vallejo, , , sol
+sonoma:
+- cloverdale, , , son
+- cotati, , , son
+- healdsburg, , , son
+- petaluma, , , son
+- rohnert_park, , , son
+- santa_rosa, , , son
+- sebastopol, , , son
+- sonoma, , , son
+- unincorporated_sonoma, , , son
+- windsor, , , son
