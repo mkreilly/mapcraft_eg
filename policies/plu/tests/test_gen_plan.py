@@ -7,46 +7,43 @@ import glob
 dirname = os.path.join("policies", "plu")
 files = glob.glob(os.path.join(dirname, "*.geojson"))
 
+# this loads all the features in the geojson files in this directory
+@pytest.fixture(scope="module")
+def all_gp_data():
+    def load_gp_data(file):
+        shapes = json.load(open(file))
+        shapes = [f["properties"] for f in shapes["features"]]
+        return pd.DataFrame.from_records(shapes)
 
-def load_gp_data(file):
-    shapes = json.load(open(file))
-    shapes = [f["properties"] for f in shapes["features"]]
-    df = pd.DataFrame.from_records(shapes)
-    return file, df
-
-gpdata = [load_gp_data(file) for file in files]
-print gpdata
+    return {file: load_gp_data(file) for file in files}
 
 
-@pytest.mark.parametrize("fname, df", gpdata)
-def test_too_many_shapes(fname, df):
+@pytest.mark.parametrize("fname", files)
+def test_too_many_shapes(all_gp_data, fname):
     if "san_francisco" in fname or "san_jose" in fname:
         return
+    df = all_gp_data[fname]
     # only san francisco really has lots of general plan shapes
     # other cities are using parcels as their general plan shapes,
     # which need to be dissolved
     assert len(df) < 2000
 
 
-@pytest.mark.parametrize("fname, df", gpdata)
-def test_empty_general_plan_names(fname, df):
+@pytest.mark.parametrize("fname", files)
+def test_empty_general_plan_names(all_gp_data, fname):
+    df = all_gp_data[fname]
     plan_names = df.general_plan_name
     empty_names = plan_names[plan_names.isnull()]
     assert len(empty_names) == 0
 
-
-# test join to zoning_lookup.csv
 # test duplicate general plan names on zoning_lookup.csv
 # (not in gp files, where it's a-ok)
 
-'''
-@pytest.mark.parametrize("fname", jurises)
-def test_csv_schema(fname):
+def test_zoning_lookup():
+    csvname = "zoning_lookup.csv"
+    fname = os.path.join(dirname, csvname)
 
-    dirname = os.path.join(county, juris, 'general_plan')
-    csvname = os.path.join(dirname, '%s.csv' % juris)
-
-    df = pd.read_csv(csvname, index_col="name")
+    df = pd.read_csv(fname, index_col="name")
 
     cols = ("city,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM" +
             ",OF,HO,SC,IL,IW,IH,RS,RB,MR,MT,ME").split(',')
@@ -68,11 +65,10 @@ def test_csv_schema(fname):
 
     # values should be in right ranges
     assert df.max_far.fillna(0).min() >= 0
-    assert df.max_far.fillna(0).max() <= 30
+    assert df.max_far.fillna(0).max() <= 50
     assert df.max_height.fillna(0).min() >= 0
-    assert df.max_height.fillna(0).max() <= 1000
+    assert df.max_height.fillna(0).max() <= 10000
     assert df.max_dua.fillna(0).min() >= 0
     assert df.max_dua.fillna(0).max() <= 350
     assert df.max_du_per_parcel.fillna(0).min() >= 0
     assert df.max_du_per_parcel.fillna(0).max() <= 10
-'''
