@@ -1,0 +1,4 @@
+name, type, required
+e1, int, y
+
+AND REPEAT THROUGH Es
