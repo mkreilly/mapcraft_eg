@@ -1,5 +1,6 @@
 name, type, required
-q1s1w0, int, y
+year, int, y
+1s1w0, int, y
 q1s1w1
 q1s2w0
 q1s2w1
