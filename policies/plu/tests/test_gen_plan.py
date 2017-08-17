@@ -52,14 +52,18 @@ def test_empty_general_plan_names(all_gp_data, fname):
     empty_names = plan_names[plan_names.isnull()]
     assert len(empty_names) == 0
 
-# test duplicate general plan names on zoning_lookup.csv
-# (not in gp files, where it's a-ok)
+
+def test_zoning_lookup_duplicates():
+    fname = os.path.join(dirname, "zoning_lookup.csv")
+    df = pd.read_csv(fname)
+
+    s = df.groupby(["name", "city"]).size()
+    print s[s > 1]
+    assert len(s[s > 1]) == 0
 
 
 def test_zoning_lookup():
-    csvname = "zoning_lookup.csv"
-    fname = os.path.join(dirname, csvname)
-
+    fname = os.path.join(dirname, "zoning_lookup.csv")
     df = pd.read_csv(fname, index_col="name")
 
     cols = ("city,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM" +
