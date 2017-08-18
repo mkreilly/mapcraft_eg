@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/BayAreaMetro/basis.svg?branch=master)](https://travis-ci.org/BayAreaMetro/basis)
 
-DRAFT: This repository is under construction; nothing here should be considered current or correct.
+*DRAFT: This repository is under construction; nothing here should be considered current or correct.
 
 This repository contains land use/urban economics data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
 
@@ -24,7 +24,6 @@ Questions should be directed to:
 * Aksel Olsen on existing policies: aolsen@bayareametro.gov
 * Kearey Smith on the pipeline: ksmith@bayareametro.gov
 * Shimon Isreal on institutions: sisreal@bayareametro.gov
-* Modeling Team member TBA on institutions:
 * RPP Team member TBA on scenarios:
 * Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
 
