@@ -1,6 +1,6 @@
-# Products
+# Applications
 
-The data within BASIS is modified and combined to produce a number of products, each of which contains clean subsets of the data. Product metadata, the code to build the products, and the product output is organized by directory:
+The data within BASIS is modified and combined for a number of applications, each of which contains clean subsets of the data. Application-specific metadata, code, and output is organized by directory:
 * UrbanSim Database
 * Additional Travel Model Inputs
 * Land Use Map
