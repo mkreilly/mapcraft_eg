@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/BayAreaMetro/basis.svg?branch=master)](https://travis-ci.org/BayAreaMetro/basis)
 
-_DRAFT: This repository is under construction; nothing here should be considered current or correct.
+DRAFT: This repository is under construction; nothing here should be considered current or correct.
 
 This repository contains land use/urban economics data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
 
