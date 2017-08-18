@@ -78,9 +78,9 @@ def merge_parcels_and_gp_data(gp_data):
     for county in cities_and_counties.keys():
         print "Joining parcels to general plan data for {}".format(county)
 
-        geopath = "basemap/parcels/{}_parcels.shp".format(county)
+        geopath = "basemap/2010/parcels/{}_parcels.shp".format(county)
         if not os.path.exists(geopath):
-            unzip_file(geopath.replace("shp", "zip"), "basemap/parcels")
+            unzip_file(geopath.replace("shp", "zip"), "basemap/parcels/2010")
 
         parcels = gpd.GeoDataFrame.from_file(geopath)
         parcels.crs = {'init': u'epsg:4326'}
