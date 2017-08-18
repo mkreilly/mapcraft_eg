@@ -6,6 +6,7 @@ DRAFT: This repository is under construction; nothing here should be considered 
 
 This repository contains land use/urban economics data and related code for Bay Area Metro. The major categories of data and code (equivalent to the directory structure above) are:
 
+* applications: the various products and analyses supported by basis
 * basemap: information on the current state of buildings and their inhabitants
 * control totals: region-wide forecasts for households and employment
 * deed restricted units: a database of current housing with low income residency requirements
