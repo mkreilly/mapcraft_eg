@@ -6,6 +6,7 @@ import glob
 
 dirname = os.path.join("policies", "plu")
 files = glob.glob(os.path.join(dirname, "*.geojson"))
+files = ["policies/plu/richmond_general_plan.geojson"]
 
 
 # this loads all the features in the geojson files in this directory
@@ -82,20 +83,20 @@ def test_zoning_lookup_duplicates():
 def test_all_general_plan_names_are_in_zoning_lookup(all_gp_data, fname):
     df = all_gp_data[fname]
     city = make_city_name_from_path_name(fname)
-    
+
     lookup_fname = os.path.join(dirname, "zoning_lookup.csv")
     lookup = pd.read_csv(lookup_fname)
-    lookup = lookup[lookup.city == city]
+    options = set(lookup[lookup.city == city].name.values)
 
     failed = False
     for gpname in df.general_plan_name.unique():
-        # "" values are caught by the empty general plan names test above
-        if gpname not in lookup.name.values:
+        if gpname is None:
+            continue
+        if gpname not in options:
             print "GP name not found:", gpname, "; city:", city
             failed = True
 
     assert not failed
-        
 
 
 def test_no_extra_rows_in_zoning_lookup():
