@@ -4228,28 +4228,28 @@ id,juris,city,name,max_far,max_height,max_dua,max_du_per_parcel,HS,HT,HM,OF,HO,S
 61073,,Unincorporated Solano,807 - Employment,,,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,26_new
 61074,,Unincorporated Solano,807 - High Density Residential,,,14,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,26_new
 61075,,Unincorporated Solano,807 - Retail Commercial,,,6.23,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,26_new
-61076,,Unincorporated Solano,899 - Commercial Office,4.8,,,,0,0,0,1,0,0,0,0,0,1,1,0,1,1,26_new
-61077,,Unincorporated Solano,899 - Commercial Recreation,2.8,,,,0,0,0,1,0,0,0,0,0,1,1,0,1,1,26_new
-61078,,Unincorporated Solano,899 - Commercial Service,2,,,,0,0,0,0,0,0,1,1,0,1,1,0,1,1,26_new
-61079,,Unincorporated Solano,899 - Commercial Service - Light Industrial,1.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
-61080,,Unincorporated Solano,899 - Community Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
-61081,,Fairfield,899 - Extensive Agriculture,,75,51,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,x985
-61082,,Unincorporated Solano,899 - General Industrial,,,,,0,0,0,1,1,0,0,0,0,1,1,0,1,1,x985
-61083,,Unincorporated Solano,899 - Highway Commercial,0.5,60,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,x985
-61084,,Unincorporated Solano,899 - Intensive Agriculture,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x985
-61085,,Fairfield,899 - Limited Industrial,,30,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
-61086,,Fairfield,899 - Low Density Residential (2 to 7 units per acre),,30,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,x985
-61087,,Unincorporated Solano,899 - Marsh,,55,50,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,x985
-61088,,Unincorporated Solano,899 - Medium Density Residential (8 to 15 units per acre),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
-61089,,Unincorporated Solano,899 - Neighborhood Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
-61090,,Fairfield,899 - Park & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
-61091,,Fairfield,899 - Public,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
-61092,,Unincorporated Solano,899 - Roads,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
-61093,,Unincorporated Solano,899 - Rural Residential (2.5 to 10 acres per unit),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
-61094,,Unincorporated Solano,899 - Suburban Residential (1 to 4 units per acre),1,65,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
-61095,,Unincorporated Solano,899 - Water Bodies & Courses,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
-61096,,Unincorporated Solano,899 - Water Dependent Industrial Reserve,1.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
-61097,,Unincorporated Solano,899 - Watershed,1,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61076,,Unincorporated Solano,Commercial Office,4.8,,,,0,0,0,1,0,0,0,0,0,1,1,0,1,1,26_new
+61077,,Unincorporated Solano,Commercial Recreation,2.8,,,,0,0,0,1,0,0,0,0,0,1,1,0,1,1,26_new
+61078,,Unincorporated Solano,Commercial Service,2,,,,0,0,0,0,0,0,1,1,0,1,1,0,1,1,26_new
+61079,,Unincorporated Solano,Commercial Service - Light Industrial,1.5,55,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
+61080,,Unincorporated Solano,Community Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
+61081,,Fairfield,Extensive Agriculture,,75,51,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,x985
+61082,,Unincorporated Solano,General Industrial,,,,,0,0,0,1,1,0,0,0,0,1,1,0,1,1,x985
+61083,,Unincorporated Solano,Highway Commercial,0.5,60,,,0,0,0,1,1,0,1,1,0,1,1,0,1,1,x985
+61084,,Unincorporated Solano,Intensive Agriculture,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,x985
+61085,,Fairfield,Limited Industrial,,30,8,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
+61086,,Fairfield,Low Density Residential (2 to 7 units per acre),,30,20,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,x985
+61087,,Unincorporated Solano,Marsh,,55,50,,0,1,1,0,0,0,0,0,0,0,0,0,0,0,x985
+61088,,Unincorporated Solano,Medium Density Residential (8 to 15 units per acre),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
+61089,,Unincorporated Solano,Neighborhood Commercial,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
+61090,,Fairfield,Park & Recreation,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,x985
+61091,,Fairfield,Public,,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
+61092,,Unincorporated Solano,Roads,3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
+61093,,Unincorporated Solano,Rural Residential (2.5 to 10 acres per unit),3,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
+61094,,Unincorporated Solano,Suburban Residential (1 to 4 units per acre),1,65,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,x985
+61095,,Unincorporated Solano,Water Bodies & Courses,,,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22
+61096,,Unincorporated Solano,Water Dependent Industrial Reserve,1.5,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
+61097,,Unincorporated Solano,Watershed,1,,,,0,0,0,1,1,1,0,0,0,1,1,0,1,1,Pre22
 61098,,Cloverdale,901 - Business Park,3,,30,,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Pre22
 61099,,Cloverdale,901 - Conservation Features,,,,,0,0,0,0,0,1,0,0,0,0,0,0,0,0,Pre22
 61100,,Cloverdale,901 - Destination Commercial,,,30,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Pre22

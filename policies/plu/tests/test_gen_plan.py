@@ -19,6 +19,15 @@ def all_gp_data():
     return {file: load_gp_data(file) for file in files}
 
 
+def make_city_name_from_path_name(path):
+    file = os.path.basename(path)
+
+    cityish = file.replace("_general_plan.geojson", "").\
+        replace("_plu.geojson", "")
+
+    return cityish.replace('_', ' ').title()
+
+
 @pytest.mark.parametrize("fname", files)
 def test_too_many_shapes(all_gp_data, fname):
     if "san_francisco" in fname or "san_jose" in fname:
@@ -53,6 +62,13 @@ def test_empty_general_plan_names(all_gp_data, fname):
     assert len(empty_names) == 0
 
 
+# make sure we don't have any multipolygons -
+# they should all be separate polygons
+@pytest.mark.parametrize("fname", files)
+def test_no_multipolygons(fname):
+    pass
+
+
 def test_zoning_lookup_duplicates():
     fname = os.path.join(dirname, "zoning_lookup.csv")
     df = pd.read_csv(fname)
@@ -60,6 +76,32 @@ def test_zoning_lookup_duplicates():
     s = df.groupby(["name", "city"]).size()
     print s[s > 1]
     assert len(s[s > 1]) == 0
+
+
+@pytest.mark.parametrize("fname", files)
+def test_all_general_plan_names_are_in_zoning_lookup(all_gp_data, fname):
+    df = all_gp_data[fname]
+    city = make_city_name_from_path_name(fname)
+    
+    lookup_fname = os.path.join(dirname, "zoning_lookup.csv")
+    lookup = pd.read_csv(lookup_fname)
+    lookup = lookup[lookup.city == city]
+
+    failed = False
+    for gpname in df.general_plan_name.unique():
+        # "" values are caught by the empty general plan names test above
+        if gpname not in lookup.name.values:
+            print "GP name not found:", gpname, "; city:", city
+            failed = True
+
+    assert not failed
+        
+
+
+def test_no_extra_rows_in_zoning_lookup():
+    # for now we think we can have extra rows in the lookup table that aren't
+    # used - maybe they get assigned to a parcel at some point
+    pass
 
 
 def test_zoning_lookup():
