@@ -6,7 +6,7 @@ import glob
 
 dirname = os.path.join("policies", "plu")
 files = glob.glob(os.path.join(dirname, "*.geojson"))
-# files = ["policies/plu/fairfield_general_plan.geojson"]
+# files = ["policies/plu/unincorporated_contra_costa_plu.geojson"]
 
 # this loads all the features in the geojson files in this directory
 @pytest.fixture(scope="module")
@@ -89,7 +89,7 @@ def test_all_general_plan_names_are_in_zoning_lookup(all_gp_data, fname):
 
     failed = False
     for gpname in df.general_plan_name.unique():
-        if gpname is None:
+        if gpname is None or gpname == "NODEV":
             continue
         if gpname not in options:
             print "GP name not found:", gpname, "; city:", city
