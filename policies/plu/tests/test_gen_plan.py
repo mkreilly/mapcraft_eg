@@ -6,8 +6,7 @@ import glob
 
 dirname = os.path.join("policies", "plu")
 files = glob.glob(os.path.join(dirname, "*.geojson"))
-files = ["policies/plu/richmond_general_plan.geojson"]
-
+# files = ["policies/plu/fairfield_general_plan.geojson"]
 
 # this loads all the features in the geojson files in this directory
 @pytest.fixture(scope="module")
