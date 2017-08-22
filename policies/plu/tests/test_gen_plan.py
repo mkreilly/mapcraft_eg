@@ -8,6 +8,7 @@ dirname = os.path.join("policies", "plu")
 files = glob.glob(os.path.join(dirname, "*.geojson"))
 # files = ["policies/plu/unincorporated_contra_costa_plu.geojson"]
 
+
 # this loads all the features in the geojson files in this directory
 @pytest.fixture(scope="module")
 def all_gp_data():
@@ -49,16 +50,18 @@ def test_too_many_shapes(all_gp_data, fname):
 @pytest.mark.parametrize("fname", files)
 def test_empty_general_plan_names(all_gp_data, fname):
 
+    df = all_gp_data[fname]
+    plan_names = df.general_plan_name
+    empty_names = plan_names[plan_names.isnull()]
+
     # these are known test failures we're not going to fix right away
     for city in ["walnut_creek", "solano", "san_mateo", "petaluma",
                  "santa_clara", "menlo_park", "corte_madera", "concord",
                  "antioch"]:
         if city in fname:
-            return
+            print fname, len(empty_names)
+            returns
 
-    df = all_gp_data[fname]
-    plan_names = df.general_plan_name
-    empty_names = plan_names[plan_names.isnull()]
     assert len(empty_names) == 0
 
 
