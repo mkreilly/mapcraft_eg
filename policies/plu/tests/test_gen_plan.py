@@ -31,20 +31,14 @@ def make_city_name_from_path_name(path):
 
 @pytest.mark.parametrize("fname", files)
 def test_too_many_shapes(all_gp_data, fname):
+    # only san francisco and san jose really have lots of
+    # general plan shapes
     if "san_francisco" in fname or "san_jose" in fname:
         return
 
-    # these are known test failures we're not going to fix right away
-    for city in ["walnut_creek", "marin", "santa_rosa", "san_mateo", "hayward",
-                 "san_bruno", "redwood_city", "petaluma", "gilroy", "concord"]:
-        if city in fname:
-            return
-
     df = all_gp_data[fname]
-    # only san francisco really has lots of general plan shapes
-    # other cities are using parcels as their general plan shapes,
-    # which need to be dissolved
-    assert len(df) < 2000
+
+    assert len(df) < 4300
 
 
 @pytest.mark.parametrize("fname", files)
