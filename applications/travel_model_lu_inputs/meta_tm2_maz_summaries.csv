@@ -1,5 +1,6 @@
 variable, long name, notes
 maz_id, MAZ number, was called zone_id and was the taz1454 number
+taz_id, TAZ number, added to represent new taz system
 SD, superdistrict number , may want to move to 100 of these zone system
 ZONE, zone, repeat of first variable
 COUNTY, county number , in MTC system so SF is 1 and counterclockwise
