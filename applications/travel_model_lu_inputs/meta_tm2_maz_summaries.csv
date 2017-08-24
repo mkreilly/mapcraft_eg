@@ -18,7 +18,7 @@ HHINCQ3, , 4 pseudo quartiles there would be one of these for each cross section
 HHINCQ4, , 4 pseudo quartiles there would be one of these for each cross section hh category
 SHPOP62P, , calculated off model from historical taz level AND income influence to match ABAG regional control
 TOTHH, total households, sum of 4 hh categories
-GQPOP, , calculated off model from historical taz level AND income influence to match ABAG regional control
+GQPOP, , pulled from off model calcs that match ABAG regional control total
 MFDU, , sum of urbansim mf units
 SFDU, , sum of urbanSim sf units
 CIACRE_UNWEIGHTED, , sum of urbansim commercial land
