@@ -1,0 +1,34 @@
+variable, long name, notes
+maz_id, MAZ number, was called zone_id and was the taz1454 number
+SD, superdistrict number ,
+ZONE, zone, repeat of first variable
+COUNTY, county number , in MTC system so SF is 1 and counterclockwise
+AGREMPN, , ABAG 6 sector there would be one of these for each emp category
+FPSEMPN, , ABAG 6 sector there would be one of these for each emp category
+HEREMPN, , ABAG 6 sector there would be one of these for each emp category
+RETEMPN, , ABAG 6 sector there would be one of these for each emp category
+TOTEMP, total employment , sum of all job categories
+MWTEMPN, , ABAG 6 sector there would be one of these for each emp category
+OTHEMPN, , ABAG 6 sector there would be one of these for each emp category
+HHINCQ1, , 4 pseudo quartiles there would be one of these for each cross section hh category
+HHINCQ2, , 4 pseudo quartiles there would be one of these for each cross section hh category
+HHINCQ3, , 4 pseudo quartiles there would be one of these for each cross section hh category
+HHINCQ4, , 4 pseudo quartiles there would be one of these for each cross section hh category
+SHPOP62P, ,
+TOTHH, ,
+GQPOP, ,
+MFDU, ,
+SFDU, ,
+CIACRE_UNWEIGHTED, ,
+RESACRE_UNWEIGHTED, ,
+CIACRE, ,
+RESACRE, ,
+TOTACRE, ,
+HHPOP, ,
+TOTPOP, ,
+EMPRES, ,
+AGE0004, ,
+AGE0519, ,
+AGE2044, ,
+AGE4564, ,
+AGE65P, ,
