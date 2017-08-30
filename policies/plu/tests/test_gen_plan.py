@@ -9,15 +9,30 @@ files = glob.glob(os.path.join(dirname, "*.geojson"))
 # files = ["policies/plu/unincorporated_contra_costa_plu.geojson"]
 
 
+@pytest.fixture(scope="module")
+def all_gp_json():
+    def load_gp_data(file):
+        return json.load(open(file))
+
+    return {file: load_gp_data(file) for file in files}
+
+
 # this loads all the features in the geojson files in this directory
 @pytest.fixture(scope="module")
-def all_gp_data():
-    def load_gp_data(file):
-        shapes = json.load(open(file))
+def all_gp_data(all_gp_json):
+    def get_data(shapes):
         shapes = [f["properties"] for f in shapes["features"]]
         return pd.DataFrame.from_records(shapes)
 
-    return {file: load_gp_data(file) for file in files}
+    return {file: get_data(all_gp_json[file]) for file in all_gp_json.keys()}
+
+
+@pytest.fixture(scope="module")
+def all_gp_geometry(all_gp_json):
+    def get_geom(shapes):
+        return [f["geometry"] for f in shapes["features"]]
+
+    return {file: get_geom(all_gp_json[file]) for file in files}
 
 
 def make_city_name_from_path_name(path):
@@ -33,7 +48,8 @@ def make_city_name_from_path_name(path):
 def test_too_many_shapes(all_gp_data, fname):
     # only san francisco and san jose really have lots of
     # general plan shapes
-    if "san_francisco" in fname or "san_jose" in fname:
+    if "san_francisco" in fname or "san_jose" in fname\
+            or "unincorporated_sonoma":
         return
 
     df = all_gp_data[fname]
@@ -65,8 +81,10 @@ def test_empty_general_plan_names(all_gp_data, fname):
 # make sure we don't have any multipolygons -
 # they should all be separate polygons
 @pytest.mark.parametrize("fname", files)
-def test_no_multipolygons(fname):
-    pass
+def test_no_multipolygons(all_gp_geometry, fname):
+    geometries = all_gp_geometry[fname]
+    for geom in geometries:
+        assert geom["type"] != "MultiPolygon"
 
 
 def test_zoning_lookup_duplicates():
