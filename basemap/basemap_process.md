@@ -12,5 +12,8 @@ Many datasets provide information for the basemap:
 * External control totals: 
 
 In the previous two Bay Area UrbanSim modeling rounds, the basemap process resulted in a map of (fairly) clean parcels that included collapsed data on all the buildings on the parcel. HHs and jobs were placed on the parcel/buildings and each parcel/building was in only one zone (i.e., one of 1454 old TAZs). I think we want to move to a new approach for this because Travel Model 2 has many more zones, there is inreasing data available, and the simplification in the old approach dissallowed some desirably analysis. The two new approaches require the same data cleaning and integration process but diverge in terms of data structure. They are:
-* MicroMicro: Represent all buildings explicitly (either from CoStar/OWM or by using point devised from the parcels). Households and jobs are placed in these buildings. Buildings can only be in one MAZ and that is the one their inhabitants are summarized into. A building is also on parcel. The parcel information is used by the developer model when considering (re)development. A parcel can have multiple buildings and be in multiple MAZs.
+* MicroMicro: Represent all buildings explicitly (either from CoStar/OSM or by using point devised from the parcels). Households and jobs are placed in these buildings. Buildings can only be in one MAZ and that is the one their inhabitants are summarized into. A building is also on parcel. The parcel information is used by the developer model when considering (re)development. A parcel can have multiple buildings and be in multiple MAZs.
 * Synthetic pseudo-parcels: Sort of the reverse. 
+
+Issues:
+* scale and timeliness of census data
