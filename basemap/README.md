@@ -6,7 +6,7 @@ This directory contains the data needed to build a "current year" map of the reg
 * historic buildings: list of parcels that cannot be redeveloped because they are historic
 * nodev list: list of parcels that cannot be developed in a future forecast
 
-Once a good map of land and buildings has been pulled together and cleaned, additional buildings are imputed and households/jobs are sited within the buildings. The process is detailed here.
+Once a good map of land and buildings has been pulled together and cleaned, additional buildings are imputed and households/jobs are sited within the buildings. The process is detailed [here](basis/basemap/basemap_process.md).
 
 This map is used for multiple purposes:
 * it serves as the startng point from which the UrbanSim land use forecast is made
