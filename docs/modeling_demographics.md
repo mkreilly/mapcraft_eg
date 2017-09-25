@@ -27,6 +27,19 @@ REMI and associated regional models produce two tables of regional level demogra
 
 Each five-year period BAUST is run, the model ensures that the total household count by type is the same as represented in the control totals. At the end of the forecast, two demographic data flows are summarized at the MAZ level and passed to both the Population Synthesizer and BATMT:
 * household count by type
-* other forecasts produced by associated scripts  for data in the regional_controls file that is not explicitly used in BAUST
+* other households and persons forecasts produced by associated scripts for data in the regional_controls file that is not explicitly used in BAUST
 
+The Population Synthesizer is run to build an artificial population that:
+* conforms to the household count from BAUST (and thus is also consistent with the regional control counts)
+* is similar to the other demographic forecasts caried through from the regional models
+* is similar to the households structure of households within that location's PUMA
 
+Two microsimulation tables come out of the Population Synthesizer:
+* household file: one row with attributes for each household, located in a MAZ
+* persons file: one row with attributes for each person, located in a household
+
+BATMT is run on these two files. Persons make choices based on their own and their household's attribute. People in the same household my coordinate. The most important demographic factors influencing travel behavior include:
+* income
+* relationship between worker count and auto count in a household
+* mandatory trip status (worker vs student vs other)
+* presence of children
