@@ -9,3 +9,12 @@ Demographics are the characteristics of households and persons in the modeling s
 
 
 ## Geographies
+REMI and the associated demographics models pass their data to UrbanSim at the regional level.
+
+BAUST creates 
+
+
+
+## Census Data
+
+Block group data (basis for the new TAZ system) is released for the 5-year estimate. The 5-year release (2013-2017) will be the census control for RTP21. It should be released on Dec 7, 2018. Until then, we will use the most up-to-date release (same time every year). 
