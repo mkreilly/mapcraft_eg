@@ -34,6 +34,14 @@ The Population Synthesizer is run to build an artificial population that:
 * is similar to the other demographic forecasts caried through from the regional models
 * is similar to the households structure of households within that location's PUMA
 
+Popsyn has been used to date with Travel Model One. The plan has been to shift to popsyn3 for use with Travel Model Two. Popsyn3 tracks demographics on multiple geographic scales. To date:
+* total hhs in a maz (super important weight)
+* income category by taz
+* hh size categories by county
+* worker count by county
+* person age category by county
+* person occupation by county
+
 Two microsimulation tables come out of the Population Synthesizer:
 * household file: one row with attributes for each household, located in a MAZ
 * persons file: one row with attributes for each person, located in a household
