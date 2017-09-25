@@ -18,3 +18,15 @@ BAUST creates
 ## Census Data
 
 Block group data (basis for the new TAZ system) is released for the 5-year estimate. The 5-year release (2013-2017) will be the census control for RTP21. It should be released on Dec 7, 2018. Until then, we will use the most up-to-date release (same time every year). 
+
+
+## Flow
+REMI and associated regional models produce two tables of regional level demographic data to send to BAUST and/or BATMT:
+* household_controls
+* regional_controls
+
+Each five-year period BAUST is run, the model ensures that the total household count by type is the same as represented in the control totals. At the end of the forecast, two demographic data flows are summarized at the MAZ level and passed to both the Population Synthesizer and BATMT:
+* household count by type
+* other forecasts produced by associated scripts  for data in the regional_controls file that is not explicitly used in BAUST
+
+
