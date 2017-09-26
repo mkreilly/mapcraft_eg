@@ -7,9 +7,11 @@ Jun 2018 DRAFT DATA DEADLINE
 
 Dec 2018 5-Year ACS (2013-2017) Released
 
-Jan 2019 FINAL DATA DEADLINE
+May 2019 FINAL DATA DEADLINE
 
 Sep 2019 Politician Consider Goals and Targets
+
+Oct 31 2019 POLICIES TO BE MODELED LIST DEADLINE
 
 May 2020 Three Alternavtive Scenario Releases
 
