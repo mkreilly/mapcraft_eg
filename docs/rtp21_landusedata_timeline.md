@@ -1,7 +1,13 @@
 # RTP 2021 Land Use Data Timeline
 
 
+Nov 2017 MODEL AND DATA SPECS DEADLINE
 
+Jun 2018 DRAFT DATA DEADLINE
+
+Dec 2018 5-Year ACS (2013-2017) Released
+
+Jan 2019 FINAL DATA DEADLINE
 
 Sep 2019 Politician Consider Goals and Targets
 
