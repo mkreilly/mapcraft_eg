@@ -1,1 +1,1 @@
-Insitutions
+Institutions
