@@ -22,14 +22,19 @@ BASIS is the working name for Bay Area Metro's land use and urban economics data
 
 Questions should be directed to:
 * Cynthia Kroll on control totals: ckroll@bayareametro.gov
-* Aksel Olsen on existing policies: aolsen@bayareametro.gov
-* Kearey Smith on the pipeline: ksmith@bayareametro.gov
+* Aksel Olsen on the development pipeline: aolsen@bayareametro.gov
+* Kearey Smith on the existing polcies: ksmith@bayareametro.gov
 * Shimon Isreal on institutions: sisreal@bayareametro.gov
 * RPP Team member TBA on scenarios:
 * Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
 
 --------------
 ## How to Use This Repository
+
+File types
+* each data file has a name and ends i t
+
+
 
 Backwards
 1) start with product 
