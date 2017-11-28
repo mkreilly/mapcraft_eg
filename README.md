@@ -31,9 +31,10 @@ Questions should be directed to:
 --------------
 ## How to Use This Repository
 
-File types
-* each data file has a name and ends i t
-
+Common File Types
+* each data file has a name and generally ends with a csv denoting that is it a comma separated values text file
+* most data files have a corresponding file with "meta" prepended: this contains a variable dictionary for that data file
+* most data files have a corresponding file with "dict" prepended: this contains a variable dictionary for that data file
 
 
 Backwards
