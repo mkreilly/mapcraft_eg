@@ -1,113 +1,110 @@
-name, long_name, five_name, county
-alameda, , almda, ala
-albany, , albny, ala
-berkeley, , brkly, ala
-castro_valley, , , alaREMOVE
-cherryland, , , alaREMOVE
-dublin, , dubln, ala
-emeryville, , emyvl, ala
-fairview, , , alaREMOVE
-fremont, , frmnt, ala
-hayward, , hywrd, ala
-livermore, , lvrmr, ala
-newark, , newrk, ala
-oakland, , oklnd, ala
-piedmont, , piedm, ala
-pleasanton, , pleas, ala
-san_leandro, , slean, ala
-unincorporated_alameda, , uiala, ala
-union_city, , unicy, ala
-antioch, , antch, cnc
-brentwood, , brntw, cnc
-clayton, , clytn, cnc
-concord, , cncrd, cnc
-danville, , dnvll, cnc
-el_cerrito, , elcer, cnc
-hercules, , herc, cnc
-lafayette, , lafay, cnc
-martinez, , mrtnz, cnc
-moraga, , morag, cnc
-oakley, , oakly, cnc
-orinda, , ornda, cnc
-pinole, , pnole, cnc
-pittsburg, , pitts, cnc
-pleasant_hill, , plhll, cnc
-richmond, , rchmd, cnc
-san_pablo, , spabl, cnc
-san_ramon, , sramn, cnc
-unincorporated_contra_costa, , uicnc, cnc
-walnut_creek, , walcr, cnc
-belvedere, , blvdr, mar
-corte_madera, , crtmd, mar
-fairfax, , fairf, mar
-larkspur, , lrksp, mar
-mill_valley, , mllvy, mar
-novato, , novto, mar
-ross, , rosss, mar
-san_anselmo, , , mar
-san_rafael, , , mar
-sausalito, , , mar
-tiburon, , , mar
-unincorporated_marin, , uimar, mar
-american_canyon, , , nap
-calistoga, , , nap
-napa, , , nap
-st_helena, , , nap
-unincorporated_napa, , uinap, nap
-yountville, , , nap
-san_francisco, , sfran, sfr
-atherton, , athrt, smt
-belmont, , belmt, smt
-brisbane, , brisb, smt
-burlingame, , burlg, smt
-colma, , colma, smt
-daly_city, , dalcy, smt
-east_palo_alto, , epalo, smt
-foster_city, , foscy, smt
-half_moon_bay, , hmbay, smt
-hillsborough, , hlsbr, smt
-menlo_park, , menpk, smt
-millbrae, , milbr, smt
-pacifica, , pacfc, smt
-portola_valley, , porvy, smt
-redwood_city, , rwdcy, smt
-san_bruno, , sbrno, smt
-san_carlos, , scarl, smt
-san_mateo, , smate, smt
-south_san_francisco, , ssfrn, smt
-unincorporated_san_mateo, , uismt, smt
-woodside, , woods, smt
-campbell, , cmpbl, scl
-cupertino, , cprtn, scl
-gilroy, , gilry, scl
-los_altos, , lalto, scl
-los_altos_hills, , lalth, scl
-los_gatos, , lgato, scl
-milpitas, , milps, scl
-monte_sereno, , mntsr, scl
-morgan_hill, , mrghl, scl
-mountain_view, , mtnvw, scl
-palo_alto, , palto, scl
-san_jose, , sjose, scl
-santa_clara, , sclar, scl
-saratoga, , sartg, scl
-sunnyvale, , snyvl, scl
-unincorporated_santa_clara, , uiscl, scl
-benicia, , benca, sol
-dixon, , dixon, sol
-fairfield, , frfld, sol
-rio_vista, , rvsta, sol
-suisun_city, , suicy, sol
-unincorporated_solano, , uisol, sol
-vacaville, , vacvl, sol
-vallejo, , vlljo, sol
-cloverdale, , clvdl, son
-cotati, , cotti, son
-healdsburg, , hldsb, son
-petaluma, , ptlma, son
-rohnert_park, , rohnp, son
-santa_rosa, , srosa, son
-sebastopol, , sebas, son
-sonoma, , sonma, son
-unincorporated_sonoma, , uison, son
-windsor, , windr, son
+name, long_name,juris,fips, county
+alameda, ,alam,, ala
+albany, ,alby,, ala
+berkeley, ,brky,, ala
+dublin, ,dubl,, ala
+emeryville, ,emry,, ala
+fremont, ,frmt,, ala
+hayward, ,hayw,, ala
+livermore, ,livr,, ala
+newark, ,newk,, ala
+oakland, ,okld,, ala
+piedmont, ,pied,, ala
+pleasanton, ,ples,, ala
+san_leandro, ,slea,, ala
+unincorporated_alameda, ,uala,, ala
+union_city, ,unic,, ala
+antioch, ,anti,, cnc
+brentwood, ,brnt,, cnc
+clayton, ,clay,, cnc
+concord, ,conc,, cnc
+danville, ,danv,, cnc
+el_cerrito, ,elce,, cnc
+hercules, ,herc,, cnc
+lafayette, ,lafy,, cnc
+martinez, ,mart,, cnc
+moraga, ,mora,, cnc
+oakley, ,okly,, cnc
+orinda, ,orin,, cnc
+pinole, ,pinl,, cnc
+pittsburg, ,pitt,, cnc
+pleasant_hill, ,plhl,, cnc
+richmond, ,rich,, cnc
+san_pablo, ,spab,, cnc
+san_ramon, ,sram,, cnc
+unincorporated_contra_costa, ,ucnc,, cnc
+walnut_creek, ,walc,, cnc
+belvedere, ,belv,, mar
+corte_madera, ,cmad,, mar
+fairfax, ,frfx,, mar
+larkspur, ,lark,, mar
+mill_valley, ,milv,, mar
+novato, ,nova,, mar
+ross, ,ross,, mar
+san_anselmo, ,sans,, mar
+san_rafael, ,sraf,, mar
+sausalito, ,saus,, mar
+tiburon, ,tibu,, mar
+unincorporated_marin, ,umar,, mar
+american_canyon, ,amcn,, nap
+calistoga, ,cali,, nap
+napa, ,napa,, nap
+st_helena, ,shel,, nap
+unincorporated_napa, ,unap,, nap
+yountville, ,yntv,, nap
+san_francisco, ,sfra,, sfr
+atherton, ,atht,, smt
+belmont, ,belm,, smt
+brisbane, ,bris,, smt
+burlingame, ,burl,, smt
+colma, ,colm,, smt
+daly_city, ,dalc,, smt
+east_palo_alto, ,epal,, smt
+foster_city, ,fosc,, smt
+half_moon_bay, ,hmby,, smt
+hillsborough, ,hill,, smt
+menlo_park, ,mprk,, smt
+millbrae, ,mlbr,, smt
+pacifica, ,pacf,, smt
+portola_valley, ,porv,, smt
+redwood_city, ,rwdc,, smt
+san_bruno, ,sbru,, smt
+san_carlos, ,scar,, smt
+san_mateo, ,smat,, smt
+south_san_francisco, ,ssfr,, smt
+unincorporated_san_mateo, ,usmt,, smt
+woodside, ,wood,, smt
+campbell, ,camp,, scl
+cupertino, ,cupe,, scl
+gilroy, ,gilr,, scl
+los_altos, ,lalt,, scl
+los_altos_hills, ,lahl,, scl
+los_gatos, ,lgat,, scl
+milpitas, ,milp,, scl
+monte_sereno, ,mser,, scl
+morgan_hill, ,mghl,, scl
+mountain_view, ,mtvw,, scl
+palo_alto, ,pala,, scl
+san_jose, ,snjs,, scl
+santa_clara, ,scla,, scl
+saratoga, ,sara,, scl
+sunnyvale, ,sunn,, scl
+unincorporated_santa_clara, ,uscl,, scl
+benicia, ,beni,, sol
+dixon, ,dixn,, sol
+fairfield, ,frfd,, sol
+rio_vista, ,riov,, sol
+suisun_city, ,suic,, sol
+unincorporated_solano, ,usol,, sol
+vacaville, ,vaca,, sol
+vallejo, ,vall,, sol
+cloverdale, ,clov,, son
+cotati, ,cota,, son
+healdsburg, ,heal,, son
+petaluma, ,peta,, son
+rohnert_park, ,rnpk,, son
+santa_rosa, ,sros,, son
+sebastopol, ,seba,, son
+sonoma, ,sono,, son
+unincorporated_sonoma, ,uson,, son
+windsor, ,wind,, son
