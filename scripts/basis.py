@@ -46,10 +46,10 @@ def merge_gp_spatial_data(cities_and_counties, path="policies/plu/*.geojson"):
     gdfs = []
     for geojson in glob.glob(path):
         city = get_city_from_gp_path(geojson)
-        print city
+        print geojson
         gdf = gpd.GeoDataFrame.from_file(geojson)
         gdf["city"] = city
-        gdf["priority"] = 2 if "plu" in geojson else 1
+        gdf["priority"] = 2 if "plu" in os.path.split(geojson)[1] else 1
         gdfs.append(gdf)
 
     return gpd.GeoDataFrame(pd.concat(gdfs))
