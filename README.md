@@ -1,4 +1,4 @@
-# BASIS
+# petrale
 
 [![Build Status](https://travis-ci.org/BayAreaMetro/basis.svg?branch=master)](https://travis-ci.org/BayAreaMetro/basis)
 
@@ -18,15 +18,6 @@ This repository contains land use/urban economics data and related code for Bay 
 * tests: code to assure the validity of database changes
 * zones: various boundary files and related data for TAZs, MAZs, Jurisdictions, PDAs, etc; geographic lookups
 
-BASIS is the working name for Bay Area Metro's land use and urban economics database. It stands for Bay Area Spatial Information System, the same name used by ABAG in the 1970's for the region's first digital geographic information system.
-
-Questions should be directed to:
-* Cynthia Kroll on control totals: ckroll@bayareametro.gov
-* Aksel Olsen on the development pipeline: aolsen@bayareametro.gov
-* Kearey Smith on the existing polcies: ksmith@bayareametro.gov
-* Shimon Isreal on institutions: sisreal@bayareametro.gov
-* RPP Team member TBA on scenarios:
-* Michael Reilly on the basemap or other topics: mreilly@bayareametro.gov
 
 --------------
 ## How to Use This Repository
