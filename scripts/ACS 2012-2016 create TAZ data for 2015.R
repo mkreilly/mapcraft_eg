@@ -1,43 +1,87 @@
 
-# Create ACS 2012-2016 PUMS files in r format
+# ACS 2012-2016 create TAZ data for 2015.R
+# Create "2015" TAZ data from ACS 2012-2016 PUMS files in r format
+# SI
+# October 24, 2018
 
 # Import Libraries
 
 suppressMessages(library(dplyr))
+library(tidycensus)
 
-# Set up directories with csv files for PUMS data
+# Set up directories and variables, import TAZ/block equivalence, install census key, set ACS year, set CPI deflation
 
-CA_HOUSEHOLDS = "M:/Data/Census/PUMS/PUMS 2012-16/ss16hca.csv"
-CA_PERSONS = "M:/Data/Census/PUMS/PUMS 2012-16/ss16pca.csv"
-EQUIVALENCE = "m:/data/census/corrlib/Bay_puma_2010.csv"
+wd <- "C:/Users/sisrae/Documents/GitHub/petrale/output/"
+setwd(wd)
+blockTAZ2010 <- "M:/Data/GIS layers/TM1_taz_census2010/block_to_TAZ1454.csv"
+censuskey <- readLines("H:/Census/API.txt")
+baycounties <- c("01","13","41","55","75","81","85","95","97")
+census_api_key(censuskey, install = TRUE, overwrite = TRUE)
+ACS_year <- 2016
+CPI_current <- 266.34  # CPI value for 2016
+CPI_reference <- 180.20 # CPI value for 2000
+CPI_ratio <- CPI_reference/CPI_current # 2000 CPI/2016 CPI
 
-CAHH_OUTPUT_RDATA   = "M:/Data/Census/PUMS/PUMS 2012-16/hcalif1216.Rdata"
-CAHH_OCC_OUTPUT_RDATA   = "M:/Data/Census/PUMS/PUMS 2012-16/hcalif1216_occ.Rdata"
-CAPER_OUTPUT_RDATA = "M:/Data/Census/PUMS/PUMS 2012-16/pcalif1216.Rdata"
+# Income table - Guidelines for HH income values used from ACS
 
-BAYHH_OUTPUT_RDATA   = "M:/Data/Census/PUMS/PUMS 2012-16/hbayarea1216.Rdata"
-BAYHH_OCC_OUTPUT_RDATA   = "M:/Data/Census/PUMS/PUMS 2012-16/hbayarea1216_occ.Rdata"
-BAYPER_OUTPUT_RDATA = "M:/Data/Census/PUMS/PUMS 2012-16/pbayarea1216.Rdata"
+    # 2000 income breakpoints       2016 equivalent   Nearest ACS breakpoint
+    # $30,000                       $44,341           $45,000
+    # $60,000                       $88,681           $100,000
+    # $100,000                      $147,802          $150,000
 
-hcalif1216 <- read.csv(CA_HOUSEHOLDS, header=TRUE)
-pcalif1216 <- read.csv(CA_PERSONS, header=TRUE)
-equivalence <- read.csv(EQUIVALENCE, header=TRUE)
+# Import ACS library for variable inspection
 
-hbayarea1216 <- merge (hcalif1216,equivalence, by.x="PUMA", by.y="PUMARC")
-pbayarea1216 <- merge (pcalif1216,equivalence, by.x="PUMA", by.y="PUMARC")
+ACS_table <- load_variables(year=2016, dataset="acs5", cache=TRUE)
 
-# Select only occupied households to save to a separate occupied file
+# Set up ACS variables for later API download
 
-hcalif1216_occ <- subset (hcalif1216, !is.na(TEN))
-row.names(hcalif1216_occ) <- NULL
+ACS_variables <- c(TOTHH = "B25009_001",
+                   TOTPOP = "B01003_001",
+                   HHPOP = "B11002_001",
+                   GQPOP = "B26001_001E",
+                   employed = "B23025_004",           # Employed residents is "employed" + "armed forces", summed below
+                   armedforces = "B23025_006", 
+                   hhinc0_10 = "B19001_",
+                   hhinc10_15 = "B19001_",
+                   hhinc15_20 = "B19001_",
+                   hhinc20_25 = "B19001_",
+                   hhinc25_30 = "B19001_",
+                   hhinc30_35 = "B19001_",
+                   hhinc35_40 = "B19001_",
+                   hhinc40_45 = "B19001_",
+                   hhinc45_50 = "B19001_",
+                   hhinc50_60 = "B19001_",
+                   hhinc60_75 = "B19001_",
+                   hhinc75_100 = "B19001_",
+                   hhinc100_125 = "B19001_",
+                   hhinc125_150 = "B19001_",
+                   hhinc150_200 = "B19001_",
+                   hhinc200p = "B19001_",
+                   
+                   )
 
-hbayarea1216_occ <- subset (hbayarea1216, !is.na(TEN))
-row.names(hbayarea1216_occ) <- NULL
 
-save(hcalif1216, file = CAHH_OUTPUT_RDATA)
-save(hcalif1216_occ, file = CAHH_OCC_OUTPUT_RDATA)
-save(pcalif1216, file = CAPER_OUTPUT_RDATA)
 
-save(hbayarea1216, file = BAYHH_OUTPUT_RDATA)
-save(hbayarea1216_occ, file = BAYHH_OCC_OUTPUT_RDATA)
-save(pbayarea1216, file = BAYPER_OUTPUT_RDATA)
+# Bring in 2010 block/TAZ equivalency, create block group ID field for later joining
+
+blockTAZ <- read.csv(blockTAZ2010,header=TRUE) %>% mutate(      
+  blockgroup = paste0("0",substr(GEOID10,1,11))) 
+
+
+blockTAZBG <- blockTAZ %>% 
+  group_by(blockgroup) %>%
+  summarize(BGTotal=sum(block_POPULATION))
+
+combined_block <- left_join(blockTAZ,blockTAZBG,by="blockgroup") %>% mutate(
+  sharebg=if_else(block_POPULATION==0,0,block_POPULATION/BGTotal)
+)
+
+
+trial <- get_acs(geography = "block group", variables = ACS_variables,
+                 state = "06", county=baycounties,
+                 year=ACS_year,
+                 output="wide",
+                 survey = "acs5")
+
+write.csv(sum.commuters15, paste0(SUMMARY_OUT,"PUMS",Year,"_Inter_regional_commuters.csv"), row.names = FALSE, quote = T)
+
