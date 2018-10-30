@@ -35,6 +35,10 @@ CPI_current <- 266.34  # CPI value for 2016
 CPI_reference <- 180.20 # CPI value for 2000
 CPI_ratio <- CPI_current/CPI_reference # 2016 CPI/2000 CPI
 
+USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
+BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys", "Development")
+PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
+
 # Income table - Guidelines for HH income values used from ACS
 "
 
@@ -206,7 +210,7 @@ blockTAZTract <- blockTAZ %>%
 # Be mindful of divide by zero error associated with 0-pop block groups and tracts
 
 combined_block <- left_join(blockTAZ,blockTAZBG,by="blockgroup") %>% mutate(
-  sharebg=if_else(block_POPULATION==0,0,block_POPULATION/BGTotal)) 
+  sharebg=if_else(block_POPULATION==0,0,block_POPULATION/BGTotal))
 
 combined_block <- left_join(combined_block,blockTAZTract,by="tract") %>% mutate(
   sharetract=if_else(block_POPULATION==0,0,block_POPULATION/TractTotal))
@@ -298,6 +302,20 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
             female75_79E+
             female80_84E+
             female85pE)*sharebg,
+  AGE62P=(male62_64E+
+            male65_66E+
+            male67_69E+
+            male70_74E+
+            male75_79E+
+            male80_84E+
+            male85pE+
+            female62_64E+
+            female65_66E+
+            female67_69E+
+            female70_74E+
+            female75_79E+
+            female80_84E+
+            female85pE)*sharebg,
   SFDU=(unit1dE+
           unit1aE+
           mobileE+
@@ -358,13 +376,61 @@ final <- workingdata %>%
               hh_kids_yes=sum(hh_kids_yes),
               hh_kids_no=sum(hh_kids_no)) 
 
+# Round data, find max value in categorical data to adjust totals so they match univariate totals
+# For example, the households by income across categories should sum to equal total HHs
+# If unequal, the largest constituent cell is adjusted up or down such that the category sums match the marginal total
+
 final_rounded <-final %>%
-  mutate_if(is.numeric,round,0)
+  mutate_if(is.numeric,round,0) %>%
+  mutate (
+    max_pop= 3+max.col(.[4:5]),
+    max_income= 6+max.col(.[7:10]),
+    max_age= 10+max.col(.[11:15]),
+    max_size= 17+max.col(.[18:21]),
+    max_workers= 21+max.col(.[22:25]),
+    max_kids= 25+max.col(.[26:27])
+    )
 
+
+final_rounded_adjusted <- final_rounded %>% mutate(
+  # Balance HH and GQ pop
+  HHPOP = if_else(max_pop==4,HHPOP+(TOTPOP-(HHPOP+GQPOP)),HHPOP),
+  GQPOP = if_else(max_pop==5,GQPOP+(TOTPOP-(HHPOP+GQPOP)),GQPOP),
+  # Balance population by age
+  AGE0004 = if_else(max_age==11,AGE0004+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0004),
+  AGE0519 = if_else(max_age==12,AGE0519+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0519),
+  AGE2044 = if_else(max_age==13,AGE2044+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE2044),
+  AGE4564 = if_else(max_age==14,AGE4564+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE4564),
+  AGE65P = if_else(max_age==15,AGE65P+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE65P),
+  # Balance HH income categories
+  HHINCQ1 = if_else(max_income==7,HHINCQ1+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ1),
+  HHINCQ2 = if_else(max_income==8,HHINCQ2+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ2),
+  HHINCQ3 = if_else(max_income==9,HHINCQ3+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ3),
+  HHINCQ4 = if_else(max_income==10,HHINCQ4+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ4),
+  #Balance HH size categories
+  hh_size1 = if_else(max_size==18,hh_size1+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size1),
+  hh_size2 = if_else(max_size==19,hh_size2+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size2),
+  hh_size3 = if_else(max_size==20,hh_size3+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size3),
+  hh_size4_plus = if_else(max_size==21,hh_size4_plus+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size4_plus),
+  #Balance HH worker categories
+  hh_wrks_0 = if_else(max_workers==22,hh_wrks_0+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_0),
+  hh_wrks_1 = if_else(max_workers==23,hh_wrks_1+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_1),
+  hh_wrks_2 = if_else(max_workers==24,hh_wrks_2+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_2),
+  hh_wrks_3_plus = if_else(max_workers==25,hh_wrks_3_plus+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_3_plus),
+  #Balance HH kids categories
+  hh_kids_yes = if_else(max_kids==26,hh_kids_yes+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_yes),
+  hh_kids_no = if_else(max_kids==27,hh_kids_no+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_no)
+  ) %>%
+  select(-max_pop,-max_income,-max_age,-max_size,-max_workers,-max_kids)
+  
+
+# Read in 2010 data and select variables for joining
+
+PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE)
+PBA2010_join <- PBA2010 %>%
+  select(ZONE,DISTRICT,SD,COUNTY,TOTACRE,RESACRE,CIACRE,PRKCST, AREATYPE,HSENROLL,COLLPTE,TOPOLOGY,TERMINAL,ZERO,sftaz)
+trial <- PBA2010_join %>%
+  select(DISTRICT,ZONE,SD,COUNTY,TOTACRE,RESACRE,CIACRE,PRKCST, AREATYPE,HSENROLL,COLLPTE,TOPOLOGY,TERMINAL,ZERO,sftaz)
 write.csv(final_rounded, "TAZ1454 2015 Land Use.csv", row.names = FALSE, quote = T)
+write.csv(final_rounded_adjusted, "TAZ1454 2015 Land Use Adjusted.csv", row.names = FALSE, quote = T)
 
-
-
-
-
-               
