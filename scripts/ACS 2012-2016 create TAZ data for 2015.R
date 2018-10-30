@@ -455,7 +455,7 @@ New2015 <- left_join(joined_10_15_employment,school_2015, by="ZONE")%>%
          gqpop)
 
 
-# Summarize ACS and employment categories by superdistrict for both 2010 and 2015
+# Summarize ACS and employment data by superdistrict for both 2010 and 2015
 
 summed10 <- PBA2010 %>%
   group_by(DISTRICT) %>%
@@ -473,11 +473,20 @@ summed15 <- New2015 %>%
             RETEMPN=sum(RETEMPN),FPSEMPN=sum(FPSEMPN),HEREMPN=sum(HEREMPN),AGREMPN=sum(AGREMPN),MWTEMPN=sum(MWTEMPN),
             OTHEMPN=sum(OTHEMPN),HSENROLL=sum(HSENROLL),COLLFTE=sum(COLLFTE),COLLPTE=sum(COLLPTE),gqpop=sum(gqpop))
 
-# Export 2010 district summary data
+# Export new 2015 data, 2010 and 2015 district summary data
 
 write.csv(New2015, "TAZ1454 2015 Land Use.csv", row.names = FALSE, quote = T)
 write.csv(summed10, "TAZ1454 2010 District Summary.csv", row.names = FALSE, quote = T)
 write.csv(summed15, "TAZ1454 2015 District Summary.csv", row.names = FALSE, quote = T)
+
+# Select out PopSim variables and export to separate csv
+
+popsim_vars <- temp_rounded_adjusted %>% 
+  rename(ZONE=TAZ1454,HH=TOTHH,POP=TOTPOP,gq_total=gqpop)%>%
+  select(HH,POP,hh_size1,hh_size2,hh_size3,hh_size4_plus,gq_total,hh_wrks_0,hh_wrks_1,hh_wrks_2,hh_wrks_3_plus,
+         hh_kids_no,hh_kids_yes)
+
+write.csv(popsim_vars, "TAZ1454 2015 Popsim Vars.csv", row.names = FALSE, quote = T)
 
 
 
