@@ -24,6 +24,7 @@ library(tidycensus)
 
 wd <- "C:/Users/sisrae/Documents/GitHub/petrale/output/"
 setwd(wd)
+employment_2015 <- "C:/Users/sisrae/Documents/GitHub/petrale/basemap/2015_employment_TAZ1454.csv"
 
 blockTAZ2010 <- "M:/Data/GIS layers/TM1_taz_census2010/block_to_TAZ1454.csv"
 censuskey <- readLines("H:/Census/API.txt")
@@ -38,6 +39,8 @@ CPI_ratio <- CPI_current/CPI_reference # 2016 CPI/2000 CPI
 USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
 BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys", "Development")
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
+school_2015 <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
+
 
 # Income table - Guidelines for HH income values used from ACS
 "
@@ -347,7 +350,7 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
 
 # Summarize to TAZ and select only variables of interest, round data to nearest whole number, export csv
 
-final <- workingdata %>%
+temp <- workingdata %>%
   group_by(TAZ1454) %>%
   summarize(  TOTHH=sum(TOTHH),
               TOTPOP=sum(TOTPOP),
@@ -374,13 +377,14 @@ final <- workingdata %>%
               hh_wrks_2=sum(hh_wrks_2),
               hh_wrks_3_plus=sum(hh_wrks_3_plus),
               hh_kids_yes=sum(hh_kids_yes),
-              hh_kids_no=sum(hh_kids_no)) 
+              hh_kids_no=sum(hh_kids_no),
+              AGE62P=sum(AGE62P))
 
 # Round data, find max value in categorical data to adjust totals so they match univariate totals
 # For example, the households by income across categories should sum to equal total HHs
 # If unequal, the largest constituent cell is adjusted up or down such that the category sums match the marginal total
 
-final_rounded <-final %>%
+temp_rounded <- temp %>%
   mutate_if(is.numeric,round,0) %>%
   mutate (
     max_pop= 3+max.col(.[4:5]),
@@ -388,11 +392,12 @@ final_rounded <-final %>%
     max_age= 10+max.col(.[11:15]),
     max_size= 17+max.col(.[18:21]),
     max_workers= 21+max.col(.[22:25]),
-    max_kids= 25+max.col(.[26:27])
+    max_kids= 25+max.col(.[26:27]),
+    SHPOP62P=AGE62P/TOTPOP
     )
 
 
-final_rounded_adjusted <- final_rounded %>% mutate(
+temp_rounded_adjusted <- temp_rounded %>% mutate(
   # Balance HH and GQ pop
   HHPOP = if_else(max_pop==4,HHPOP+(TOTPOP-(HHPOP+GQPOP)),HHPOP),
   GQPOP = if_else(max_pop==5,GQPOP+(TOTPOP-(HHPOP+GQPOP)),GQPOP),
@@ -421,16 +426,54 @@ final_rounded_adjusted <- final_rounded %>% mutate(
   hh_kids_yes = if_else(max_kids==26,hh_kids_yes+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_yes),
   hh_kids_no = if_else(max_kids==27,hh_kids_no+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_no)
   ) %>%
-  select(-max_pop,-max_income,-max_age,-max_size,-max_workers,-max_kids)
+  select(-max_pop,-max_income,-max_age,-max_size,-max_workers,-max_kids,-AGE62P)
   
 
 # Read in 2010 data and select variables for joining
 
 PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE)
-PBA2010_join <- PBA2010 %>%
+PBA2010_joiner <- PBA2010 %>%
   select(ZONE,DISTRICT,SD,COUNTY,TOTACRE,RESACRE,CIACRE,PRKCST, AREATYPE,HSENROLL,COLLPTE,TOPOLOGY,TERMINAL,ZERO,sftaz)
-trial <- PBA2010_join %>%
-  select(DISTRICT,ZONE,SD,COUNTY,TOTACRE,RESACRE,CIACRE,PRKCST, AREATYPE,HSENROLL,COLLPTE,TOPOLOGY,TERMINAL,ZERO,sftaz)
-write.csv(final_rounded, "TAZ1454 2015 Land Use.csv", row.names = FALSE, quote = T)
-write.csv(final_rounded_adjusted, "TAZ1454 2015 Land Use Adjusted.csv", row.names = FALSE, quote = T)
+#write.csv(final_rounded, "TAZ1454 2015 Land Use.csv", row.names = FALSE, quote = T)
+#write.csv(final_rounded_adjusted, "TAZ1454 2015 Land Use Adjusted.csv", row.names = FALSE, quote = T)
+
+# Join 2015 data to 2010 reused variables, add employment data, add HHLDS variable (same as TOTHH), select new 2015
+
+employment_data_2015 <- read.csv(employment_data,header=TRUE)
+school_data_2015 <- read.csv(school_data_2015)
+
+joined1015 <- left_join(PBA2010_joiner,temp_rounded_adjusted, by=c("ZONE"="TAZ1454"))
+
+PBA2015 <- left_join(joined1015,employment_data, by=c("ZONE"="TAZ1454")) %>% 
+  mutate(HHLDS=TOTHH) %>% 
+  select(ZONE,DISTRICT,SD,COUNTY,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,TOTACRE,
+         RESACRE,CIACRE,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREEMPN,AGREMPN,
+         MWTEMPN,OTHEMPN,PRKCST,OPRKCST,AREATYPE,HSENROLL,COLLFTE,COLLPTE,TERMINAL,TOPOLOGY,ZERO,HHLDS,SFTAZ,
+         GQPOP)
+
+
+# Summarize ACS and employment categories by superdistrict for both 2010 and 2015
+
+summed10 <- PBA2010 %>%
+  group_by(DISTRICT) %>%
+  summarize(TOTHH=sum(TOTHH),HHPOP=sum(HHPOP),TOTPOP=sum(TOTPOP),EMPRES=sum(EMPRES),SFDU=sum(SFDU),MFDU=sum(MFDU),
+            HHINCQ1=sum(HHINCQ1),HHINCQ2=sum(HHINCQ2),HHINCQ3=sum(HHINCQ3),HHINCQ4=sum(HHINCQ4),TOTEMP=sum(TOTEMP),
+            AGE0004=sum(AGE0004),AGE0519=sum(AGE0519),AGE2044=sum(AGE2044),AGE4564=sum(AGE4564),AGE65P=sum(AGE65P),
+            RETEMPN=sum(RETEMPN),FPSEMPN=sum(FPSEMPN),HEREMPN=sum(HEREMPN),OTHEMPN=sum(OTHEMPN),AGREMPN=sum(AGREMPN),
+            MWTEMPN=sum(MWTEMPN),gqpop=sum(gqpop))
+
+summed15 <- PBA2015 %>%
+  group_by(DISTRICT) %>%
+  summarize(TOTHH=sum(TOTHH),HHPOP=sum(HHPOP),TOTPOP=sum(TOTPOP),EMPRES=sum(EMPRES),SFDU=sum(SFDU),MFDU=sum(MFDU),
+            HHINCQ1=sum(HHINCQ1),HHINCQ2=sum(HHINCQ2),HHINCQ3=sum(HHINCQ3),HHINCQ4=sum(HHINCQ4),TOTEMP=sum(TOTEMP),
+            AGE0004=sum(AGE0004),AGE0519=sum(AGE0519),AGE2044=sum(AGE2044),AGE4564=sum(AGE4564),AGE65P=sum(AGE65P),
+            RETEMPN=sum(RETEMPN),FPSEMPN=sum(FPSEMPN),HEREMPN=sum(HEREMPN),OTHEMPN=sum(OTHEMPN),AGREMPN=sum(AGREMPN),
+            MWTEMPN=sum(MWTEMPN),gqpop=sum(gqpop))
+
+# Export 2010 district summary data
+
+write.csv(summed10, "TAZ1454 2010 District Summary.csv", row.names = FALSE, quote = T)
+write.csv(summed15, "TAZ1454 2010 District Summary.csv", row.names = FALSE, quote = T)
+
+
 
