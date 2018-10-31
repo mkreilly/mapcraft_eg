@@ -39,7 +39,7 @@ CPI_ratio <- CPI_current/CPI_reference # 2016 CPI/2000 CPI
 USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
 BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys", "Development")
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
-school_2015_data <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
+school_parking_2015_data <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
 
 
 # Income table - Guidelines for HH income values used from ACS
@@ -436,18 +436,18 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
 
 PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
 PBA2010_joiner <- PBA2010%>%
-  select(ZONE,DISTRICT,SD,COUNTY,TOTACRE,RESACRE,CIACRE,PRKCST,OPRKCST,AREATYPE,TOPOLOGY,TERMINAL,ZERO,sftaz)
+  select(ZONE,DISTRICT,SD,COUNTY,TOTACRE,RESACRE,CIACRE,AREATYPE,TOPOLOGY,ZERO,sftaz)
 
 employment_2015 <- read.csv(employment_2015_data,header=TRUE) %>%
   rename(TOTEMP=EMPNUM,HEREMPN=HEREEMPN)               # Rename total employment and HEREMPN variables to match
 
-school_2015 <- read.csv(school_2015_data, header=TRUE) %>% 
-  select(ZONE,HSENROLL,COLLFTE,COLLPTE)
+school_parking_2015 <- read.csv(school_parking_2015_data, header=TRUE) %>% 
+  select(ZONE,HSENROLL,COLLFTE,COLLPTE,PRKCST,OPRKCST,TERMINAL)
 
 joined_10_15 <- left_join(PBA2010_joiner,temp_rounded_adjusted, by=c("ZONE"="TAZ1454"))
 joined_10_15_employment <- left_join(joined_10_15,employment_2015, by=c("ZONE"="TAZ1454"))
 
-New2015 <- left_join(joined_10_15_employment,school_2015, by="ZONE")%>% 
+New2015 <- left_join(joined_10_15_employment,school_parking_2015, by="ZONE")%>% 
   mutate(hhlds=TOTHH) %>%
   select(ZONE,DISTRICT,SD,COUNTY,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,TOTACRE,
          RESACRE,CIACRE,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREMPN,AGREMPN,
