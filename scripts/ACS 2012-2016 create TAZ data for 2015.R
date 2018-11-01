@@ -348,7 +348,7 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
   hh_kids_no=(ownkidsnoE+rentkidsnoE)*sharetract
 )
 
-# Summarize to TAZ and select only variables of interest, round data to nearest whole number, export csv
+# Summarize to TAZ and select only variables of interest
 
 temp <- workingdata %>%
   group_by(TAZ1454) %>%
