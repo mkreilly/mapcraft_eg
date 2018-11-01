@@ -433,7 +433,7 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
 
 # Read in 2010 data and select variables for joining to 2015 data
 # Bring in updated 2015 employment for joining
-# Bring in school data from PBA 2040, 2015 TAZ data 
+# Bring in school and parking data from PBA 2040, 2015 TAZ data 
 # Join "2015" census-derived data to 2010/2015 reused variables and 2015 employment
 # Add HHLDS variable (same as TOTHH), select new 2015 output
 
