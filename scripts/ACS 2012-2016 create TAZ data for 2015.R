@@ -383,6 +383,7 @@ temp <- workingdata %>%
 # Round data, find max value in categorical data to adjust totals so they match univariate totals
 # For example, the households by income across categories should sum to equal total HHs
 # If unequal, the largest constituent cell is adjusted up or down such that the category sums match the marginal total
+# Add in population over age 62 variable that's also needed (but shouldn't be rounded, so added at the end)
 
 temp_rounded <- temp %>%
   mutate_if(is.numeric,round,0) %>%
@@ -396,6 +397,7 @@ temp_rounded <- temp %>%
     SHPOP62P=AGE62P/TOTPOP
     )
 
+# Now use max values determined above to find appropriate column for adjustement
 
 temp_rounded_adjusted <- temp_rounded %>% mutate(
   # Balance HH and GQ pop
@@ -431,8 +433,9 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
 
 # Read in 2010 data and select variables for joining to 2015 data
 # Bring in updated 2015 employment for joining
-# Bring in school data from PBA 2015 run
-# Join 2015 data to 2010 reused variables and 2015 employment, add HHLDS variable (same as TOTHH), select new 2015
+# Bring in school data from PBA 2040, 2015 TAZ data 
+# Join "2015" census-derived data to 2010/2015 reused variables and 2015 employment
+# Add HHLDS variable (same as TOTHH), select new 2015 output
 
 PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
 PBA2010_joiner <- PBA2010%>%
