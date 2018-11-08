@@ -397,7 +397,7 @@ temp_rounded <- temp %>%
     SHPOP62P=AGE62P/TOTPOP
     )
 
-# Now use max values determined above to find appropriate column for adjustement
+# Now use max values determined above to find appropriate column for adjustment
 
 temp_rounded_adjusted <- temp_rounded %>% mutate(
   # Balance HH and GQ pop
