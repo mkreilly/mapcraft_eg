@@ -14,6 +14,11 @@
    level, tract-level data used instead. Suppressed variables may change if ACS_year is changed. This 
    should be checked, as this change could cause the script not to work.
 
+3. Group quarters come from the decennial census so they're outdated.  TODO: grow these for 2015.
+
+4. Persons with miltary occupation is from gq_type_mil, which is probably low (since it's both from 2010
+   and also only includes those living in group quarters.)  TOD: find better source.
+
 "
 # Import Libraries
 
@@ -21,17 +26,18 @@ suppressMessages(library(dplyr))
 library(tidycensus)
 
 # Set up directories, import TAZ/block equivalence, install census key, set ACS year,set CPI inflation
-
-wd <- "C:/Users/sisrae/Documents/GitHub/petrale/output/"
+# Z is MainModelShare
+wd                   <- "Z:/petrale/output/"
 setwd(wd)
-employment_2015_data <- "C:/Users/sisrae/Documents/GitHub/petrale/basemap/2015_employment_TAZ1454.csv"
+employment_2015_data <- "Z:/petrale/basemap/2015_employment_TAZ1454.csv"
 
-blockTAZ2010 <- "M:/Data/GIS layers/TM1_taz_census2010/block_to_TAZ1454.csv"
-censuskey <- readLines("H:/Census/API.txt")
-baycounties <- c("01","13","41","55","75","81","85","95","97")
+blockTAZ2010         <- "M:/Data/GIS layers/TM1_taz_census2010/block_to_TAZ1454.csv"
+censuskey            <- readLines("M:/Data/Census/API/api-key.txt")
+baycounties          <- c("01","13","41","55","75","81","85","95","97")
 census_api_key(censuskey, install = TRUE, overwrite = TRUE)
 
 ACS_year <- 2016
+sf1_year <- 2010
 CPI_current <- 266.34  # CPI value for 2016
 CPI_reference <- 180.20 # CPI value for 2000
 CPI_ratio <- CPI_current/CPI_reference # 2016 CPI/2000 CPI
@@ -85,8 +91,7 @@ ACS_table <- load_variables(year=2016, dataset="acs5", cache=TRUE)
 ACS_BG_variables <- c(tothh = "B25009_001",        #Total HHs, pop, HH pop, and GQ pop
                       totpop = "B01003_001",
                       hhpop = "B11002_001",
-                      gqpop = "B09019_038",
-                   
+
                       employed = "B23025_004",     # Employed residents is "employed" + "armed forces"
                       armedforces = "B23025_006", 
                    
@@ -179,7 +184,47 @@ ACS_BG_variables <- c(tothh = "B25009_001",        #Total HHs, pop, HH pop, and 
                       rent4 = "B25009_014",
                       rent5 = "B25009_015",
                       rent6 = "B25009_016",
-                      rent7p = "B25009_017")
+                      rent7p = "B25009_017",
+                      
+                      # these skip some numbers since there are nested levels
+                      occ_m_manage    ="C24010_005", # Management
+                      occ_m_prof_biz  ="C24010_006", # Business and financial
+                      occ_m_prof_comp ="C24010_007", # Computer, engineering, and science
+                      occ_m_svc_comm  ="C24010_012", # community and social service
+                      occ_m_prof_leg  ="C24010_013", # Legal
+                      occ_m_prof_edu  ="C24010_014", # Education, training, and library
+                      occ_m_svc_ent   ="C24010_015", # Arts, design, entertainment, sports, and media
+                      occ_m_prof_heal ="C24010_016", # Healthcare practitioners and technical
+                      occ_m_svc_heal  ="C24010_020", # Healthcare support
+                      occ_m_svc_fire  ="C24010_022", # Fire fighting and prevention, and other protective service workers
+                      occ_m_svc_law   ="C24010_023", # Law enforcement workers
+                      occ_m_ret_eat   ="C24010_024", # Food preparation and serving related
+                      occ_m_man_build ="C24010_025", # Building and grounds cleaning and maintenance
+                      occ_m_svc_pers  ="C24010_026", # Personal care and service
+                      occ_m_ret_sales ="C24010_028", # Sales and related
+                      occ_m_svc_off   ="C24010_029", # Office and administrative support
+                      occ_m_man_nat   ="C24010_030", # Natural resources, construction, and maintenance
+                      occ_m_man_prod  ="C24010_034", # Production, transportation, and material moving
+
+                      occ_f_manage    ="C24010_041", # Management
+                      occ_f_prof_biz  ="C24010_042", # Business and financial
+                      occ_f_prof_comp ="C24010_043", # Computer, engineering, and science
+                      occ_f_svc_comm  ="C24010_048", # community and social service
+                      occ_f_prof_leg  ="C24010_049", # Legal
+                      occ_f_prof_edu  ="C24010_050", # Education, training, and library
+                      occ_f_svc_ent   ="C24010_051", # Arts, design, entertainment, sports, and media
+                      occ_f_prof_heal ="C24010_052", # Healthcare practitioners and technical
+                      occ_f_svc_heal  ="C24010_056", # Healthcare support
+                      occ_f_svc_fire  ="C24010_058", # Fire fighting and prevention, and other protective service workers
+                      occ_f_svc_law   ="C24010_059", # Law enforcement workers
+                      occ_f_ret_eat   ="C24010_060", # Food preparation and serving related
+                      occ_f_man_build ="C24010_061", # Building and grounds cleaning and maintenance
+                      occ_f_svc_pers  ="C24010_062", # Personal care and service
+                      occ_f_ret_sales ="C24010_064", # Sales and related
+                      occ_f_svc_off   ="C24010_065", # Office and administrative support
+                      occ_f_man_nat   ="C24010_066", # Natural resources, construction, and maintenance
+                      occ_f_man_prod  ="C24010_070"  # Production, transportation, and material moving
+                      )
                    
         
 ACS_tract_variables <-c(hhwrks0 = "B08202_002",     # Households by number of workers
@@ -192,6 +237,28 @@ ACS_tract_variables <-c(hhwrks0 = "B08202_002",     # Households by number of wo
                         ownkidsno = "B25012_009",
                         rentkidsno = "B25012_017"
                         )
+
+sf1_table <- load_variables(year=2010, dataset="sf1", cache=TRUE)
+
+sf1_tract_variables <-
+  c(gq_noninst_m_0017_univ = "P043010",
+    gq_noninst_m_0017_mil  = "P043011",
+    gq_noninst_m_0017_oth  = "P043012",
+    gq_noninst_m_1864_univ = "P043020",
+    gq_noninst_m_1864_mil  = "P043021",
+    gq_noninst_m_1864_oth  = "P043022",
+    gq_noninst_m_65p_univ  = "P043030",
+    gq_noninst_m_65p_mil   = "P043031",
+    gq_noninst_m_65p_oth   = "P043032",
+    gq_noninst_f_0017_univ = "P043041",
+    gq_noninst_f_0017_mil  = "P043042",
+    gq_noninst_f_0017_oth  = "P043043",
+    gq_noninst_f_1864_univ = "P043051",
+    gq_noninst_f_1864_mil  = "P043052",
+    gq_noninst_f_1864_oth  = "P043053",
+    gq_noninst_f_65p_univ  = "P043061",
+    gq_noninst_f_65p_mil   = "P043062",
+    gq_noninst_f_65p_oth   = "P043063")
 
 # Bring in 2010 block/TAZ equivalency, create block group ID and tract ID fields for later joining to ACS data
 
@@ -232,6 +299,11 @@ ACS_tract_raw <- get_acs(geography = "tract", variables = ACS_tract_variables,
                       output="wide",
                       survey = "acs5")
 
+sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variables,
+                            state = "06", county=baycounties,
+                            year=sf1_year,
+                            output="wide")
+
 # Join 2016 ACS block group and tract variables to combined_block file
 # Combine and collapse ACS categories to get land use control totals, as appropriate
 # Apply block share of 2016 ACS variables using block/block group and block/tract shares of 2010 total population
@@ -242,7 +314,6 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
   TOTHH=tothhE*sharebg,
   TOTPOP=totpopE*sharebg,
   HHPOP=hhpopE*sharebg,
-  gqpop=gqpopE*sharebg,
   EMPRES=(employedE+armedforcesE)*sharebg,
   HHINCQ1=(hhinc0_10E+
              hhinc10_15E+
@@ -329,10 +400,10 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
           unit10_19E+
           unit20_49E+
           unit50pE)*sharebg,
-  hh_size1=(own1E+rent1E)*sharebg,
-  hh_size2=(own2E+rent2E)*sharebg,
-  hh_size3=(own3E+rent3E)*sharebg,
-  hh_size4_plus=(own4E+
+  hh_size_1=(own1E+rent1E)*sharebg,
+  hh_size_2=(own2E+rent2E)*sharebg,
+  hh_size_3=(own3E+rent3E)*sharebg,
+  hh_size_4_plus=(own4E+
                    own5E+
                    own6E+
                    own7pE+
@@ -345,8 +416,46 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
   hh_wrks_2=hhwrks2E*sharetract,
   hh_wrks_3_plus=hhwrks3pE*sharetract,
   hh_kids_yes=(ownkidsyesE+rentkidsyesE)*sharetract,
-  hh_kids_no=(ownkidsnoE+rentkidsnoE)*sharetract
+  hh_kids_no=(ownkidsnoE+rentkidsnoE)*sharetract,
+  pers_occ_management   = (occ_m_manageE    + occ_f_manageE   )*sharebg,
+  pers_occ_professional = (occ_m_prof_bizE  + occ_f_prof_bizE  +
+                           occ_m_prof_compE + occ_f_prof_compE +
+                           occ_m_prof_legE  + occ_f_prof_legE  +
+                           occ_m_prof_eduE  + occ_f_prof_eduE  +
+                           occ_m_prof_healE + occ_f_prof_healE)*sharebg,
+  pers_occ_services     = (occ_m_svc_commE  + occ_f_svc_commE  +
+                           occ_m_svc_entE   + occ_f_svc_entE   +
+                           occ_m_svc_healE  + occ_f_svc_healE  +
+                           occ_m_svc_fireE  + occ_f_svc_fireE  +
+                           occ_m_svc_lawE   + occ_f_svc_lawE   +
+                           occ_m_svc_persE  + occ_f_svc_persE  +
+                           occ_m_svc_offE   + occ_f_svc_offE  )*sharebg,
+  pers_occ_retail       = (occ_m_ret_eatE   + occ_f_ret_eatE   +
+                           occ_m_ret_salesE + occ_f_ret_salesE)*sharebg,
+  pers_occ_manual       = (occ_m_man_buildE + occ_f_man_buildE +
+                           occ_m_man_natE   + occ_f_man_natE   +
+                           occ_m_man_prodE  + occ_f_man_prodE )*sharebg
 )
+# sf1
+workingdata <- left_join(workingdata,sf1_tract_raw, by=c("tract"="GEOID")) %>%
+  mutate(gq_type_univ  =(gq_noninst_m_0017_univ +
+                         gq_noninst_m_1864_univ +
+                         gq_noninst_m_65p_univ  +
+                         gq_noninst_f_0017_univ +
+                         gq_noninst_f_1864_univ +
+                         gq_noninst_f_65p_univ)*sharetract,
+         gq_type_mil   =(gq_noninst_m_0017_mil  +
+                         gq_noninst_m_1864_mil  +
+                         gq_noninst_m_65p_mil   +
+                         gq_noninst_f_0017_mil  +
+                         gq_noninst_f_1864_mil  +
+                         gq_noninst_f_65p_mil)*sharetract,
+         gq_type_othnon=(gq_noninst_m_0017_oth  +
+                         gq_noninst_m_1864_oth  +
+                         gq_noninst_m_65p_oth   +
+                         gq_noninst_f_0017_oth  +
+                         gq_noninst_f_1864_oth  +
+                         gq_noninst_f_65p_oth)*sharetract)
 
 # Summarize to TAZ and select only variables of interest
 
@@ -355,7 +464,6 @@ temp <- workingdata %>%
   summarize(  TOTHH=sum(TOTHH),
               TOTPOP=sum(TOTPOP),
               HHPOP=sum(HHPOP),
-              gqpop=sum(gqpop),
               EMPRES=sum(EMPRES),
               HHINCQ1=sum(HHINCQ1),
               HHINCQ2=sum(HHINCQ2),
@@ -368,17 +476,28 @@ temp <- workingdata %>%
               AGE65P=sum(AGE65P),
               SFDU=sum(SFDU),
               MFDU=sum(MFDU),
-              hh_size1=sum(hh_size1),
-              hh_size2=sum(hh_size2),
-              hh_size3=sum(hh_size3),
-              hh_size4_plus=sum(hh_size4_plus),
+              hh_size_1=sum(hh_size_1),
+              hh_size_2=sum(hh_size_2),
+              hh_size_3=sum(hh_size_3),
+              hh_size_4_plus=sum(hh_size_4_plus),
               hh_wrks_0=sum(hh_wrks_0),
               hh_wrks_1=sum(hh_wrks_1),
               hh_wrks_2=sum(hh_wrks_2),
               hh_wrks_3_plus=sum(hh_wrks_3_plus),
               hh_kids_yes=sum(hh_kids_yes),
               hh_kids_no=sum(hh_kids_no),
-              AGE62P=sum(AGE62P))
+              AGE62P=sum(AGE62P),
+              gq_type_univ         =sum(gq_type_univ),
+              gq_type_mil          =sum(gq_type_mil),
+              gq_type_othnon       =sum(gq_type_othnon),
+              gqpop                =gq_type_univ+gq_type_mil+gq_type_othnon,
+              pers_occ_management  =sum(pers_occ_management),
+              pers_occ_professional=sum(pers_occ_professional),
+              pers_occ_services    =sum(pers_occ_services),
+              pers_occ_retail      =sum(pers_occ_retail),
+              pers_occ_manual      =sum(pers_occ_manual),
+              pers_occ_military    =sum(gq_type_mil)
+              )
 
 # Round data, find max value in categorical data to adjust totals so they match univariate totals
 # For example, the households by income across categories should sum to equal total HHs
@@ -415,10 +534,10 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
   HHINCQ3 = if_else(max_income==9,HHINCQ3+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ3),
   HHINCQ4 = if_else(max_income==10,HHINCQ4+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ4),
   #Balance HH size categories
-  hh_size1 = if_else(max_size==18,hh_size1+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size1),
-  hh_size2 = if_else(max_size==19,hh_size2+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size2),
-  hh_size3 = if_else(max_size==20,hh_size3+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size3),
-  hh_size4_plus = if_else(max_size==21,hh_size4_plus+(TOTHH-(hh_size1+hh_size2+hh_size3+hh_size4_plus)),hh_size4_plus),
+  hh_size_1 = if_else(max_size==18,hh_size_1+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_1),
+  hh_size_2 = if_else(max_size==19,hh_size_2+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_2),
+  hh_size_3 = if_else(max_size==20,hh_size_3+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_3),
+  hh_size_4_plus = if_else(max_size==21,hh_size_4_plus+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_4_plus),
   #Balance HH worker categories
   hh_wrks_0 = if_else(max_workers==22,hh_wrks_0+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_0),
   hh_wrks_1 = if_else(max_workers==23,hh_wrks_1+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_1),
@@ -485,11 +604,32 @@ write.csv(summed15, "TAZ1454 2015 District Summary.csv", row.names = FALSE, quot
 # Select out PopSim variables and export to separate csv
 
 popsim_vars <- temp_rounded_adjusted %>% 
-  rename(ZONE=TAZ1454,HH=TOTHH,POP=TOTPOP,gq_total=gqpop)%>%
-  select(ZONE,HH,POP,hh_size1,hh_size2,hh_size3,hh_size4_plus,gq_total,hh_wrks_0,hh_wrks_1,hh_wrks_2,hh_wrks_3_plus,
-         hh_kids_no,hh_kids_yes)
+  rename(TAZ=TAZ1454,gq_tot_pop=gqpop)%>%
+  select(TAZ,TOTHH,TOTPOP,hh_size_1,hh_size_2,hh_size_3,hh_size_4_plus,hh_wrks_0,hh_wrks_1,hh_wrks_2,hh_wrks_3_plus,
+         hh_kids_no,hh_kids_yes,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,
+         gq_tot_pop,gq_type_univ,gq_type_mil,gq_type_othnon)
 
 write.csv(popsim_vars, "TAZ1454 2015 Popsim Vars.csv", row.names = FALSE, quote = T)
+
+# region popsim vars
+popsim_vars_region <- popsim_vars %>% 
+  mutate(REGION=1) %>%
+  group_by(REGION) %>%
+  summarize(gq_num_hh_region=sum(gq_tot_pop))
+
+write.csv(popsim_vars_region, "TAZ1454 2015 Popsim Vars Region.csv", row.names = FALSE, quote = T)
+
+# county popsim vars
+popsim_vars_county <- joined_10_15 %>%
+  group_by(COUNTY) %>% summarize(
+    pers_occ_management  =sum(pers_occ_management),
+    pers_occ_professional=sum(pers_occ_professional),
+    pers_occ_services    =sum(pers_occ_services),
+    pers_occ_retail      =sum(pers_occ_retail),
+    pers_occ_manual      =sum(pers_occ_manual),
+    pers_occ_military    =sum(pers_occ_military))
+
+write.csv(popsim_vars_county, "TAZ1454 2015 Popsim Vars County.csv", row.names = FALSE, quote = T)
 
 
 
