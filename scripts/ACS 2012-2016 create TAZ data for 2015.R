@@ -88,8 +88,7 @@ ACS_table <- load_variables(year=2016, dataset="acs5", cache=TRUE)
 
 # Set up ACS block group and tract variables for later API download. 
 
-ACS_BG_variables <- c(tothh = "B25009_001",        #Total HHs, pop, HH pop, and GQ pop
-                      totpop = "B01003_001",
+ACS_BG_variables <- c(tothh = "B25009_001",        #Total HHs, HH pop
                       hhpop = "B11002_001",
 
                       employed = "B23025_004",     # Employed residents is "employed" + "armed forces"
@@ -312,7 +311,6 @@ sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variab
 workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID"))
 workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mutate(
   TOTHH=tothhE*sharebg,
-  TOTPOP=totpopE*sharebg,
   HHPOP=hhpopE*sharebg,
   EMPRES=(employedE+armedforcesE)*sharebg,
   HHINCQ1=(hhinc0_10E+
@@ -462,7 +460,6 @@ workingdata <- left_join(workingdata,sf1_tract_raw, by=c("tract"="GEOID")) %>%
 temp <- workingdata %>%
   group_by(TAZ1454) %>%
   summarize(  TOTHH=sum(TOTHH),
-              TOTPOP=sum(TOTPOP),
               HHPOP=sum(HHPOP),
               EMPRES=sum(EMPRES),
               HHINCQ1=sum(HHINCQ1),
@@ -497,7 +494,8 @@ temp <- workingdata %>%
               pers_occ_retail      =sum(pers_occ_retail),
               pers_occ_manual      =sum(pers_occ_manual),
               pers_occ_military    =sum(gq_type_mil)
-              )
+              ) %>%
+  mutate(TOTPOP = HHPOP+gqpop)
 
 # Round data, find max value in categorical data to adjust totals so they match univariate totals
 # For example, the households by income across categories should sum to equal total HHs
@@ -507,45 +505,45 @@ temp <- workingdata %>%
 temp_rounded <- temp %>%
   mutate_if(is.numeric,round,0) %>%
   mutate (
-    max_pop= 3+max.col(.[4:5]),
-    max_income= 6+max.col(.[7:10]),
-    max_age= 10+max.col(.[11:15]),
-    max_size= 17+max.col(.[18:21]),
-    max_workers= 21+max.col(.[22:25]),
-    max_kids= 25+max.col(.[26:27]),
-    SHPOP62P=if_else(TOTPOP==0,0,AGE62P/TOTPOP)
-    )
+    max_pop    = max.col(.[c("HHPOP","gqpop")],                                      ties.method="first"),
+    max_income = max.col(.[c("HHINCQ1","HHINCQ2","HHINCQ3","HHINCQ4")],              ties.method="first"),
+    max_age    = max.col(.[c("AGE0004","AGE0519","AGE2044","AGE4564","AGE65P")],     ties.method="first"),
+    max_size   = max.col(.[c("hh_size_1","hh_size_2","hh_size_3","hh_size_4_plus")], ties.method="first"),
+    max_workers= max.col(.[c("hh_wrks_0","hh_wrks_1","hh_wrks_2","hh_wrks_3_plus")], ties.method="first"),
+    max_kids   = max.col(.[c("hh_kids_yes","hh_kids_no")],                           ties.method="first"),
+    SHPOP62P   =if_else(TOTPOP==0,0,AGE62P/TOTPOP)
+    ) 
 
 # Now use max values determined above to find appropriate column for adjustment
 
 temp_rounded_adjusted <- temp_rounded %>% mutate(
   # Balance HH and GQ pop
-  HHPOP = if_else(max_pop==4,HHPOP+(TOTPOP-(HHPOP+gqpop)),HHPOP),
-  gqpop = if_else(max_pop==5,gqpop+(TOTPOP-(HHPOP+gqpop)),gqpop),
+  HHPOP = if_else(max_pop==1,HHPOP+(TOTPOP-(HHPOP+gqpop)),HHPOP),
+  gqpop = if_else(max_pop==2,gqpop+(TOTPOP-(HHPOP+gqpop)),gqpop),
   # Balance population by age
-  AGE0004 = if_else(max_age==11,AGE0004+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0004),
-  AGE0519 = if_else(max_age==12,AGE0519+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0519),
-  AGE2044 = if_else(max_age==13,AGE2044+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE2044),
-  AGE4564 = if_else(max_age==14,AGE4564+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE4564),
-  AGE65P = if_else(max_age==15,AGE65P+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE65P),
+  AGE0004 = if_else(max_age==1,AGE0004+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0004),
+  AGE0519 = if_else(max_age==2,AGE0519+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0519),
+  AGE2044 = if_else(max_age==3,AGE2044+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE2044),
+  AGE4564 = if_else(max_age==4,AGE4564+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE4564),
+  AGE65P  = if_else(max_age==5,AGE65P +(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE65P),
   # Balance HH income categories
-  HHINCQ1 = if_else(max_income==7,HHINCQ1+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ1),
-  HHINCQ2 = if_else(max_income==8,HHINCQ2+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ2),
-  HHINCQ3 = if_else(max_income==9,HHINCQ3+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ3),
-  HHINCQ4 = if_else(max_income==10,HHINCQ4+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ4),
+  HHINCQ1 = if_else(max_income==1,HHINCQ1+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ1),
+  HHINCQ2 = if_else(max_income==2,HHINCQ2+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ2),
+  HHINCQ3 = if_else(max_income==3,HHINCQ3+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ3),
+  HHINCQ4 = if_else(max_income==4,HHINCQ4+(TOTHH-(HHINCQ1+HHINCQ2+HHINCQ3+HHINCQ4)),HHINCQ4),
   #Balance HH size categories
-  hh_size_1 = if_else(max_size==18,hh_size_1+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_1),
-  hh_size_2 = if_else(max_size==19,hh_size_2+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_2),
-  hh_size_3 = if_else(max_size==20,hh_size_3+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_3),
-  hh_size_4_plus = if_else(max_size==21,hh_size_4_plus+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_4_plus),
+  hh_size_1      = if_else(max_size==1,hh_size_1     +(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_1),
+  hh_size_2      = if_else(max_size==2,hh_size_2     +(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_2),
+  hh_size_3      = if_else(max_size==3,hh_size_3     +(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_3),
+  hh_size_4_plus = if_else(max_size==4,hh_size_4_plus+(TOTHH-(hh_size_1+hh_size_2+hh_size_3+hh_size_4_plus)),hh_size_4_plus),
   #Balance HH worker categories
-  hh_wrks_0 = if_else(max_workers==22,hh_wrks_0+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_0),
-  hh_wrks_1 = if_else(max_workers==23,hh_wrks_1+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_1),
-  hh_wrks_2 = if_else(max_workers==24,hh_wrks_2+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_2),
-  hh_wrks_3_plus = if_else(max_workers==25,hh_wrks_3_plus+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_3_plus),
+  hh_wrks_0      = if_else(max_workers==1,hh_wrks_0+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_0),
+  hh_wrks_1      = if_else(max_workers==2,hh_wrks_1+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_1),
+  hh_wrks_2      = if_else(max_workers==3,hh_wrks_2+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_2),
+  hh_wrks_3_plus = if_else(max_workers==4,hh_wrks_3_plus+(TOTHH-(hh_wrks_0+hh_wrks_1+hh_wrks_2+hh_wrks_3_plus)),hh_wrks_3_plus),
   #Balance HH kids categories
-  hh_kids_yes = if_else(max_kids==26,hh_kids_yes+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_yes),
-  hh_kids_no = if_else(max_kids==27,hh_kids_no+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_no)
+  hh_kids_yes = if_else(max_kids==1,hh_kids_yes+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_yes),
+  hh_kids_no  = if_else(max_kids==2,hh_kids_no +(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_no)
   ) %>%
   select(-max_pop,-max_income,-max_age,-max_size,-max_workers,-max_kids,-AGE62P)
   
