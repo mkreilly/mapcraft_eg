@@ -513,7 +513,7 @@ temp_rounded <- temp %>%
     max_size= 17+max.col(.[18:21]),
     max_workers= 21+max.col(.[22:25]),
     max_kids= 25+max.col(.[26:27]),
-    SHPOP62P=AGE62P/TOTPOP
+    SHPOP62P=if_else(TOTPOP==0,0,AGE62P/TOTPOP)
     )
 
 # Now use max values determined above to find appropriate column for adjustment
