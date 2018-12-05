@@ -26,10 +26,17 @@ suppressMessages(library(dplyr))
 library(tidycensus)
 
 # Set up directories, import TAZ/block equivalence, install census key, set ACS year,set CPI inflation
-# Z is MainModelShare
+# X is mapped to MainModelShare for Shimon
+# Z is MainModelShare for Others
+if (Sys.getenv("USERNAME") == "SIsrael"){
+  wd                 <- "X:/petrale/output/"
+  employment_2015_data <- "X:/petrale/basemap/2015_employment_TAZ1454.csv"
+} else {
 wd                   <- "Z:/petrale/output/"
-setwd(wd)
 employment_2015_data <- "Z:/petrale/basemap/2015_employment_TAZ1454.csv"
+}
+setwd(wd)
+
 
 blockTAZ2010         <- "M:/Data/GIS layers/TM1_taz_census2010/block_to_TAZ1454.csv"
 censuskey            <- readLines("M:/Data/Census/API/api-key.txt")
