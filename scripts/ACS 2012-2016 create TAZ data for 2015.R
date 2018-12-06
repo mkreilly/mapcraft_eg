@@ -29,12 +29,13 @@ library(tidycensus)
 # X is mapped to MainModelShare for Shimon
 # Z is MainModelShare for Others
 if (Sys.getenv("USERNAME") == "SIsrael"){
-  wd                 <- "X:/petrale/output/"
-  employment_2015_data <- "X:/petrale/basemap/2015_employment_TAZ1454.csv"
+  drive		       <- "X:/"
 } else {
-wd                   <- "Z:/petrale/output/"
-employment_2015_data <- "Z:/petrale/basemap/2015_employment_TAZ1454.csv"
+  drive                <- "Z:/"
 }
+
+wd                   <- paste0(drive,"petrale/output/")
+employment_2015_data <- paste0(drive,"petrale/basemap/2015_employment_TAZ1454.csv")
 setwd(wd)
 
 
