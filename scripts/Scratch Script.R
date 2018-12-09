@@ -8,6 +8,8 @@ state="06"
 https://api.census.gov/data/2017/acs/acs5?get=B01001_001E,NAME&for=block%20group:*&in=state:01%20county:025%20tract:957602&key=YOUR_KEY_GOES_HERE
 trial_url2 = paste0("https://api.census.gov/data/",ACS_year,"/acs/acs",ACS_product,"?get=NAME,",ACS_BG_variables2,"&for=block%20group:*&in=state:",state,"%20county:","001","%20tract:400400&key=",key)
 
+# Function for converting API calls into data frame
+
 f.data <- function(url,geography_fields){  
   furl <- content(GET(url))
   for (i in 1:length(furl)){
@@ -30,43 +32,56 @@ f.data <- function(url,geography_fields){
   return (output_data)
 }
 
+# Function for creating block group URL API calls
 
-f.url <- function (ACS_BG_variables,tract) {paste0("https://api.census.gov/data/",ACS_year,"/acs/acs",ACS_product,"?get=NAME,",ACS_BG_variables,"&for=block%20group:*&in=state:",state,"%20county:","001","%20tract:",tract,"&key=",key)}
-trial_url <- f.url(ACS_BG_variables = ACS_BG_variables1,"400400")
+f.url <- function (ACS_BG_variables,tract) {paste0("https://api.census.gov/data/",ACS_year,"/acs/acs",ACS_product,"?get=NAME,",
+                                                   ACS_BG_variables,"&for=block%20group:*&in=state:",state,"%20county:","001",
+                                                   "%20tract:",tract,"&key=",key)}
 
-first_df <- f.data(f.url(ACS_BG_variables1,400400),4)
+# 
 
-
-for(i in 1:length(tracts_vector)) {
+for(i in 1:3){                     #length(tracts_vector)) {
   if (i==1) {
     first_df <- f.data(f.url(ACS_BG_variables1,tracts_vector[i]),4)
   }
   else if (i==2) {
     temp_df <- f.data(f.url(ACS_BG_variables1,tracts_vector[i]),4)
-    output_df <- rbind(first_df,temp_df)
+    bg_df1 <- rbind(first_df,temp_df)
   }
   else {
     temp_df <- f.data(f.url(ACS_BG_variables1,tracts_vector[i]),4)
-    output_df <- rbind(output_df,temp_df)
+    bg_df1 <- rbind(bg_df1,temp_df)
   }
 }
 
-
-
-for(i in 1:length(tracts_vector)) {
+for(i in 1:3){                     #length(tracts_vector)) {
   if (i==1) {
     first_df <- f.data(f.url(ACS_BG_variables2,tracts_vector[i]),4)
   }
   else if (i==2) {
     temp_df <- f.data(f.url(ACS_BG_variables2,tracts_vector[i]),4)
-    output_df <- rbind(first_df,temp_df)
+    bg_df2 <- rbind(first_df,temp_df)
   }
   else {
     temp_df <- f.data(f.url(ACS_BG_variables2,tracts_vector[i]),4)
-    output_df <- rbind(output_df,temp_df)
+    bg_df2 <- rbind(bg_df2,temp_df)
   }
 }
 
-    
 
+for(i in 1:3){                     #length(tracts_vector)) {
+  if (i==1) {
+    first_df <- f.data(f.url(ACS_BG_variables3,tracts_vector[i]),4)
+  }
+  else if (i==2) {
+    temp_df <- f.data(f.url(ACS_BG_variables3,tracts_vector[i]),4)
+    bg_df3 <- rbind(first_df,temp_df)
+  }
+  else {
+    temp_df <- f.data(f.url(ACS_BG_variables3,tracts_vector[i]),4)
+    bg_df3 <- rbind(bg_df3,temp_df)
+  }
+}
+
+ACS_BG_preraw <- cbind(bg_df1,bg_df2,bg_df3)
 

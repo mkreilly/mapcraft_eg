@@ -49,6 +49,8 @@ census_api_key(censuskey, install = TRUE, overwrite = TRUE)
 
 ACS_year <- 2017
 sf1_year <- 2010
+ACS_product="5"
+state="06"
 CPI_current <- 274.92  # CPI value for 2017
 CPI_reference <- 180.20 # CPI value for 2000
 CPI_ratio <- CPI_current/CPI_reference # 2016 CPI/2000 CPI
@@ -110,6 +112,7 @@ shareabove88681 <- 0.3042492 # Use this value to later divvy up HHs in the 30-60
 ACS_table <- load_variables(year=2017, dataset="acs5", cache=TRUE)
 
 # Set up ACS block group and tract variables for later API download. 
+# Block group calls broken up into 3 groups of <50 variables each, due to API limit
 
 ACS_BG_variables1 <- paste0("B25009_001E,",     #Total HHs, HH pop
                       "B11002_001E,",
@@ -307,7 +310,7 @@ combined_block <- left_join(blockTAZ,blockTAZBG,by="blockgroup") %>% mutate(
 combined_block <- left_join(combined_block,blockTAZTract,by="tract") %>% mutate(
   sharetract=if_else(block_POPULATION==0,0,block_POPULATION/TractTotal))
 
-# Peform ACS calls for tract data and then get a vector of tracts to make block group calls
+# Function to make tract data API calls by county
 
 f.tract.call <- function (baycounty){
                       get_acs(geography = "tract", variables = ACS_tract_variables,
@@ -317,19 +320,262 @@ f.tract.call <- function (baycounty){
                       survey = "acs5")
 }
 
-Alameda_tracts <- ACS.tract.call(Alameda)
-Contra_tracts <- ACS.tract.call(Contra)
-Marin_tracts <- ACS.tract.call(Marin)
-Napa_tracts <- ACS.tract.call(Napa)
-Francisco_tracts <- ACS.tract.call(Francisco)
-Mateo_tracts <- ACS.tract.call(Mateo)
-Clara_tracts <- ACS.tract.call(Clara)
-Solano_tracts <- ACS.tract.call(Solano)
-Sonoma_tracts <- ACS.tract.call(Sonoma)
+# Now make tract calls by county
+
+Alameda_tracts <- f.tract.call(Alameda)
+Contra_tracts <- f.tract.call(Contra)
+Marin_tracts <- f.tract.call(Marin)
+Napa_tracts <- f.tract.call(Napa)
+Francisco_tracts <- f.tract.call(Francisco)
+Mateo_tracts <- f.tract.call(Mateo)
+Clara_tracts <- f.tract.call(Clara)
+Solano_tracts <- f.tract.call(Solano)
+Sonoma_tracts <- f.tract.call(Sonoma)
 ACS_tract_raw <- rbind(Alameda_tracts,Contra_tracts,Marin_tracts,Napa_tracts,Francisco_tracts,
                        Mateo_tracts,Clara_tracts,Solano_tracts,Sonoma_tracts)
 
-tracts_vector <- substr(ACS_tract_raw$GEOID,6,11)
+# Create index of Bay Area tracts to pass into block group API calls 
+
+tract_index <- ACS_tract_raw %>%
+  mutate(
+    county=substr(GEOID,3,5),
+    tract=substr(GEOID,6,11)
+      ) %>%
+  select(county,tract)
+
+tract_index <- sample_n(tract_index, 10)
+
+# Manual function for converting API calls into data frame (due to tidycensus not working for county->block group downloads)
+# The "geography_fields" argument helps convert relevant columns to numeric format
+
+f.data <- function(url,geography_fields){  
+  furl <- content(GET(url))
+  for (i in 1:length(furl)){
+    if (i==1) header <- furl [[i]]
+    if (i==2){
+      temp <- lapply(furl[[i]], function(x) ifelse(is.null(x), NA, x))
+      output_data <- data.frame(temp, stringsAsFactors=FALSE)
+      names (output_data) <- header
+    }
+    if (i>2){
+      temp <- lapply(furl[[i]], function(x) ifelse(is.null(x), NA, x))
+      tempdf <- data.frame(temp, stringsAsFactors=FALSE)
+      names (tempdf) <- header
+      output_data <- rbind (output_data,tempdf)
+    }
+  }
+  for(i in 2:(ncol(output_data)-geography_fields)) {
+    output_data[,i] <- as.numeric(output_data[,i])
+  }
+  return (output_data)
+}
+
+# Function for creating block group URLs to pass into tract API calls
+
+f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.gov/data/",ACS_year,"/acs/acs",ACS_product,"?get=NAME,",
+                                                   ACS_BG_variables,"&for=block%20group:*&in=state:",state,"%20county:",county,
+                                                   "%20tract:",tract,"&key=",censuskey)}
+
+# Block group calls (done in 3 tranches because API limited to calls of 50 variables)
+# The "4" in the call refers to the number of columns at the end of the API call devoted to geography (not numeric)
+# Call 1
+
+for(i in 1:nrow(tract_index)) {
+  if (i==1) {
+    first_df <- f.data(f.url(ACS_BG_variables1,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  }
+  else if (i==2) {
+    temp_df <- f.data(f.url(ACS_BG_variables1,tract_index[i,"county"],tract_index[i,"tract"]),4)
+    bg_df1 <- rbind(first_df,temp_df)
+  }
+  else {
+    temp_df <- f.data(f.url(ACS_BG_variables1,tract_index[i,"county"],tract_index[i,"tract"]),4)
+    bg_df1 <- rbind(bg_df1,temp_df)
+  }
+}
+
+# Call 2
+
+for(i in 1:nrow(tract_index)) {
+  if (i==1) {
+    first_df <- f.data(f.url(ACS_BG_variables2,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  }
+  else if (i==2) {
+    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[i,"county"],tract_index[i,"tract"]),4)
+    bg_df2 <- rbind(first_df,temp_df)
+  }
+  else {
+    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[i,"county"],tract_index[i,"tract"]),4)
+    bg_df2 <- rbind(bg_df2,temp_df)
+  }
+}
+
+# Call 3
+
+for(i in 1:nrow(tract_index)) {
+  if (i==1) {
+    first_df <- f.data(f.url(ACS_BG_variables3,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  }
+  else if (i==2) {
+    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[i,"county"],tract_index[i,"tract"]),4)
+    bg_df3 <- rbind(first_df,temp_df)
+  }
+  else {
+    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[i,"county"],tract_index[i,"tract"]),4)
+    bg_df3 <- rbind(bg_df3,temp_df)
+  }
+}
+
+ACS_BG_preraw <- left_join (bg_df1,bg_df2,by=c("NAME","state","county","block group","tract"))
+ACS_BG_preraw <- left_join (ACS_BG_preraw,bg_df3,by=c("NAME","state","county","block group","tract"))
+
+
+# Rename block group variables 
+names(ACS_BG_preraw) <- str_replace_all(names(ACS_BG_preraw), c(" " = "_"))   # Fix variable name "block group" to "block_group"
+ACS_BG_raw <- ACS_BG_preraw %>%
+  rename(	 tothhE = B25009_001E,        #Total HHs, HH pop
+           hhpopE = B11002_001E,
+           
+           employedE = B23025_004E,     # Employed residents isemployedE +armed forcesE
+           armedforcesE = B23025_006E, 
+           
+           #total_income = B19001_001",
+           hhinc0_10E = B19001_002E,    # Income categories 
+           hhinc10_15E = B19001_003E,
+           hhinc15_20E = B19001_004E,
+           hhinc20_25E = B19001_005E,
+           hhinc25_30E = B19001_006E,
+           hhinc30_35E = B19001_007E,
+           hhinc35_40E = B19001_008E,
+           hhinc40_45E = B19001_009E,
+           hhinc45_50E = B19001_010E,
+           hhinc50_60E = B19001_011E,
+           hhinc60_75E = B19001_012E,
+           hhinc75_100E = B19001_013E,
+           hhinc100_125E = B19001_014E,
+           hhinc125_150E = B19001_015E,
+           hhinc150_200E = B19001_016E,
+           hhinc200pE = B19001_017E,
+           
+           male0_4E = B01001_003E,      # Age data
+           male5_9E = B01001_004E,
+           male10_14E = B01001_005E,
+           male15_17E = B01001_006E,
+           male18_19E = B01001_007E,
+           male20E = B01001_008E,
+           male21E = B01001_009E,
+           male22_24E = B01001_010E,
+           male25_29E = B01001_011E,
+           male30_34E = B01001_012E,
+           male35_39E = B01001_013E,
+           male40_44E = B01001_014E,
+           male45_49E = B01001_015E,
+           male50_54E = B01001_016E,
+           male55_59E = B01001_017E,
+           male60_61E = B01001_018E,
+           male62_64E = B01001_019E,
+           male65_66E = B01001_020E,
+           male67_69E = B01001_021E,
+           male70_74E = B01001_022E,
+           male75_79E = B01001_023E,
+           male80_84E = B01001_024E,
+           male85pE = B01001_025E,
+           female0_4E = B01001_027E,
+           female5_9E = B01001_028E,
+           female10_14E = B01001_029E,
+           female15_17E = B01001_030E,
+           female18_19E = B01001_031E,
+           female20E = B01001_032E,
+           female21E = B01001_033E,
+           female22_24E = B01001_034E,
+           female25_29E = B01001_035E,
+           female30_34E = B01001_036E,
+           female35_39E = B01001_037E,
+           female40_44E = B01001_038E,
+           female45_49E = B01001_039E,
+           female50_54E = B01001_040E,
+           female55_59E = B01001_041E,
+           female60_61E = B01001_042E,
+           female62_64E = B01001_043E,
+           female65_66E = B01001_044E,
+           female67_69E = B01001_045E,
+           female70_74E = B01001_046E,
+           female75_79E = B01001_047E,
+           female80_84E = B01001_048E,
+           female85pE = B01001_049E,
+           
+           unit1dE = B25024_002E,       # Single and multi-family dwelling unit data
+           unit1aE = B25024_003E,
+           unit2E = B25024_004E,
+           unit3_4E = B25024_005E,
+           unit5_9E = B25024_006E,
+           unit10_19E = B25024_007E,
+           unit20_49E = B25024_008E,
+           unit50pE = B25024_009E,
+           mobileE = B25024_010E,
+           boat_RV_VanE = B25024_011E,
+           
+           own1E = B25009_003E,        # Household size data
+           own2E = B25009_004E,
+           own3E = B25009_005E,
+           own4E = B25009_006E,
+           own5E = B25009_007E,
+           own6E = B25009_008E,
+           own7pE = B25009_009E,
+           rent1E = B25009_011E,
+           rent2E = B25009_012E,
+           rent3E = B25009_013E,
+           rent4E = B25009_014E,
+           rent5E = B25009_015E,
+           rent6E = B25009_016E,
+           rent7pE = B25009_017E,
+           
+           # these skip some numbers since there are nested levels
+           occ_m_manageE    = C24010_005E, # Management
+           occ_m_prof_bizE  = C24010_006E, # Business and financial
+           occ_m_prof_compE = C24010_007E, # Computer, engineering, and science
+           occ_m_svc_commE  = C24010_012E, # community and social service
+           occ_m_prof_legE  = C24010_013E, # Legal
+           occ_m_prof_eduE  = C24010_014E, # Education, training, and library
+           occ_m_svc_entE   = C24010_015E, # Arts, design, entertainment, sports, and media
+           occ_m_prof_healE = C24010_016E, # Healthcare practitioners and technical
+           occ_m_svc_healE  = C24010_020E, # Healthcare support
+           occ_m_svc_fireE  = C24010_022E, # Fire fighting and prevention, and other protectiv
+           occ_m_svc_lawE   = C24010_023E, # Law enforcement workers
+           occ_m_ret_eatE   = C24010_024E, # Food preparation and serving related
+           occ_m_man_buildE = C24010_025E, # Building and grounds cleaning and maintenance
+           occ_m_svc_persE  = C24010_026E, # Personal care and service
+           occ_m_ret_salesE = C24010_028E, # Sales and related
+           occ_m_svc_offE   = C24010_029E, # Office and administrative support
+           occ_m_man_natE   = C24010_030E, # Natural resources, construction, and maintenance
+           occ_m_man_prodE  = C24010_034E, # Production, transportation, and material moving
+           
+           occ_f_manageE    = C24010_041E, # Management
+           occ_f_prof_bizE  = C24010_042E, # Business and financial
+           occ_f_prof_compE = C24010_043E, # Computer, engineering, and science
+           occ_f_svc_commE  = C24010_048E, # community and social service
+           occ_f_prof_legE  = C24010_049E, # Legal
+           occ_f_prof_eduE  = C24010_050E, # Education, training, and library
+           occ_f_svc_entE   = C24010_051E, # Arts, design, entertainment, sports, and media
+           occ_f_prof_healE = C24010_052E, # Healthcare practitioners and technical
+           occ_f_svc_healE  = C24010_056E, # Healthcare support
+           occ_f_svc_fireE  = C24010_058E, # Fire fighting and prevention, and other protectiv
+           occ_f_svc_lawE   = C24010_059E, # Law enforcement workers
+           occ_f_ret_eatE   = C24010_060E, # Food preparation and serving related
+           occ_f_man_buildE = C24010_061E, # Building and grounds cleaning and maintenance
+           occ_f_svc_persE  = C24010_062E, # Personal care and service
+           occ_f_ret_salesE = C24010_064E, # Sales and related
+           occ_f_svc_offE   = C24010_065E, # Office and administrative support
+           occ_f_man_natE   = C24010_066E, # Natural resources, construction, and maintenance
+           occ_f_man_prodE  = C24010_070E  # Production, transportation, and material moving
+        ) %>%
+  mutate(
+    GEOID=paste0(state,county,tract,block_group)
+  )
+
+
+
+# Make decennial census calls
 
 sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variables,
                             state = "06", county=baycounties,
