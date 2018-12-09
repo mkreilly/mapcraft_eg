@@ -25,7 +25,7 @@
 
 suppressMessages(library(tidyverse))
 library(tidycensus)
-library(purrr)
+library(httr)
 
 # Set up directories, import TAZ/block equivalence, install census key, set ACS year,set CPI inflation
 # X is mapped to MainModelShare for Shimon
@@ -105,7 +105,7 @@ HHINCQ4   2000      $100,000        $inf
 
 "
 
-shareabove88681 <- 0.3042492 # Use this value to later divvy up HHs in the 30-60k and 60-100k respective quartiles
+shareabove91538 <- 0.3042492 # Use this value to later divvy up HHs in the 30-60k and 60-100k respective quartiles
 
 # Import ACS library for variable inspection
 
@@ -343,8 +343,6 @@ tract_index <- ACS_tract_raw %>%
       ) %>%
   select(county,tract)
 
-tract_index <- sample_n(tract_index, 10)
-
 # Manual function for converting API calls into data frame (due to tidycensus not working for county->block group downloads)
 # The "geography_fields" argument helps convert relevant columns to numeric format
 
@@ -364,8 +362,8 @@ f.data <- function(url,geography_fields){
       output_data <- rbind (output_data,tempdf)
     }
   }
-  for(i in 2:(ncol(output_data)-geography_fields)) {
-    output_data[,i] <- as.numeric(output_data[,i])
+  for(j in 2:(ncol(output_data)-geography_fields)) {
+  output_data[,j] <- as.numeric(output_data[,j])
   }
   return (output_data)
 }
@@ -378,50 +376,51 @@ f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.go
 
 # Block group calls (done in 3 tranches because API limited to calls of 50 variables)
 # The "4" in the call refers to the number of columns at the end of the API call devoted to geography (not numeric)
+
 # Call 1
 
-for(i in 1:nrow(tract_index)) {
-  if (i==1) {
-    first_df <- f.data(f.url(ACS_BG_variables1,tract_index[i,"county"],tract_index[i,"tract"]),4)
+for(k in 1:nrow(tract_index)) {
+  if (k==1) {
+    first_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  else if (i==2) {
-    temp_df <- f.data(f.url(ACS_BG_variables1,tract_index[i,"county"],tract_index[i,"tract"]),4)
-    bg_df1 <- rbind(first_df,temp_df)
+  if (k==2) {
+    second_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df1 <- rbind(first_df,second_df)
   }
-  else {
-    temp_df <- f.data(f.url(ACS_BG_variables1,tract_index[i,"county"],tract_index[i,"tract"]),4)
-    bg_df1 <- rbind(bg_df1,temp_df)
+  if (k>2) {
+    subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df1 <- rbind(bg_df1,subsequent_df)
   }
 }
 
 # Call 2
 
-for(i in 1:nrow(tract_index)) {
-  if (i==1) {
-    first_df <- f.data(f.url(ACS_BG_variables2,tract_index[i,"county"],tract_index[i,"tract"]),4)
+for(k in 1:nrow(tract_index)) {
+  if (k==1) {
+    first_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  else if (i==2) {
-    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  if (k==2) {
+    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df2 <- rbind(first_df,temp_df)
   }
-  else {
-    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  if (k>2) {
+    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df2 <- rbind(bg_df2,temp_df)
   }
 }
 
 # Call 3
 
-for(i in 1:nrow(tract_index)) {
-  if (i==1) {
-    first_df <- f.data(f.url(ACS_BG_variables3,tract_index[i,"county"],tract_index[i,"tract"]),4)
+for(k in 1:nrow(tract_index)) {
+  if (k==1) {
+    first_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  else if (i==2) {
-    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  if (k==2) {
+    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df3 <- rbind(first_df,temp_df)
   }
-  else {
-    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[i,"county"],tract_index[i,"tract"]),4)
+  if (k>2) {
+    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df3 <- rbind(bg_df3,temp_df)
   }
 }
@@ -431,12 +430,12 @@ ACS_BG_preraw <- left_join (ACS_BG_preraw,bg_df3,by=c("NAME","state","county","b
 
 
 # Rename block group variables 
-names(ACS_BG_preraw) <- str_replace_all(names(ACS_BG_preraw), c(" " = "_"))   # Fix variable name "block group" to "block_group"
+names(ACS_BG_preraw) <- str_replace_all(names(ACS_BG_preraw), c(" " = "_"))   # Remove space in variable name, "block group" to "block_group"
 ACS_BG_raw <- ACS_BG_preraw %>%
   rename(	 tothhE = B25009_001E,        #Total HHs, HH pop
            hhpopE = B11002_001E,
            
-           employedE = B23025_004E,     # Employed residents isemployedE +armed forcesE
+           employedE = B23025_004E,     # Employed residents is employedE +armed forcesE
            armedforcesE = B23025_006E, 
            
            #total_income = B19001_001",
@@ -603,8 +602,8 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
   HHINCQ2=(hhinc45_50E+
              hhinc50_60E+
              hhinc60_75E+
-             (hhinc75_100E*(1-shareabove88681)))*sharebg, # Apportions HHs below $88,681 within $75,000-$100,000
-  HHINCQ3=((hhinc75_100E*shareabove88681)+                # Apportions HHs above $88,681 within $75,000-$100,000
+             (hhinc75_100E*(1-shareabove91538)))*sharebg, # Apportions HHs below $88,681 within $75,000-$100,000
+  HHINCQ3=((hhinc75_100E*shareabove91538)+                # Apportions HHs above $88,681 within $75,000-$100,000
              hhinc100_125E+
              hhinc125_150E)*sharebg,
   HHINCQ4=(hhinc150_200E+hhinc200pE)*sharebg,
