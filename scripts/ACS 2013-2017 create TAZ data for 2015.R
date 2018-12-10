@@ -321,7 +321,7 @@ f.tract.call <- function (baycounty){
                       survey = "acs5")
 }
 
-# Now make tract calls by county
+# Now make tract calls by county and concatenate all counties into a single file
 
 Alameda_tracts <- f.tract.call(Alameda)
 Contra_tracts <- f.tract.call(Contra)
