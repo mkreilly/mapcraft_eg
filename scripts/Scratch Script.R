@@ -11,7 +11,7 @@ trial_url2 = paste0("https://api.census.gov/data/",ACS_year,"/acs/acs",ACS_produ
 # Function for converting API calls into data frame
 
 f.data <- function(url,geography_fields){  
-  furl <- content(GET(url))
+  furl <- content(RETRY("GET",url,times=3))
   for (i in 1:length(furl)){
     if (i==1) header <- furl [[i]]
     if (i==2){
@@ -85,3 +85,51 @@ for(i in 1:3){                     #length(tracts_vector)) {
 
 ACS_BG_preraw <- cbind(bg_df1,bg_df2,bg_df3)
 
+trial <- bg_df1 %>%
+  #names(bg_df1) <- str_replace_all(names(bg_df1), c(" " = "_")) %>% # Remove space in variable name, "block group" to "block_group"
+  mutate(
+    concat = paste0(state,county,tract,block_group))
+
+trial2 <- trial %>%
+  arrange(concat)
+
+vector <- unique (trial2$concat)
+
+write.csv(trial2, "C:/Files for Deletion/Block Group Vars.csv", row.names = FALSE, quote = T)
+
+some_function_that_may_fail <- function() {
+  if( runif(1) < .5 ) stop()
+  return(1)
+}
+
+r <- NULL
+attempt <- 1
+while( is.null(r) && attempt <= 3 ) {
+  attempt <- attempt + 1
+  try(
+    r <- some_function_that_may_fail()
+  )
+} 
+
+
+f.data <- function(url,geography_fields){  
+  furl <- content(RETRY("GET",url,times=5))
+  for (i in 1:length(furl)){
+    if (i==1) header <- furl [[i]]
+    if (i==2){
+      temp <- lapply(furl[[i]], function(x) ifelse(is.null(x), NA, x))
+      output_data <- data.frame(temp, stringsAsFactors=FALSE)
+      names (output_data) <- header
+    }
+    if (i>2){
+      temp <- lapply(furl[[i]], function(x) ifelse(is.null(x), NA, x))
+      tempdf <- data.frame(temp, stringsAsFactors=FALSE)
+      names (tempdf) <- header
+      output_data <- rbind (output_data,tempdf)
+    }
+  }
+  for(j in 2:(ncol(output_data)-geography_fields)) {
+    output_data[,j] <- as.numeric(output_data[,j])
+  }
+  return (output_data)
+}

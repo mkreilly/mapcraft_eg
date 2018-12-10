@@ -60,7 +60,7 @@ BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys", "D
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
 school_parking_2015_data <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
 
-# FIPS codes for API calls
+# County FIPS codes for API calls
 
 Alameda   <- "001"
 Contra    <- "013"
@@ -114,14 +114,14 @@ ACS_table <- load_variables(year=2017, dataset="acs5", cache=TRUE)
 # Set up ACS block group and tract variables for later API download. 
 # Block group calls broken up into 3 groups of <50 variables each, due to API limit
 
-ACS_BG_variables1 <- paste0("B25009_001E,",     #Total HHs, HH pop
+ACS_BG_variables1 <- paste0("B25009_001E,",     # Total HHs, HH pop
                       "B11002_001E,",
                       
-                      "B23025_004E,",     # Employed residents is "employed" + "armed for
+                      "B23025_004E,",           # Employed residents is "employed" + "armed for
                       "B23025_006E,", 
                       
                       "B19001_001E,",
-                      "B19001_002E,",    # Income categories 
+                      "B19001_002E,",           # Income categories 
                       "B19001_003E,",
                       "B19001_004E,",
                       "B19001_005E,",
@@ -138,7 +138,7 @@ ACS_BG_variables1 <- paste0("B25009_001E,",     #Total HHs, HH pop
                       "B19001_016E,",
                       "B19001_017E,",
                       
-                      "B01001_003E,",      # Age data
+                      "B01001_003E,",           # Age data
                       "B01001_004E,",
                       "B01001_005E,",
                       "B01001_006E,",
@@ -167,7 +167,7 @@ ACS_BG_variables1 <- paste0("B25009_001E,",     #Total HHs, HH pop
                       "B01001_030E,",
                       "B01001_031E")
 
-ACS_BG_variables2 <- paste0("B01001_032E,",        # Age data continued
+ACS_BG_variables2 <- paste0("B01001_032E,",     # Age data continued
                       "B01001_033E,",         
                       "B01001_034E,",
                       "B01001_035E,",
@@ -186,7 +186,7 @@ ACS_BG_variables2 <- paste0("B01001_032E,",        # Age data continued
                       "B01001_048E,",
                       "B01001_049E,",
                       
-                      "B25024_002E,",       # Single and multi-family dwelling unit data
+                      "B25024_002E,",          # Single and multi-family dwelling unit data
                       "B25024_003E,",
                       "B25024_004E,",
                       "B25024_005E,",
@@ -197,7 +197,7 @@ ACS_BG_variables2 <- paste0("B01001_032E,",        # Age data continued
                       "B25024_010E,",
                       "B25024_011E,",
                       
-                      "B25009_003E,",        # Household size data
+                      "B25009_003E,",         # Household size data
                       "B25009_004E,",
                       "B25009_005E,",
                       "B25009_006E,",
@@ -311,6 +311,7 @@ combined_block <- left_join(combined_block,blockTAZTract,by="tract") %>% mutate(
   sharetract=if_else(block_POPULATION==0,0,block_POPULATION/TractTotal))
 
 # Function to make tract data API calls by county
+# 2013-2017 API no longer supports vectorized county calls, and they must be made individually
 
 f.tract.call <- function (baycounty){
                       get_acs(geography = "tract", variables = ACS_tract_variables,
@@ -335,6 +336,7 @@ ACS_tract_raw <- rbind(Alameda_tracts,Contra_tracts,Marin_tracts,Napa_tracts,Fra
                        Mateo_tracts,Clara_tracts,Solano_tracts,Sonoma_tracts)
 
 # Create index of Bay Area tracts to pass into block group API calls 
+# 2013-2017 API no longer supports county->block group, and no relies on county -> tract -> block group calls
 
 tract_index <- ACS_tract_raw %>%
   mutate(
@@ -343,11 +345,11 @@ tract_index <- ACS_tract_raw %>%
       ) %>%
   select(county,tract)
 
-# Manual function for converting API calls into data frame (due to tidycensus not working for county->block group downloads)
-# The "geography_fields" argument helps convert relevant columns to numeric format
+# Manual function for converting API calls into data frame (due to tidycensus not working for county -> block group downloads)
+# The "geography_fields" argument helps convert relevant (variable, not geographic) columns to numeric format
 
 f.data <- function(url,geography_fields){  
-  furl <- content(GET(url))
+  furl <- content(RETRY("GET",url,times=5))         # Retry the API up to 5 times to overcome choking of API call
   for (i in 1:length(furl)){
     if (i==1) header <- furl [[i]]
     if (i==2){
@@ -363,19 +365,20 @@ f.data <- function(url,geography_fields){
     }
   }
   for(j in 2:(ncol(output_data)-geography_fields)) {
-  output_data[,j] <- as.numeric(output_data[,j])
+    output_data[,j] <- as.numeric(output_data[,j])
   }
   return (output_data)
 }
 
-# Function for creating block group URLs to pass into tract API calls
+# Function for creating URLs to pass into tract -> block group API calls
 
 f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.gov/data/",ACS_year,"/acs/acs",ACS_product,"?get=NAME,",
                                                    ACS_BG_variables,"&for=block%20group:*&in=state:",state,"%20county:",county,
                                                    "%20tract:",tract,"&key=",censuskey)}
 
-# Block group calls (done in 3 tranches because API limited to calls of 50 variables)
+# Block group calls done for all 1588 Bay Area tracts (done in 3 tranches because API limited to calls of 50 variables)
 # The "4" in the call refers to the number of columns at the end of the API call devoted to geography (not numeric)
+# Numeric values are changed by the f.data function from character to numeric
 
 # Call 1
 
@@ -391,6 +394,7 @@ for(k in 1:nrow(tract_index)) {
     subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df1 <- rbind(bg_df1,subsequent_df)
   }
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 1"))} # Monitor progress of this step, as it's long.
 }
 
 # Call 2
@@ -400,13 +404,14 @@ for(k in 1:nrow(tract_index)) {
     first_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
   if (k==2) {
-    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df2 <- rbind(first_df,temp_df)
+    second_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df2 <- rbind(first_df,second_df)
   }
   if (k>2) {
-    temp_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df2 <- rbind(bg_df2,temp_df)
+    subsequent_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df2 <- rbind(bg_df2,subsequent_df)
   }
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 2"))} # Monitor progress of this step, as it's long.
 }
 
 # Call 3
@@ -416,14 +421,17 @@ for(k in 1:nrow(tract_index)) {
     first_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
   if (k==2) {
-    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df3 <- rbind(first_df,temp_df)
+    second_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df3 <- rbind(first_df,second_df)
   }
   if (k>2) {
-    temp_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df3 <- rbind(bg_df3,temp_df)
+    subsequent_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df3 <- rbind(bg_df3,subsequent_df)
   }
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 3"))} # Monitor progress of this step, as it's long.
 }
+
+# Combine three data tranches into single data frame
 
 ACS_BG_preraw <- left_join (bg_df1,bg_df2,by=c("NAME","state","county","block group","tract"))
 ACS_BG_preraw <- left_join (ACS_BG_preraw,bg_df3,by=c("NAME","state","county","block group","tract"))
@@ -569,7 +577,7 @@ ACS_BG_raw <- ACS_BG_preraw %>%
            occ_f_man_prodE  = C24010_070E  # Production, transportation, and material moving
         ) %>%
   mutate(
-    GEOID=paste0(state,county,tract,block_group)
+    GEOID=paste0(state,county,tract,block_group)  # FixFix
   )
 
 
@@ -586,7 +594,7 @@ sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variab
 # Apply block share of 2016 ACS variables using block/block group and block/tract shares of 2010 total population
 # Note that "E" on the end of each variable is appended by tidycensus package to denote "estimate"
 
-workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID"))
+workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID"))          #FixFix
 workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mutate(
   TOTHH=tothhE*sharebg,
   HHPOP=hhpopE*sharebg,
@@ -602,8 +610,8 @@ workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mu
   HHINCQ2=(hhinc45_50E+
              hhinc50_60E+
              hhinc60_75E+
-             (hhinc75_100E*(1-shareabove91538)))*sharebg, # Apportions HHs below $88,681 within $75,000-$100,000
-  HHINCQ3=((hhinc75_100E*shareabove91538)+                # Apportions HHs above $88,681 within $75,000-$100,000
+             (hhinc75_100E*(1-shareabove91538)))*sharebg, # Apportions HHs below $91,538 within $75,000-$100,000
+  HHINCQ3=((hhinc75_100E*shareabove91538)+                # Apportions HHs above $91,538 within $75,000-$100,000
              hhinc100_125E+
              hhinc125_150E)*sharebg,
   HHINCQ4=(hhinc150_200E+hhinc200pE)*sharebg,
