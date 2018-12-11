@@ -28,17 +28,9 @@ library(tidycensus)
 library(httr)
 
 # Set up directories, import TAZ/block equivalence, install census key, set ACS year,set CPI inflation
-# X is mapped to MainModelShare for Shimon
-# Z is MainModelShare for Others
 
-if (Sys.getenv("USERNAME") == "SIsrael"){
-  drive		           <- "X:/"
-} else {
-  drive              <- "Z:/"
-}
-
-wd                   <- paste0(drive,"petrale/output/")
-employment_2015_data <- paste0(drive,"petrale/basemap/2015_employment_TAZ1454.csv")
+wd                   <- "X:/petrale/output/"
+employment_2015_data <- "X:/petrale/basemap/2015_employment_TAZ1454.csv"
 setwd(wd)
 
 
@@ -379,18 +371,16 @@ f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.go
 # Block group calls done for all 1588 Bay Area tracts (done in 3 tranches because API limited to calls of 50 variables)
 # The "4" in the call refers to the number of columns at the end of the API call devoted to geography (not numeric)
 # Numeric values are changed by the f.data function from character to numeric
+# Note that, because the API call process is so long, these data are also saved in X:/petrale/output/
+# Calls 1-3 are saved in "ACS 2013-2017 Block Group Vars1-3", respectively
 
 # Call 1
 
 for(k in 1:nrow(tract_index)) {
   if (k==1) {
-    first_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df1 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  if (k==2) {
-    second_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df1 <- rbind(first_df,second_df)
-  }
-  if (k>2) {
+  if (k>=2) {
     subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df1 <- rbind(bg_df1,subsequent_df)
   }
@@ -401,34 +391,26 @@ for(k in 1:nrow(tract_index)) {
 
 for(k in 1:nrow(tract_index)) {
   if (k==1) {
-    first_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df2 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  if (k==2) {
-    second_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df2 <- rbind(first_df,second_df)
-  }
-  if (k>2) {
-    subsequent_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
+  if (k>=2) {
+    subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df2 <- rbind(bg_df2,subsequent_df)
   }
-  if (k%%10==0) {print(paste(k, "tracts have been called for Call 2"))} # Monitor progress of this step, as it's long.
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 1"))} # Monitor progress of this step, as it's long.
 }
 
 # Call 3
 
 for(k in 1:nrow(tract_index)) {
   if (k==1) {
-    first_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df3 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  if (k==2) {
-    second_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df3 <- rbind(first_df,second_df)
-  }
-  if (k>2) {
-    subsequent_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
+  if (k>=2) {
+    subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df3 <- rbind(bg_df3,subsequent_df)
   }
-  if (k%%10==0) {print(paste(k, "tracts have been called for Call 3"))} # Monitor progress of this step, as it's long.
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 1"))} # Monitor progress of this step, as it's long.
 }
 
 # Combine three data tranches into single data frame
@@ -577,7 +559,8 @@ ACS_BG_raw <- ACS_BG_preraw %>%
            occ_f_man_prodE  = C24010_070E  # Production, transportation, and material moving
         ) %>%
   mutate(
-    GEOID=paste0(state,county,tract,block_group)  
+    GEOID=paste0(state,county,tract,block_group),
+    tract=paste0(state,county,tract)
   )
 
 
@@ -594,7 +577,7 @@ sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variab
 # Apply block share of 2016 ACS variables using block/block group and block/tract shares of 2010 total population
 # Note that "E" on the end of each variable is appended by tidycensus package to denote "estimate"
 
-workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID"))          
+workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID","tract"))          
 workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mutate(
   TOTHH=tothhE*sharebg,
   HHPOP=hhpopE*sharebg,
