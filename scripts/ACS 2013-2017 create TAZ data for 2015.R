@@ -105,105 +105,104 @@ ACS_table <- load_variables(year=2017, dataset="acs5", cache=TRUE)
 
 # Set up ACS block group and tract variables for later API download. 
 # Block group calls broken up into 3 groups of <50 variables each, due to API limit
-# Detail of the below variables can be found later (search for "# Rename block group variables")
+# Some variables skipped in sequence due to nesting
 
-ACS_BG_variables1 <- paste0("B25009_001E,",     # Total HHs, HH pop
-                      "B11002_001E,",
+ACS_BG_variables1 <- paste0("B25009_001E,",     # Total HHs
+                      "B11002_001E,",		# HH pop
                       
-                      "B23025_004E,",           # Employed residents is "employed" + "armed forces
-                      "B23025_006E,", 
+                      "B23025_004E,",           # Employed residents (employed residents is "employed" + "armed forces")
+                      "B23025_006E,", 		# Armed forces
                       
-                      #"B19001_001E,",          # Total income
-                      "B19001_002E,",           # Income categories 
-                      "B19001_003E,",
-                      "B19001_004E,",
-                      "B19001_005E,",
-                      "B19001_006E,",
-                      "B19001_007E,",
-                      "B19001_008E,",
-                      "B19001_009E,",
-                      "B19001_010E,",
-                      "B19001_011E,",
-                      "B19001_012E,",
-                      "B19001_013E,",
-                      "B19001_014E,",
-                      "B19001_015E,",
-                      "B19001_016E,",
-                      "B19001_017E,",
+                      "B19001_002E,",           # Household income 0 to $10k 
+                      "B19001_003E,",		# Household income $10 to $15k
+                      "B19001_004E,",		# Household income $15 to $20k
+                      "B19001_005E,",		# Household income $20 to $25k
+                      "B19001_006E,",		# Household income $25 to $30k
+                      "B19001_007E,",		# Household income $30 to $35k
+                      "B19001_008E,",		# Household income $35 to $40k
+                      "B19001_009E,",		# Household income $40 to $45k
+                      "B19001_010E,",		# Household income $45 to $50k
+                      "B19001_011E,",		# Household income 50 to $60k
+                      "B19001_012E,",		# Household income 60 to $75k
+                      "B19001_013E,",		# Household income 75 to $100k
+                      "B19001_014E,",		# Household income $100 to $1$25k
+                      "B19001_015E,",		# Household income $1$25 to $150k
+                      "B19001_016E,",		# Household income $150 to $200k
+                      "B19001_017E,",		# Household income $200k+
                       
-                      "B01001_003E,",           # Age data
-                      "B01001_004E,",
-                      "B01001_005E,",
-                      "B01001_006E,",
-                      "B01001_007E,",
-                      "B01001_008E,",
-                      "B01001_009E,",
-                      "B01001_010E,",
-                      "B01001_011E,",
-                      "B01001_012E,",
-                      "B01001_013E,",
-                      "B01001_014E,",
-                      "B01001_015E,",
-                      "B01001_016E,",
-                      "B01001_017E,",
-                      "B01001_018E,",
-                      "B01001_019E,",
-                      "B01001_020E,",
-                      "B01001_021E,",
-                      "B01001_022E,",
-                      "B01001_023E,",
-                      "B01001_024E,",
-                      "B01001_025E,",
-                      "B01001_027E,",
-                      "B01001_028E,",
-                      "B01001_029E,",
-                      "B01001_030E,",
-                      "B01001_031E")
+                      "B01001_003E,",           # male aged 0 to 4 
+                      "B01001_004E,",		# male aged 5 to 9 
+                      "B01001_005E,",		# male aged 10 to 14
+                      "B01001_006E,",		# male aged 15 to 17
+                      "B01001_007E,",		# male aged 18 to 19
+                      "B01001_008E,",		# male aged 20 
+                      "B01001_009E,",		# male aged 21 
+                      "B01001_010E,",		# male aged 22 to 24 
+                      "B01001_011E,",		# male aged 25 to 29 
+                      "B01001_012E,",		# male aged 30 to 34 
+                      "B01001_013E,",		# male aged 35 to 39 
+                      "B01001_014E,",		# male aged 40 to 44 
+                      "B01001_015E,",		# male aged 45 to 49 
+                      "B01001_016E,",		# male aged 50 to 54 
+                      "B01001_017E,",		# male aged 55 to 59 
+                      "B01001_018E,",		# male aged 60 to 61 
+                      "B01001_019E,",		# male aged 62 to 64 
+                      "B01001_020E,",		# male aged 65 to 66 
+                      "B01001_021E,",		# male aged 67 to 69 
+                      "B01001_022E,",		# male aged 70 to 74 
+                      "B01001_023E,",		# male aged 75 to 79 
+                      "B01001_024E,",		# male aged 80 to 84 
+                      "B01001_025E,",		# male aged 85+ 
+                      "B01001_027E,",		# female aged 0 to 4 
+                      "B01001_028E,",		# female aged 5 to 9 
+                      "B01001_029E,",		# female aged 10 to 14
+                      "B01001_030E,",		# female aged 15 to 17
+                      "B01001_031E")		# female aged 18 to 19
 
-ACS_BG_variables2 <- paste0("B01001_032E,",     # Age data continued
-                      "B01001_033E,",         
-                      "B01001_034E,",
-                      "B01001_035E,",
-                      "B01001_036E,",
-                      "B01001_037E,",
-                      "B01001_038E,",
-                      "B01001_039E,",
-                      "B01001_040E,",
-                      "B01001_041E,",
-                      "B01001_042E,",
-                      "B01001_043E,",
-                      "B01001_044E,",
-                      "B01001_045E,",
-                      "B01001_046E,",
-                      "B01001_047E,",
-                      "B01001_048E,",
-                      "B01001_049E,",
+ACS_BG_variables2 <- paste0("B01001_032E,",     # female aged 20  
+                      "B01001_033E,",         	# female aged 21  
+                      "B01001_034E,",		# female aged 22 to 24
+                      "B01001_035E,",		# female aged 25 to 29
+                      "B01001_036E,",		# female aged 30 to 34
+                      "B01001_037E,",		# female aged 35 to 39
+                      "B01001_038E,",		# female aged 40 to 44
+                      "B01001_039E,",		# female aged 45 to 49
+                      "B01001_040E,",		# female aged 50 to 54
+                      "B01001_041E,",		# female aged 55 to 59
+                      "B01001_042E,",		# female aged 60 to 61
+                      "B01001_043E,",		# female aged 62 to 64
+                      "B01001_044E,",		# female aged 65 to 66
+                      "B01001_045E,",		# female aged 67 to 69
+                      "B01001_046E,",		# female aged 70 to 74
+                      "B01001_047E,",		# female aged 75 to 79
+                      "B01001_048E,",		# female aged 80 to 84
+                      "B01001_049E,",		# female aged 85+ 
                       
-                      "B25024_002E,",          # Single and multi-family dwelling unit data
-                      "B25024_003E,",
-                      "B25024_004E,",
-                      "B25024_005E,",
-                      "B25024_006E,",
-                      "B25024_007E,",
-                      "B25024_008E,",
-                      "B25024_009E,",
-                      "B25024_010E,",
-                      "B25024_011E,",
+                      "B25024_002E,",           # 1 unit detached    
+                      "B25024_003E,",		# 1 unit attached 
+                      "B25024_004E,",		# 2 units
+                      "B25024_005E,",		# 3 or 4 units
+                      "B25024_006E,",		# 5 to 9 units
+                      "B25024_007E,",		# 10 to 19 units
+                      "B25024_008E,",		# 20 to 49 units
+                      "B25024_009E,",		# 50+ units
+                      "B25024_010E,",		# mobile homes
+                      "B25024_011E,",		# boats, RVs, vans
                       
-                      "B25009_003E,",         # Household size data
-                      "B25009_004E,",
-                      "B25009_005E,",
-                      "B25009_006E,",
-                      "B25009_007E,",
-                      "B25009_008E,",
-                      "B25009_009E,",
-                      "B25009_011E,",
-                      "B25009_012E,",
-                      "B25009_013E,",
-                      "B25009_014E,",
-                      "B25009_015E,",
-                      "B25009_016E,",
-                      "B25009_017E")
+                      "B25009_003E,",           # own 1 person in HH 	     
+                      "B25009_004E,",		# own 2 persons in HH 
+                      "B25009_005E,",		# own 3 persons in HH 
+                      "B25009_006E,",		# own 4 persons in HH 
+                      "B25009_007E,",		# own 5 persons in HH 
+                      "B25009_008E,",		# own 6 persons in HH 
+                      "B25009_009E,",		# own 7+ persons in HH 
+                      "B25009_011E,",		# rent 1 person in HH
+                      "B25009_012E,",		# rent 2 persons in HH 
+                      "B25009_013E,",		# rent 3 persons in HH 
+                      "B25009_014E,",		# rent 4 persons in HH 
+                      "B25009_015E,",		# rent 5 persons in HH 
+                      "B25009_016E,",		# rent 6 persons in HH 
+                      "B25009_017E")		# rent 7+ persons in HH
                       
                       # these skip some numbers since there are nested levels
 ACS_BG_variables3 <- paste0("C24010_005E,", # Management
@@ -245,15 +244,15 @@ ACS_BG_variables3 <- paste0("C24010_005E,", # Management
                       "C24010_070E")  # Production, transportation, and material moving
 
 
-ACS_tract_variables <-c(hhwrks0 = "B08202_002",     # Households by number of workers
-                        hhwrks1 = "B08202_003",
-                        hhwrks2 = "B08202_004",
-                        hhwrks3p = "B08202_005",
+ACS_tract_variables <-c(hhwrks0 = "B08202_002",     # 0-worker HH
+                        hhwrks1 = "B08202_003",	    # 1-worker HH
+                        hhwrks2 = "B08202_004",	    # 2-worker HH
+                        hhwrks3p = "B08202_005",    # 3+-worker HH
                    
-                        ownkidsyes = "B25012_003",  # Presence of related kids under 18, by tenure
-                        rentkidsyes = "B25012_011", 
-                        ownkidsno = "B25012_009",
-                        rentkidsno = "B25012_017"
+                        ownkidsyes = "B25012_003",  # Own with related kids under 18
+                        rentkidsyes = "B25012_011", # Rent with related kids under 18
+                        ownkidsno = "B25012_009",   # Own without related kids under 18
+                        rentkidsno = "B25012_017"   # Rent without related kids under 18
                         )
 
 sf1_table <- load_variables(year=2010, dataset="sf1", cache=TRUE)
@@ -430,7 +429,6 @@ ACS_BG_raw <- ACS_BG_preraw %>%
            employedE = B23025_004E,     # Employed residents is employedE +armed forcesE
            armedforcesE = B23025_006E, 
            
-           #total_income = B19001_001",
            hhinc0_10E = B19001_002E,    # Income categories 
            hhinc10_15E = B19001_003E,
            hhinc15_20E = B19001_004E,
