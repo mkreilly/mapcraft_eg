@@ -3,12 +3,12 @@
 # Create "2015" TAZ data from ACS 2013-2017 
 # SI
 # October 25, 2018
-# Updated December 6, 2018
+# Updated December 11, 2018
 
 # Notes
 "
 
-1. ACS data here is downloaded for the 2012-2016 5-year dataset. The end year can be updated 
+1. ACS data here is downloaded for the 2013-2017 5-year dataset. The end year can be updated 
    by changing the *ACS_year* variable. 
 
 2. ACS block group variables used in all instances where not suppressed. If suppressed at the block group 
@@ -45,14 +45,14 @@ ACS_product="5"
 state="06"
 CPI_current <- 274.92  # CPI value for 2017
 CPI_reference <- 180.20 # CPI value for 2000
-CPI_ratio <- CPI_current/CPI_reference # 2016 CPI/2000 CPI
+CPI_ratio <- CPI_current/CPI_reference # 2017 CPI/2000 CPI
 
 USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
 BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys", "Development")
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
 school_parking_2015_data <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
 
-# County FIPS codes for API calls
+# County FIPS codes for ACS tract API calls
 
 Alameda   <- "001"
 Contra    <- "013"
@@ -68,14 +68,14 @@ Sonoma    <- "097"
 # Income table - Guidelines for HH income values used from ACS
 "
 
-    2000 income breaks 2016 CPI equivalent   Nearest 2017 ACS breakpoint
+    2000 income breaks 2017 CPI equivalent   Nearest 2017 ACS breakpoint
     ------------------ -------------------   ---------------------------
     $30,000            $45,769               $45,000
     $60,000            $91,538               $91,538* 
     $100,000           $152,564              $150,000
     ------------------ -------------------   ---------------------------
 
-    * Because the 2017$ equivalent of $60,000 in 2000$ ($91,538) doesn't closely align with 2016 ACS income 
+    * Because the 2017$ equivalent of $60,000 in 2000$ ($91,538) doesn't closely align with 2017 ACS income 
       categories, households within the $75,000-$99,999 category will be apportioned above and below $91,538. 
       Using the ACS 2012-2016 PUMS data, the share of households above $91,538 within the $75,000-$99,999 
       category is 0.3042492.That is, approximately 30 percent of HHs in the $75,000-$99,999 category will be 
@@ -86,13 +86,13 @@ Household Income Category Equivalency, 2000$ and 2017$
           Year      Lower Bound     Upper Bound
           ----      ------------    -----------
 HHINCQ1   2000      $-inf           $29,999
-          2016      $-inf           $44,999
+          2017      $-inf           $44,999
 HHINCQ2   2000      $30,000         $59,999
-          2016      $45,000         $91,537
+          2017      $45,000         $91,537
 HHINCQ3   2000      $60,000         $99,999
-          2016      $91,538         $149,999
+          2017      $91,538         $149,999
 HHINCQ4   2000      $100,000        $inf
-          2016      $150,000        $inf
+          2017      $150,000        $inf
           ----      -------------   -----------
 
 "
@@ -105,14 +105,15 @@ ACS_table <- load_variables(year=2017, dataset="acs5", cache=TRUE)
 
 # Set up ACS block group and tract variables for later API download. 
 # Block group calls broken up into 3 groups of <50 variables each, due to API limit
+# Detail of the below variables can be found later (search for "# Rename block group variables")
 
 ACS_BG_variables1 <- paste0("B25009_001E,",     # Total HHs, HH pop
                       "B11002_001E,",
                       
-                      "B23025_004E,",           # Employed residents is "employed" + "armed for
+                      "B23025_004E,",           # Employed residents is "employed" + "armed forces
                       "B23025_006E,", 
                       
-                      "B19001_001E,",
+                      #"B19001_001E,",          # Total income
                       "B19001_002E,",           # Income categories 
                       "B19001_003E,",
                       "B19001_004E,",
@@ -420,7 +421,8 @@ ACS_BG_preraw <- left_join (ACS_BG_preraw,bg_df3,by=c("NAME","state","county","b
 
 
 # Rename block group variables 
-names(ACS_BG_preraw) <- str_replace_all(names(ACS_BG_preraw), c(" " = "_"))   # Remove space in variable name, "block group" to "block_group"
+names(ACS_BG_preraw) <- str_replace_all(names(ACS_BG_preraw), c(" " = "_"))   # Remove space in variable name, 
+                                                                              # "block group" to "block_group"
 ACS_BG_raw <- ACS_BG_preraw %>%
   rename(	 tothhE = B25009_001E,        #Total HHs, HH pop
            hhpopE = B11002_001E,
@@ -572,9 +574,9 @@ sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variab
                             year=sf1_year,
                             output="wide")
 
-# Join 2016 ACS block group and tract variables to combined_block file
+# Join 2013-2017 ACS block group and tract variables to combined_block file
 # Combine and collapse ACS categories to get land use control totals, as appropriate
-# Apply block share of 2016 ACS variables using block/block group and block/tract shares of 2010 total population
+# Apply block share of 2013-2017 ACS variables using block/block group and block/tract shares of 2010 total population
 # Note that "E" on the end of each variable is appended by tidycensus package to denote "estimate"
 
 workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID","tract"))          
