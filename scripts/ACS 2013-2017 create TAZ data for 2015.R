@@ -336,7 +336,7 @@ ACS_tract_raw <- rbind(Alameda_tracts,Contra_tracts,Marin_tracts,Napa_tracts,Fra
                        Mateo_tracts,Clara_tracts,Solano_tracts,Sonoma_tracts)
 
 # Create index of Bay Area tracts to pass into block group API calls 
-# 2013-2017 API no longer supports county->block group, and no relies on county -> tract -> block group calls
+# 2013-2017 API no longer supports county->block group, and now relies on county -> tract -> block group calls
 
 tract_index <- ACS_tract_raw %>%
   mutate(
@@ -349,7 +349,7 @@ tract_index <- ACS_tract_raw %>%
 # The "geography_fields" argument helps convert relevant (variable, not geographic) columns to numeric format
 
 f.data <- function(url,geography_fields){  
-  furl <- content(RETRY("GET",url,times=5))         # Retry the API up to 5 times to overcome choking of API call
+  furl <- content(RETRY("GET",url,times=10))         # Retry the API up to 10 times to overcome choking of API call
   for (i in 1:length(furl)){
     if (i==1) header <- furl [[i]]
     if (i==2){
