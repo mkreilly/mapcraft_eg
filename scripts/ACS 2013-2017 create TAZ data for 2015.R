@@ -378,13 +378,9 @@ f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.go
 
 for(k in 1:nrow(tract_index)) {
   if (k==1) {
-    first_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df1 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  if (k==2) {
-    second_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df1 <- rbind(first_df,second_df)
-  }
-  if (k>2) {
+  if (k>=2) {
     subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df1 <- rbind(bg_df1,subsequent_df)
   }
@@ -395,34 +391,26 @@ for(k in 1:nrow(tract_index)) {
 
 for(k in 1:nrow(tract_index)) {
   if (k==1) {
-    first_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df2 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  if (k==2) {
-    second_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df2 <- rbind(first_df,second_df)
-  }
-  if (k>2) {
-    subsequent_df <- f.data(f.url(ACS_BG_variables2,tract_index[k,"county"],tract_index[k,"tract"]),4)
+  if (k>=2) {
+    subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df2 <- rbind(bg_df2,subsequent_df)
   }
-  if (k%%10==0) {print(paste(k, "tracts have been called for Call 2"))} # Monitor progress of this step, as it's long.
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 1"))} # Monitor progress of this step, as it's long.
 }
 
 # Call 3
 
 for(k in 1:nrow(tract_index)) {
   if (k==1) {
-    first_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
+    bg_df3 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
-  if (k==2) {
-    second_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
-    bg_df3 <- rbind(first_df,second_df)
-  }
-  if (k>2) {
-    subsequent_df <- f.data(f.url(ACS_BG_variables3,tract_index[k,"county"],tract_index[k,"tract"]),4)
+  if (k>=2) {
+    subsequent_df <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
     bg_df3 <- rbind(bg_df3,subsequent_df)
   }
-  if (k%%10==0) {print(paste(k, "tracts have been called for Call 3"))} # Monitor progress of this step, as it's long.
+  if (k%%10==0) {print(paste(k, "tracts have been called for Call 1"))} # Monitor progress of this step, as it's long.
 }
 
 # Combine three data tranches into single data frame
