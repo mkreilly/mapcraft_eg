@@ -577,7 +577,7 @@ ACS_BG_raw <- ACS_BG_preraw %>%
            occ_f_man_prodE  = C24010_070E  # Production, transportation, and material moving
         ) %>%
   mutate(
-    GEOID=paste0(state,county,tract,block_group)  # FixFix
+    GEOID=paste0(state,county,tract,block_group)  
   )
 
 
@@ -594,7 +594,7 @@ sf1_tract_raw <- get_decennial(geography = "tract", variables = sf1_tract_variab
 # Apply block share of 2016 ACS variables using block/block group and block/tract shares of 2010 total population
 # Note that "E" on the end of each variable is appended by tidycensus package to denote "estimate"
 
-workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID"))          #FixFix
+workingdata <- left_join(combined_block,ACS_BG_raw, by=c("blockgroup"="GEOID"))          
 workingdata <- left_join(workingdata,ACS_tract_raw, by=c("tract"="GEOID"))%>% mutate(
   TOTHH=tothhE*sharebg,
   HHPOP=hhpopE*sharebg,
