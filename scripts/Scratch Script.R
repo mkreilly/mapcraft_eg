@@ -133,3 +133,7 @@ f.data <- function(url,geography_fields){
   }
   return (output_data)
 }
+
+write.csv(bg_df1, "TAZ1454 Block Group Vars1.csv", row.names = FALSE, quote = T)
+write.csv(bg_df2, "TAZ1454 Block Group Vars2.csv", row.names = FALSE, quote = T)
+write.csv(bg_df3, "TAZ1454 Block Group Vars3.csv", row.names = FALSE, quote = T)
