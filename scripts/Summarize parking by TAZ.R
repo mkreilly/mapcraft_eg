@@ -51,10 +51,12 @@ parking2000 <- parking_raw_eq %>%
     OPRKCST=CPI_00_10*average_hourly                                        # Deflate 2010$ to 2000$ for short-term 
       )
 
-output <- data.frame(TAZ1454=1:1454) %>%                                    # Create 0 values for free TAZs
+output <- data.frame(TAZ1454=1:1454) %>%                                    # Create full TAZ file for merging
   left_join(.,parking2000, by="TAZ1454") %>%                                # Create clean output file for later merging
-  mutate_if(is.numeric, replace_na, 0) %>%
-  select(TAZ1454,PRKCST,OPRKCST)
+  mutate_if(is.numeric, replace_na, 0) %>%                                  # Replace missing values with 0
+  select(TAZ1454,PRKCST,OPRKCST)                                            # Select only parking cost fields
+
+# Output file
 
 write.csv(output, "TAZ1454 2015 Parking Cost.csv", row.names = FALSE, quote = T)
 

@@ -110,10 +110,10 @@ ACS_table <- load_variables(year=2017, dataset="acs5", cache=TRUE)
 ACS_BG_variables1 <- paste0("B25009_001E,",     # Total HHs
                       "B11002_001E,",		# HH pop
                       
-                      "B23025_004E,",           # Employed residents (employed residents is "employed" + "armed forces")
-                      "B23025_006E,", 		# Armed forces
+                      "B23025_004E,",   # Employed residents (employed residents is "employed" + "armed forces")
+                      "B23025_006E,", 	# Armed forces
                       
-                      "B19001_002E,",           # Household income 0 to $10k 
+                      "B19001_002E,",   # Household income 0 to $10k 
                       "B19001_003E,",		# Household income $10 to $15k
                       "B19001_004E,",		# Household income $15 to $20k
                       "B19001_005E,",		# Household income $20 to $25k
@@ -130,7 +130,7 @@ ACS_BG_variables1 <- paste0("B25009_001E,",     # Total HHs
                       "B19001_016E,",		# Household income $150 to $200k
                       "B19001_017E,",		# Household income $200k+
                       
-                      "B01001_003E,",           # male aged 0 to 4 
+                      "B01001_003E,",   # male aged 0 to 4 
                       "B01001_004E,",		# male aged 5 to 9 
                       "B01001_005E,",		# male aged 10 to 14
                       "B01001_006E,",		# male aged 15 to 17
