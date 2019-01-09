@@ -777,10 +777,12 @@ temp0 <- workingdata %>%
 # Create factor indices by county and number of workers in households
 # Values from ACS2013-2017_PUMS2012-2016_HH_Worker_Correction_Factors.csv
 
-PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) %>%                               # Bring in model county equivalence
+PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
+
+PBA2010_county <- PBA2010 %>%                         # Bring in model county equivalence
   select(ZONE,COUNTY)
 
-temp1 <- left_join(temp0,PBA2010,by = c("TAZ1454" = "ZONE"))
+temp1 <- left_join(temp0,PBA2010_county,by = c("TAZ1454" = "ZONE"))
 
 counties  <- c(1,2,3,4,5,6,7,8,9)
 workers0  <- c(0.67682904,0.64921752,0.5802766,0.56210084,0.75801448,0.74793229,0.69205109,0.78336595,0.82851428)
@@ -853,7 +855,7 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
 # Add HHLDS variable (same as TOTHH), select new 2015 output
 
 PBA2010_joiner <- PBA2010%>%
-  select(ZONE,DISTRICT,SD,COUNTY,TOTACRE,RESACRE,CIACRE,AREATYPE,TOPOLOGY,ZERO,sftaz)
+  select(ZONE,DISTRICT,SD,TOTACRE,RESACRE,CIACRE,AREATYPE,TOPOLOGY,ZERO,sftaz)
 
 employment_2015 <- read.csv(employment_2015_data,header=TRUE) %>%
   rename(TOTEMP=EMPNUM,HEREMPN=HEREEMPN)               # Rename total employment and HEREMPN variables to match
