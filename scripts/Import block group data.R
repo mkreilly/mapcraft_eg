@@ -18,7 +18,13 @@ bg_df2 <- read.csv("X:/petrale/output/ACS 2013-2017 Block Group Vars2.csv",heade
 bg_df3 <- read.csv("X:/petrale/output/ACS 2013-2017 Block Group Vars3.csv",header=TRUE, stringsAsFactors = FALSE,
                    colClasses = c("tract" = "character","state" = "character","county" = "character", "block.group" = "character"))
 
-# Rename block.group to block_group, so rest of ACS 2013-2017 create TAZ data for 2015.R code works
+# Rename block.group to block group, so rest of ACS 2013-2017 create TAZ data for 2015.R code works
 
-ACS_BG_preraw <- ACS_BG_preraw %>%
-  rename("block_group" = "block.group")
+bg_df1 <- bg_df1 %>%
+  rename("block group" = "block.group")
+
+bg_df2 <- bg_df2 %>%
+  rename("block group" = "block.group")
+
+bg_df3 <- bg_df3 %>%
+  rename("block group" = "block.group")

@@ -29,8 +29,8 @@ library(httr)
 
 # Set up directories, import TAZ/block equivalence, install census key, set ACS year,set CPI inflation
 
-wd                   <- "X:/petrale/output/"
-employment_2015_data <- "X:/petrale/basemap/2015_employment_TAZ1454.csv"
+wd                             <- "X:/petrale/output/"
+employment_2015_data           <- "X:/petrale/basemap/2015_employment_TAZ1454.csv"
 setwd(wd)
 
 
@@ -48,7 +48,7 @@ CPI_reference <- 180.20 # CPI value for 2000
 CPI_ratio <- CPI_current/CPI_reference # 2017 CPI/2000 CPI
 
 USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
-BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys", "Development")
+BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys")
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
 school_parking_2015_data <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
 
@@ -368,6 +368,7 @@ f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.go
                                                    ACS_BG_variables,"&for=block%20group:*&in=state:",state,"%20county:",county,
                                                    "%20tract:",tract,"&key=",censuskey)}
 
+# Create wrapper to either perform API calls or not depending on presence of cached block group data
 # Block group calls done for all 1588 Bay Area tracts (done in 3 tranches because API limited to calls of 50 variables)
 # The "4" in the call refers to the number of columns at the end of the API call devoted to geography (not numeric)
 # Numeric values are changed by the f.data function from character to numeric
@@ -376,7 +377,11 @@ f.url <- function (ACS_BG_variables,county,tract) {paste0("https://api.census.go
 
 # Call 1
 
-for(k in 1:nrow(tract_index)) {
+if (file.exists("ACS 2013-2017 Block Group Vars1.csv")) {source("../scripts/Import block group data.R")
+  } else {                      # Wrapper checks for cached block group variables, then runs a script to import them
+                                # Only checks for first of three BG files, but that should be sufficient
+                                # Else run the API block group calls to retrieve the data
+for(k in 1:nrow(tract_index)) {  
   if (k==1) {
     bg_df1 <- f.data(f.url(ACS_BG_variables1,tract_index[k,"county"],tract_index[k,"tract"]),4)
   }
@@ -412,6 +417,8 @@ for(k in 1:nrow(tract_index)) {
   }
   if (k%%10==0) {print(paste(k, "tracts have been called for Call 1"))} # Monitor progress of this step, as it's long.
 }
+  
+}                                   # End of wrapper
 
 # Combine three data tranches into single data frame
 
@@ -726,7 +733,7 @@ workingdata <- left_join(workingdata,sf1_tract_raw, by=c("tract"="GEOID")) %>%
 
 # Summarize to TAZ and select only variables of interest
 
-temp <- workingdata %>%
+temp0 <- workingdata %>%
   group_by(TAZ1454) %>%
   summarize(  TOTHH=sum(TOTHH),
               HHPOP=sum(HHPOP),
@@ -766,12 +773,34 @@ temp <- workingdata %>%
               ) %>%
   mutate(TOTPOP = HHPOP+gqpop)
 
+# Apply households by number of workers correction factors
+# Create factor indices by county and number of workers in households
+# Values from ACS2013-2017_PUMS2012-2016_HH_Worker_Correction_Factors.csv
+
+PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) %>%                               # Bring in model county equivalence
+  select(ZONE,COUNTY)
+
+temp1 <- left_join(temp0,PBA2010,by = c("TAZ1454" = "ZONE"))
+
+counties  <- c(1,2,3,4,5,6,7,8,9)
+workers0  <- c(0.67682904,0.64921752,0.5802766,0.56210084,0.75801448,0.74793229,0.69205109,0.78336595,0.82851428)
+workers1  <- c(1.08921147,1.05480267,1.08859871,1.10148924,1.06763472,1.07126544,1.08621834,1.06958318,1.0342124)
+workers2  <- c(1.08354536,1.08808827,1.09142667,1.16141048,1.07910591,1.11294028,1.07878553,1.08952879,1.07098673)
+workers3p <- c(1.16845428,1.16973951,1.1489769,1.27682832,1.09678653,1.06629451,1.26553099,1.09744812,1.19898921)
+
+temp2 <- temp1 %>%
+  mutate(
+    hh_wrks_0      = hh_wrks_0*workers0[match(COUNTY,counties)],          # Use the above index values for correction factors
+    hh_wrks_1      = hh_wrks_1*workers1[match(COUNTY,counties)],
+    hh_wrks_2      = hh_wrks_2*workers2[match(COUNTY,counties)],
+    hh_wrks_3_plus = hh_wrks_3_plus*workers3p[match(COUNTY,counties)]) 
+
 # Round data, find max value in categorical data to adjust totals so they match univariate totals
 # For example, the households by income across categories should sum to equal total HHs
 # If unequal, the largest constituent cell is adjusted up or down such that the category sums match the marginal total
 # Add in population over age 62 variable that's also needed (but shouldn't be rounded, so added at the end)
 
-temp_rounded <- temp %>%
+temp_rounded <- temp2 %>%
   mutate_if(is.numeric,round,0) %>%
   mutate (
     max_pop    = max.col(.[c("HHPOP","gqpop")],                                      ties.method="first"),
@@ -823,7 +852,6 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
 # Join "2015" census-derived data to 2010/2015 reused variables and 2015 employment
 # Add HHLDS variable (same as TOTHH), select new 2015 output
 
-PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
 PBA2010_joiner <- PBA2010%>%
   select(ZONE,DISTRICT,SD,COUNTY,TOTACRE,RESACRE,CIACRE,AREATYPE,TOPOLOGY,ZERO,sftaz)
 
@@ -899,4 +927,6 @@ popsim_vars_county <- joined_10_15 %>%
 write.csv(popsim_vars_county, "TAZ1454 2015 Popsim Vars County.csv", row.names = FALSE, quote = T)
 
 
+
+           
 
