@@ -773,18 +773,22 @@ temp0 <- workingdata %>%
               ) %>%
   mutate(TOTPOP = HHPOP+gqpop)
 
+# Add in additional GQ population from MR, file "gq_add_00051015.csv"
+
+
+
 # Apply households by number of workers correction factors
-# Create factor indices by county and number of workers in households
 # Values from ACS2013-2017_PUMS2012-2016_HH_Worker_Correction_Factors.csv
+# 1=San Francisco; 2=San Mateo; 3=Santa Clara; 4=Alameda; 5=Contra Costa; 6=Solano; 7= Napa; 8=Sonoma; 9=Marin
 
 PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
 
-PBA2010_county <- PBA2010 %>%                         # Bring in model county equivalence
+PBA2010_county <- PBA2010 %>%                                    # Create and join TAZ/county equivalence
   select(ZONE,COUNTY)
 
 temp1 <- left_join(temp0,PBA2010_county,by = c("TAZ1454" = "ZONE"))
 
-counties  <- c(1,2,3,4,5,6,7,8,9)
+counties  <- c(1,2,3,4,5,6,7,8,9)       # Matching values to get the county index ordering correct for below factors
 workers0  <- c(0.67682904,0.64921752,0.5802766,0.56210084,0.75801448,0.74793229,0.69205109,0.78336595,0.82851428)
 workers1  <- c(1.08921147,1.05480267,1.08859871,1.10148924,1.06763472,1.07126544,1.08621834,1.06958318,1.0342124)
 workers2  <- c(1.08354536,1.08808827,1.09142667,1.16141048,1.07910591,1.11294028,1.07878553,1.08952879,1.07098673)
@@ -792,7 +796,7 @@ workers3p <- c(1.16845428,1.16973951,1.1489769,1.27682832,1.09678653,1.06629451,
 
 temp2 <- temp1 %>%
   mutate(
-    hh_wrks_0      = hh_wrks_0*workers0[match(COUNTY,counties)],          # Use the above index values for correction factors
+    hh_wrks_0      = hh_wrks_0*workers0[match(COUNTY,counties)], # Apply the above index values for correction factors
     hh_wrks_1      = hh_wrks_1*workers1[match(COUNTY,counties)],
     hh_wrks_2      = hh_wrks_2*workers2[match(COUNTY,counties)],
     hh_wrks_3_plus = hh_wrks_3_plus*workers3p[match(COUNTY,counties)]) 
