@@ -30,7 +30,8 @@ library(httr)
 # Set up directories, import TAZ/block equivalence, install census key, set ACS year,set CPI inflation
 
 wd                             <- "X:/petrale/output/"
-employment_2015_data           <- "X:/petrale/basemap/2015_employment_TAZ1454.csv"
+employment_2015_data           <- "X:/petrale/output/2015_employment_TAZ1454.csv"
+school_2015_data               <- "X:/petrale/output/tazData_enrollment.csv"
 setwd(wd)
 
 
@@ -50,7 +51,7 @@ CPI_ratio <- CPI_current/CPI_reference # 2017 CPI/2000 CPI
 USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
 BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys")
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
-school_parking_2015_data <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
+parking_2015_data    <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
 
 # County FIPS codes for ACS tract API calls
 
@@ -63,6 +64,25 @@ Mateo     <- "081"
 Clara     <- "085"
 Solano    <- "095"
 Sonoma    <- "097"
+
+# Bring in PBA (2017) 2010 land use data for county equivalencies and later summaries
+# 1=San Francisco; 2=San Mateo; 3=Santa Clara; 4=Alameda; 5=Contra Costa; 6=Solano; 7= Napa; 8=Sonoma; 9=Marin
+
+PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
+
+PBA2010_county <- PBA2010 %>%                                    # Create and join TAZ/county equivalence
+  select(ZONE,COUNTY) %>%
+  mutate(County_Name=case_when(
+    COUNTY==1 ~ "San Francisco",
+    COUNTY==2 ~ "San Mateo",
+    COUNTY==3 ~ "Santa Clara",
+    COUNTY==4 ~ "Alameda",
+    COUNTY==5 ~ "Contra Costa",
+    COUNTY==6 ~ "Solano",
+    COUNTY==7 ~ "Napa",
+    COUNTY==8 ~ "Sonoma",
+    COUNTY==9 ~ "Marin"
+  ))
 
 
 # Income table - Guidelines for HH income values used from ACS
@@ -763,38 +783,90 @@ temp0 <- workingdata %>%
               gq_type_univ         =sum(gq_type_univ),
               gq_type_mil          =sum(gq_type_mil),
               gq_type_othnon       =sum(gq_type_othnon),
-              gqpop                =gq_type_univ+gq_type_mil+gq_type_othnon,
+              gqpop2010            =gq_type_univ+gq_type_mil+gq_type_othnon,
               pers_occ_management  =sum(pers_occ_management),
               pers_occ_professional=sum(pers_occ_professional),
               pers_occ_services    =sum(pers_occ_services),
               pers_occ_retail      =sum(pers_occ_retail),
               pers_occ_manual      =sum(pers_occ_manual),
-              pers_occ_military    =sum(gq_type_mil)
-              ) %>%
-  mutate(TOTPOP = HHPOP+gqpop)
+              pers_occ_military    =sum(gq_type_mil)) 
+  
 
-# Add in additional GQ population from MR, file "gq_add_00051015.csv"
+# Correct GQ population to sum to ACS PUMS 2015 total, outlined in Steps 1-3 below
+"
+1. Add in additional GQ population for growth 2010-2015 from M. Reilly, file gq_add_00051015.csv
 
+Location                                                  TAZ1454    extra_gq
+------------------------------------------------------    -------    --------
+Kennedy Grad at Stanford	                                353        436
+Munger East AND Ng House at Stanford	                    354        120
+Metropolitan, Channing Bowditch, Maximo Commons at UCB	  1008       348
+------------------------------------------------------    -------    --------
+
+2. Sum total 2010 GQ to compare to ACS PUMS 2015 GQ
+
+3. Create factor corrections to apply to TAZs; apply them 
+"
+
+# Create data frame for added GQ pop (only three TAZs have empirically-collected data for updates)
+# Join to temp0 file and add GQ pop, then remove column
+
+added_gq <- data.frame(TAZ1454=1:1454,extra_gq=0) %>%
+  mutate(extra_gq=case_when(
+    TAZ1454 == 353  ~ 436,                              
+    TAZ1454 == 354  ~ 120,
+    TAZ1454 == 1008 ~ 348,
+    TRUE ~ extra_gq                                    # All other values kept at zero
+  ))
+
+temp1 <- left_join(temp0,added_gq, by="TAZ1454") %>%
+  mutate(gqpop2010=gqpop2010+extra_gq) %>%
+  select(-extra_gq)
+
+# Sum GQ 2010 population by county
+
+sum_gq10 <- left_join(temp1,PBA2010_county,by=c("TAZ1454"="ZONE")) %>%
+  group_by(County_Name,COUNTY) %>%
+  summarize(sum10=sum(gqpop2010)) 
+
+# Bring in 2015 PUMS and perform the same summary, then join with the 2010 data
+# Create GQ adjustment factor
+
+PERSON_RDATA = "M:/Data/Census/PUMS/PUMS 2015/pbayarea15.Rdata"
+load (PERSON_RDATA) 
+
+sum_gq15 <- pbayarea15 %>%
+  mutate(County_Name=as.character(County_Name)) %>%           # Bug fix to override County_Name as factor
+  filter(RELP==17) %>%
+  group_by(County_Name) %>%
+  summarize(sum15=sum(PWGTP))
+
+gqcounty1015 <- left_join(sum_gq10,sum_gq15,by="County_Name") %>%
+  mutate(gqfactor=sum15/sum10) %>%                            # Factor is ratio of GQ15/GQ10, by county  
+  arrange(COUNTY)                                             # Sort by COUNTY variable, so factors in correct order
+
+gqfactor <- gqcounty1015$gqfactor                             # Ordered vector of factors to apply   
+counties  <- c(1,2,3,4,5,6,7,8,9)                             # Matching county values for factor ordering
+ 
+# Apply GQ factor to reconcile adjust 2010 decennial with 2015 PUMS
+
+temp2 <- left_join(temp1,PBA2010_county,by=c("TAZ1454"="ZONE")) %>%
+  mutate(
+    gqpop = gqpop2010*gqfactor[match(COUNTY,counties)]
+  )
 
 
 # Apply households by number of workers correction factors
 # Values from ACS2013-2017_PUMS2012-2016_HH_Worker_Correction_Factors.csv
 # 1=San Francisco; 2=San Mateo; 3=Santa Clara; 4=Alameda; 5=Contra Costa; 6=Solano; 7= Napa; 8=Sonoma; 9=Marin
+# "counties" vector is defined above with this county order
 
-PBA2010 <- read.csv(PBA_TAZ_2010,header=TRUE) 
-
-PBA2010_county <- PBA2010 %>%                                    # Create and join TAZ/county equivalence
-  select(ZONE,COUNTY)
-
-temp1 <- left_join(temp0,PBA2010_county,by = c("TAZ1454" = "ZONE"))
-
-counties  <- c(1,2,3,4,5,6,7,8,9)       # Matching values to get the county index ordering correct for below factors
 workers0  <- c(0.67682904,0.64921752,0.5802766,0.56210084,0.75801448,0.74793229,0.69205109,0.78336595,0.82851428)
 workers1  <- c(1.08921147,1.05480267,1.08859871,1.10148924,1.06763472,1.07126544,1.08621834,1.06958318,1.0342124)
 workers2  <- c(1.08354536,1.08808827,1.09142667,1.16141048,1.07910591,1.11294028,1.07878553,1.08952879,1.07098673)
 workers3p <- c(1.16845428,1.16973951,1.1489769,1.27682832,1.09678653,1.06629451,1.26553099,1.09744812,1.19898921)
 
-temp2 <- temp1 %>%
+temp3 <- temp2 %>%
   mutate(
     hh_wrks_0      = hh_wrks_0*workers0[match(COUNTY,counties)], # Apply the above index values for correction factors
     hh_wrks_1      = hh_wrks_1*workers1[match(COUNTY,counties)],
@@ -806,24 +878,21 @@ temp2 <- temp1 %>%
 # If unequal, the largest constituent cell is adjusted up or down such that the category sums match the marginal total
 # Add in population over age 62 variable that's also needed (but shouldn't be rounded, so added at the end)
 
-temp_rounded <- temp2 %>%
+temp_rounded <- temp3 %>%
   mutate_if(is.numeric,round,0) %>%
   mutate (
-    max_pop    = max.col(.[c("HHPOP","gqpop")],                                      ties.method="first"),
     max_income = max.col(.[c("HHINCQ1","HHINCQ2","HHINCQ3","HHINCQ4")],              ties.method="first"),
     max_age    = max.col(.[c("AGE0004","AGE0519","AGE2044","AGE4564","AGE65P")],     ties.method="first"),
     max_size   = max.col(.[c("hh_size_1","hh_size_2","hh_size_3","hh_size_4_plus")], ties.method="first"),
     max_workers= max.col(.[c("hh_wrks_0","hh_wrks_1","hh_wrks_2","hh_wrks_3_plus")], ties.method="first"),
     max_kids   = max.col(.[c("hh_kids_yes","hh_kids_no")],                           ties.method="first"),
+    TOTPOP     = HHPOP+gqpop,    
     SHPOP62P   =if_else(TOTPOP==0,0,AGE62P/TOTPOP)
     ) 
 
 # Now use max values determined above to find appropriate column for adjustment
 
 temp_rounded_adjusted <- temp_rounded %>% mutate(
-  # Balance HH and GQ pop
-  HHPOP = if_else(max_pop==1,HHPOP+(TOTPOP-(HHPOP+gqpop)),HHPOP),
-  gqpop = if_else(max_pop==2,gqpop+(TOTPOP-(HHPOP+gqpop)),gqpop),
   # Balance population by age
   AGE0004 = if_else(max_age==1,AGE0004+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0004),
   AGE0519 = if_else(max_age==2,AGE0519+(TOTPOP-(AGE0004+AGE0519+AGE2044+AGE4564+AGE65P)),AGE0519),
@@ -849,10 +918,9 @@ temp_rounded_adjusted <- temp_rounded %>% mutate(
   hh_kids_yes = if_else(max_kids==1,hh_kids_yes+(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_yes),
   hh_kids_no  = if_else(max_kids==2,hh_kids_no +(TOTHH-(hh_kids_yes+hh_kids_no)),hh_kids_no)
   ) %>%
-  select(-max_pop,-max_income,-max_age,-max_size,-max_workers,-max_kids,-AGE62P)
+  select(-max_income,-max_age,-max_size,-max_workers,-max_kids,-AGE62P)
   
-
-# Read in 2010 data and select variables for joining to 2015 data
+# Read in old PBA data sets and select variables for joining to new 2015 dataset
 # Bring in updated 2015 employment for joining
 # Bring in school and parking data from PBA 2040, 2015 TAZ data 
 # Join "2015" census-derived data to 2010/2015 reused variables and 2015 employment
@@ -864,19 +932,30 @@ PBA2010_joiner <- PBA2010%>%
 employment_2015 <- read.csv(employment_2015_data,header=TRUE) %>%
   rename(TOTEMP=EMPNUM,HEREMPN=HEREEMPN)               # Rename total employment and HEREMPN variables to match
 
-school_parking_2015 <- read.csv(school_parking_2015_data, header=TRUE) %>% 
-  select(ZONE,HSENROLL,COLLFTE,COLLPTE,PRKCST,OPRKCST,TERMINAL)
+parking_2015 <- read.csv(parking_2015_data, header=TRUE) %>% 
+  select(ZONE,PRKCST,OPRKCST,TERMINAL)
 
-joined_10_15 <- left_join(PBA2010_joiner,temp_rounded_adjusted, by=c("ZONE"="TAZ1454"))
-joined_10_15_employment <- left_join(joined_10_15,employment_2015, by=c("ZONE"="TAZ1454"))
+school_2015 <- read.csv(school_2015_data, header=TRUE) %>% 
+  select(ZONE,HSENROLL,COLLFTE,COLLPTE)
 
-New2015 <- left_join(joined_10_15_employment,school_parking_2015, by="ZONE")%>% 
+joined_10_15      <- left_join(PBA2010_joiner,temp_rounded_adjusted, by=c("ZONE"="TAZ1454")) # Join 2010 topology
+joined_parking    <- left_join(joined_10_15,parking_2015, by="ZONE")                         # Join PBA 2015 parking
+joined_school     <- left_join(joined_parking, school_2015, by="ZONE")                       # Join schools
+joined_employment <- left_join(joined_school,employment_2015, by=c("ZONE"="TAZ1454"))        # Join employment
+ 
+New2015 <- joined_employment %>%
   mutate(hhlds=TOTHH) %>%
   select(ZONE,DISTRICT,SD,COUNTY,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,TOTACRE,
          RESACRE,CIACRE,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREMPN,AGREMPN,
          MWTEMPN,OTHEMPN,PRKCST,OPRKCST,AREATYPE,HSENROLL,COLLFTE,COLLPTE,TERMINAL,TOPOLOGY,ZERO,hhlds,sftaz,
-         gqpop)
-
+         gqpop) %>%
+  mutate(
+    AGE0004 = if_else(ZONE==1439,0,AGE0004),                # Zero out population components in San Quentin TAZ
+    AGE0519 = if_else(ZONE==1439,0,AGE0519),                # All institutional group quarters
+    AGE2044 = if_else(ZONE==1439,0,AGE2044),                # Total pop and gq pop already 0
+    AGE4564 = if_else(ZONE==1439,0,AGE4564),
+    AGE65P =  if_else(ZONE==1439,0,AGE65P)
+  )
 
 # Summarize ACS and employment data by superdistrict for both 2010 and 2015
 
@@ -932,7 +1011,28 @@ popsim_vars_county <- joined_10_15 %>%
 
 write.csv(popsim_vars_county, "TAZ1454 2015 Popsim Vars County.csv", row.names = FALSE, quote = T)
 
+# Output into Tableau-friendly format
+
+Tableau2015 <- New2015 %>%
+  select(ZONE,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREMPN,AGREMPN,
+         MWTEMPN,OTHEMPN,PRKCST,OPRKCST,HSENROLL,COLLFTE,COLLPTE,gqpop) %>%
+  gather(Variable,Value2015,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREMPN,AGREMPN,
+         MWTEMPN,OTHEMPN,PRKCST,OPRKCST,HSENROLL,COLLFTE,COLLPTE,gqpop)
+
+Tableau2010 <- PBA2010 %>%
+  select(ZONE,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREMPN,AGREMPN,
+         MWTEMPN,OTHEMPN,PRKCST,OPRKCST,HSENROLL,COLLFTE,COLLPTE,gqpop) %>%
+  gather(Variable,Value2010,TOTHH,HHPOP,TOTPOP,EMPRES,SFDU,MFDU,HHINCQ1,HHINCQ2,HHINCQ3,HHINCQ4,SHPOP62P,TOTEMP,AGE0004,AGE0519,AGE2044,AGE4564,AGE65P,RETEMPN,FPSEMPN,HEREMPN,AGREMPN,
+         MWTEMPN,OTHEMPN,PRKCST,OPRKCST,HSENROLL,COLLFTE,COLLPTE,gqpop)
+
+Tableau10_15 <- left_join(Tableau2010,Tableau2015,by = c("ZONE","Variable"))
+
+write.csv(Tableau10_15, "Tableau_2010_2015_Comparison.csv", row.names = FALSE, quote = T)
 
 
-           
+
+
+
+
+  
 
