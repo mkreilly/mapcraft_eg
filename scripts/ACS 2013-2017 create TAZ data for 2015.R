@@ -52,6 +52,7 @@ USERPROFILE          <- gsub("\\\\","/", Sys.getenv("USERPROFILE"))
 BOX_TM               <- file.path(USERPROFILE, "Box", "Modeling and Surveys")
 PBA_TAZ_2010         <- file.path(BOX_TM, "Share Data",   "plan-bay-area-2040", "2010_06_003","tazData.csv")
 parking_2015_data    <- file.path(BOX_TM,"Share Data", "plan-bay-area-2040", "2015_06_002", "tazData.csv")
+PERSON_RDATA = "M:/Data/Census/PUMS/PUMS 2015/pbayarea15.Rdata"   # 2015 PUMS data for GQ adjustments
 
 # County FIPS codes for ACS tract API calls
 
@@ -832,7 +833,6 @@ sum_gq10 <- left_join(temp1,PBA2010_county,by=c("TAZ1454"="ZONE")) %>%
 # Bring in 2015 PUMS and perform the same summary, then join with the 2010 data
 # Create GQ adjustment factor
 
-PERSON_RDATA = "M:/Data/Census/PUMS/PUMS 2015/pbayarea15.Rdata"
 load (PERSON_RDATA) 
 
 sum_gq15 <- pbayarea15 %>%
