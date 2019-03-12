@@ -1,6 +1,8 @@
 | Field Name | Field Alias | Field Type | Field Description | Field Source | Required | Domain | Value Definitions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | parcel_id |   |   |   |   |   |   |   |   |
+| apn
+| acres
 | building_id ???
 | building_type
 | building_type_det |   |   |   |   |   |   |  https://github.com/BayAreaMetro/petrale/blob/master/basemap/val_building_type_det.csv
