@@ -1,0 +1,9 @@
+Field Name, Field Alias, Field Type, Field Description, Field Source, Required, Domain, Notes
+parcel_id
+building_id ???
+building_type
+building_type_det
+building_sqft
+assessed_land_value
+assessed_improvement_value
+assessment_date
