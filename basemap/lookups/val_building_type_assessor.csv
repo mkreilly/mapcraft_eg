@@ -7,10 +7,16 @@ OF,office
 HO,hotel
 SC,school
 IL,light industrial
+FP, food processing and wineries
 IW,warehouse
 IH,heavy industrial
 RS,retail general
-RB,retail big box
+RB,retail big box or regional
 MR,mixed use residential focused
 MT,mixed use industiral focused
 ME,mixed use employment focused
+PA, parking lot
+PG, parking garage
+VA, vacant now
+VP, vacant permanently
+HA, high end ag and vineyards and orchards
