@@ -15,3 +15,4 @@
 | last_sale_date
 | tenure
 | rent_type
+| below market rate
