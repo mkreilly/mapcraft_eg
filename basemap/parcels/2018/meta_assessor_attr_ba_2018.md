@@ -3,7 +3,7 @@
 | parcel_id |   |   |   |   |   |   |   |   |
 | building_id ???
 | building_type
-| building_type_det |   |   |   |   |   |   |  https://github.com/BayAreaMetro/petrale/blob/master/basemap/building_types.csv
+| building_type_det |   |   |   |   |   |   |  https://github.com/BayAreaMetro/petrale/blob/master/basemap/val_building_type_det.csv
 | building_sqft
 | non_residential_sqft
 | residential_units
