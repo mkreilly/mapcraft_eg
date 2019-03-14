@@ -10,6 +10,7 @@
 | non_residential_sqft
 | residential_units
 | year_built
+| stories
 | assessed_land_value
 | assessed_building_value
 | assessment_date
