@@ -24,8 +24,8 @@ This repository contains land use/urban economics data and related code for Bay 
 
 Common File Types
 * each data file has a name and generally ends with a csv denoting that is it a comma separated values text file
-* most data files have a corresponding file with "temp" prepeneed: this is template with blank values
-* most data files have a corresponding file with "meta" prepended: this contains a variable dictionary for that data file
+* most data files have a corresponding file with "meta" prepended: this contains information about the structure and creation of the data file
+* most data files have a corresponding file with "temp" prepended: this is template with blank values
 * most data files have a corresponding file with "dict" prepended: this contains a variable dictionary for that data file
 
 
