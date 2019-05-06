@@ -3,6 +3,7 @@
 ## Fields
 ### parcel_id / Parcel Identifier	/ numeric	
 The parcel that the building is on or the parcel most closely associated with the building it it is on multiple parcels or no parcels
+* Values
 ### building_id	/ Unique Building Identifier / numeric	
 unique bilding id
 ### building_type	Building Type	text	
