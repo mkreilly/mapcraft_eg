@@ -1,6 +1,9 @@
 # dv-buildings2018
 
-parcel_id	Parcel Identifier	numeric	The parcel that the building is on or the parcel most closely associated with the building it it is on multiple parcels or no parcels
+### parcel_id	
+Parcel Identifier	
+numeric	
+The parcel that the building is on or the parcel most closely associated with the building it it is on multiple parcels or no parcels
 building_id	Unique Building Identifier	numeric	unique bilding id
 building_type	Building Type	text	The building type or the primary building type if there are multiple
 building_sqft	Building Total Square Feet	numeric	The building's total square feet or the the total for all buildings if there are multiple
