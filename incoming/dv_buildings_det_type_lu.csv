@@ -4,6 +4,8 @@ HT, townhomes, HT, townhomes
 HM, multi family residential, HM, multi family residential
 MH, mobile home, HM, multi family residential
 SR, single room occupancy, HM, multi family residential
+AL, assisted living, GQ, group quarters
+DM, dorm, GQ, group quarters
 CM, condo or apt common area, VP, vacant permanently
 OF, office, OF, office
 HP, hospital, OF, office
