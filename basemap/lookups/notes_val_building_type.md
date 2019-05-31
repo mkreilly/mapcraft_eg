@@ -1,4 +1,4 @@
-* HS, single family residential: 
+HS, single family residential: 
 HT, townhomes: we rarely use this since it is hard to differentiate consistently btwn sfd and townhomes
 HM, multi family residential: condos or apartments, diff is done in the tenure var; incl SRO dorms frats boarding
 MH, mobile home
