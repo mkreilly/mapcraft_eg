@@ -1,3 +1,0 @@
-# PDA Policies
-
-RHNA

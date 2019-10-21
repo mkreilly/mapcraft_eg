@@ -1,2 +1,0 @@
-# Residential Transactions and Rent
-

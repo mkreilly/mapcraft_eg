@@ -1,2 +1,0 @@
-# The NoDev List
-
